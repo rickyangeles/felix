@@ -1,0 +1,229 @@
+{
+    "key": "group_5e9a0f7eeb209",
+    "title": "Blocks: Clone fields",
+    "fields": [
+        {
+            "key": "field_5e9a1088a5343",
+            "label": "Background Color",
+            "name": "background_color",
+            "type": "radio",
+            "instructions": "Select background color",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "custom-color-picker",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "primary": "<span class=\"color-sample-primary\"><\/span>",
+                "primary-light": "<span class=\"color-sample-primary-light\"><\/span>",
+                "primary-dark": "<span class=\"color-sample-primary-dark\"><\/span>",
+                "secondary": "<span class=\"color-sample-secondary\"><\/span>",
+                "secondary-light": "<span class=\"color-sample-secondary-light\"><\/span>",
+                "secondary-dark": "<span class=\"color-sample-secondary-dark\"><\/span>",
+                "white": "<span class=\"color-sample-white\"><\/span>",
+                "light": "<span class=\"color-sample-light\"><\/span>",
+                "dark": "<span class=\"color-sample-dark\"><\/span>"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "white",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_5e9a123ba5346",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image_aspect_ratio_crop",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "crop_type": "aspect_ratio",
+            "aspect_ratio_width": 16,
+            "aspect_ratio_height": 9,
+            "return_format": "url",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5e9a1133a5344",
+            "label": "Align Content",
+            "name": "align_content",
+            "type": "button_group",
+            "instructions": "Content Alignment",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "allow_null": 0,
+            "default_value": "left",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5e9a11d7a5345",
+            "label": "Horizontal Padding",
+            "name": "horizontal_padding",
+            "type": "button_group",
+            "instructions": "Normal: 80px Narrow: 20px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "normal": "Normal",
+                "narrow": "Narrow"
+            },
+            "allow_null": 0,
+            "default_value": "normal",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
+            "key": "field_5e9a0e66f4b62",
+            "label": "Buttons",
+            "name": "buttons",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "acfe_repeater_stylised_button": 0,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Button",
+            "sub_fields": [
+                {
+                    "key": "field_5e9a0e99f4b63",
+                    "label": "Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "return_format": "array"
+                },
+                {
+                    "key": "field_5e9a0eaef4b64",
+                    "label": "Color",
+                    "name": "color",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "choices": {
+                        "primary": "Primary",
+                        "secondary": "Secondary",
+                        "white": "White",
+                        "light": "Light",
+                        "dark": "Dark"
+                    },
+                    "default_value": [
+                        "primary"
+                    ],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "return_format": "value",
+                    "ajax": 0,
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5e9a0f2af4b65",
+                    "label": "Reverse",
+                    "name": "reverse",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "25",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "!=",
+                "value": "all"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 0,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_form": 0,
+    "acfe_meta": "",
+    "acfe_note": "",
+    "modified": 1589804189
+}
