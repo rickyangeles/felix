@@ -1,0 +1,52 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+
+section.testimonial {
+    .grid {
+        .single-testimonial {
+            margin-bottom: 2em;
+            ul.rating {
+                margin: 1em 0 0 0;
+                padding-left: 0;
+                li {
+                    display: inline-block;
+                    list-style-type: none;
+                    margin-right: .5em;
+                    i {
+                        color: gold;
+                    }
+                }
+            }
+        }
+    }
+
+    .slider {
+        padding: 2em 0;
+        .single-testimonial {
+            text-align: center;
+            list-style-type: none;
+
+            &>* {
+                max-width: 80%;
+                width: 100%;
+                margin: 0 auto;
+            }
+            ul.rating {
+                margin: 1em auto 0;
+                padding-left: 0;
+                li {
+                    display: inline-block;
+                    list-style-type: none;
+                    margin-right: .5em;
+                    i {
+                        color: gold;
+                    }
+                }
+            }
+        }
+        .splide__pagination {
+            bottom: -1.5em;
+        }
+    }
+}

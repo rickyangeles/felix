@@ -1,0 +1,106 @@
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
+/* Block Defaults */
+section.split .main-content a.button {
+  margin: 1em 0 0 0;
+  display: inline-block; }
+
+section.split.primary .main-content a.button {
+  background-color: #EE6C4D;
+  color: #fff; }
+
+section.split.primary-light .main-content a.button {
+  background-color: #f07f64; }
+
+section.split.primary-dark .main-content a.button {
+  background-color: #ec5936; }
+
+section.split.secondary .main-content a.button {
+  background-color: #3D5A80; }
+
+section.split.secondary-light .main-content a.button {
+  background-color: #456691; }
+
+section.split.secondary-dark .main-content a.button {
+  background-color: #354e6f; }
+
+section.split.dark .main-content a.button {
+  background-color: #EEE;
+  color: #444; }
+
+section.split.light .main-content a.button {
+  background-color: #444;
+  color: #EEE; }
+
+section.split.light-dark .main-content a.button {
+  background-color: #444;
+  color: #e1e1e1; }
+
+section.split.white .main-content a.button {
+  background-color: #3D5A80;
+  color: white; }
+
+section.split .bg > div {
+  padding: 1.5em; }
+
+section.split .bg.primary > div {
+  background-color: #3D5A80;
+  color: #fff; }
+
+section.split .bg.secondary > div {
+  background-color: #EE6C4D;
+  color: #fff; }
+
+section.split .bg.white > div {
+  background-color: #fff;
+  color: #444; }
+
+section.split .bg.light > div {
+  background-color: #EEE;
+  color: #444; }
+
+section.split .bg.dark > div {
+  background-color: #444;
+  color: #EEE; }
+
+section.split .bg.slideshow .splide .splide__arrows .splide__arrow--prev {
+  left: 3em; }
+
+section.split .bg.slideshow .splide .splide__arrows .splide__arrow--next {
+  right: 3em; }
+
+section.split .slideshow > div {
+  padding-bottom: 3em; }
+
+section.split .splide .splide__pagination {
+  bottom: 1em; }
+
+section.split .splide .splide__slide {
+  position: relative; }
+  section.split .splide .splide__slide img {
+    position: relative; }
+  section.split .splide .splide__slide > div {
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    padding: 1em;
+    background-color: rgba(68, 68, 68, 0.8);
+    color: #fff; }
+
+@media (max-width: 991px) {
+  section.split .main-content {
+    margin-bottom: 2em; }
+  section.split .flip-mobile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse; }
+    section.split .flip-mobile .main-content {
+      margin-top: 2em;
+      margin-bottom: 0; } }

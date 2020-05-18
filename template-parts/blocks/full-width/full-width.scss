@@ -1,0 +1,30 @@
+section.full-width {
+    &.med-width {
+        &>div.container {
+            max-width: 50%;
+        }
+    }
+    &.small-width {
+        &>div.container {
+            max-width: 25%;
+        }
+    }
+    &.center {
+        &>div {
+            margin: 0 auto;
+        }
+        &>* {
+            text-align: center;
+        }
+    }
+    &.left {
+        &>* {
+            text-align: left;
+        }
+    }
+    &.right {
+        &>* {
+            text-align: right;
+        }
+    }
+}

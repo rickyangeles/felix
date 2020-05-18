@@ -1,0 +1,91 @@
+/* Sidebar Widgets */
+aside {
+    &.widget-area {
+        section {
+            background-color: $light;
+            padding: 20px;
+            border-radius: $sm-br;
+            .widget-title {
+                font-size: 1.4rem;
+                border-bottom: 1px solid $light-dark;
+                padding-bottom: 10px;
+            }
+            ul {
+                margin: 0;
+                padding-left: 1.5rem;
+                li {
+                    a {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Footer Widgets */
+.widget-contact-info {
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: none;
+    li {
+        color: white;
+        a {
+            color: white;
+        }
+    }
+}
+
+
+.widget-social-icon {
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+    overflow: hidden;
+    li {
+        float: left;
+        margin: 0 8px 8px 0;
+        font-size: 20px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        border-radius: 2px;
+        padding-top: 3px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &.primary {
+        li {
+            background-color: $primary;
+            a {
+                color: white;
+            }
+        }
+    }
+    &.secondary {
+        li {
+            background-color: $secondary;
+            a {
+                color: white;
+            }
+        }
+    }
+    &.light {
+        li {
+            background-color: $light;
+            a {
+                color: $primary;
+            }
+        }
+    }
+    &.dark {
+        li {
+            background-color: $dark;
+
+            a {
+                color: $light;
+            }
+        }
+    }
+}

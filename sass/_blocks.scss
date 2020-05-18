@@ -1,0 +1,258 @@
+@import 'variables';
+
+/* General Block Styles */
+
+section.block {
+    font-family: $bodyFont;
+    padding: 7em 0;
+    position: relative;
+    @each $colorname, $color in $colors {
+        &.#{$colorname} {
+            background-color: #{$color};
+            color: $white;
+            &.light, &.light-dark {
+                color: $dark;
+            }
+
+            &.white {
+                color: $primary;
+            }
+            &.bg-img {
+                background-size: cover;
+                background-position: center;
+                &:before {
+                    content: '';
+                    background-color: rgba($color, .75);
+                    display: block;
+                    width: 100%; height: 100%;
+                    top: 0;
+                    position: absolute;
+                }
+            }
+        }
+
+        &.#{$colorname} + &.#{$colorname} {
+            padding-top: 0em;
+        }
+    }
+    &.narrow {
+        padding: 3em 0;
+    }
+    &.med-width {
+        &>div.container {
+            max-width: 50%;
+        }
+    }
+    &.small-width {
+        &>div.container {
+            max-width: 25%;
+        }
+    }
+    &>div.container {
+        position: relative;
+        z-index: 9;
+    }
+    /* headers */
+    .block-header {
+        margin-bottom: 40px;
+        .header {
+            margin-bottom: 10px;
+        }
+        .subheader {
+            margin-bottom: 0;
+        }
+    }
+
+    &:not(.center) {
+        .block-header {
+            text-align: center;
+        }
+    }
+
+    /* buttons */
+    a.button {
+        display: block;
+        padding: 14px 30px;
+        margin: 0 10px;
+        border-radius: $sm-br;
+        text-decoration: none;
+        transition: all .3s ease;
+
+        &:hover {
+            transition: all .3s ease;
+        }
+        &.reverse {
+            background-color: transparent;
+            border-width: 3px;
+            padding: 12px 28px;
+            border-style: solid;
+        }
+        &.primary {
+            background-color: $primary;
+            color: $white;
+            &.reverse {
+                background-color: transparent;
+                border-color: $primary;
+                color: $primary;
+                &:hover {
+                    background-color: $primary;
+                    color: $white;
+                }
+            }
+            &:hover {
+                background-color: $primary-dark;
+            }
+        }
+        &.secondary {
+            background-color: $secondary;
+            color: $white;
+            &.reverse {
+                background-color: transparent;
+                border-color: $secondary;
+                color: $secondary;
+            }
+            &:hover {
+                background-color: $secondary-dark;
+                color: $white;
+            }
+        }
+        &.white {
+            background-color: $white;
+            color: $primary;
+            &.reverse {
+                background-color: transparent;
+                border-width: 2px;
+                border-color: $white;
+                color: $white;
+                &:hover {
+                    background-color: $white;
+                    color: $primary;
+                }
+            }
+
+        }
+        &.light {
+            background-color: $light;
+            color: $dark;
+        }
+        &.dark {
+            background-color: $dark;
+            color: $white;
+        }
+    }
+    .block-buttons {
+        margin-top: 40px;
+        overflow: hidden;
+        ul.buttons {
+            margin-left: 0;
+            padding-left: 0;
+            overflow: hidden;
+            display: inline-block;
+            li {
+                list-style: none;
+                float: left;
+                &:first-child {
+                    a {
+                        margin-left: 0;
+                    }
+                }
+                &:last-child {
+                    a {
+                        margin-right: 0;
+                    }
+                }
+                a {
+                    display: block;
+                    padding: 14px 30px;
+                    margin: 0 10px;
+                    border-radius: $sm-br;
+                    text-decoration: none;
+                    transition: all .3s ease;
+
+                    &:hover {
+                        transition: all .3s ease;
+                    }
+                    &.reverse {
+                        background-color: transparent;
+                        border-width: 3px;
+                        padding: 12px 28px;
+                        border-style: solid;
+                    }
+                    &.primary {
+                        background-color: $primary;
+                        color: $white;
+                        &.reverse {
+                            background-color: transparent;
+                            border-color: $primary;
+                            color: $primary;
+                            &:hover {
+                                background-color: $primary;
+                                color: $white;
+                            }
+                        }
+                        &:hover {
+                            background-color: $primary-dark;
+                        }
+                    }
+                    &.secondary {
+                        background-color: $secondary;
+                        color: $white;
+                        &.reverse {
+                            background-color: transparent;
+                            border-color: $secondary;
+                            color: $secondary;
+                        }
+                        &:hover {
+                            background-color: $secondary-dark;
+                            color: $white;
+                        }
+                    }
+                    &.white {
+                        background-color: $white;
+                        color: $primary;
+                        &.reverse {
+                            background-color: transparent;
+                            border-width: 2px;
+                            border-color: $white;
+                            color: $white;
+                            &:hover {
+                                background-color: $white;
+                                color: $primary;
+                            }
+                        }
+
+                    }
+                    &.light {
+                        background-color: $light;
+                        color: $dark;
+                    }
+                    &.dark {
+                        background-color: $dark;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &:not(.center) {
+        .block-buttons {
+            text-align: center;
+        }
+    }
+}
+
+
+//Core GUtenberg block Styles
+/* Color Options
+--------------------------------------------- */
+
+@each $name, $color in $colors {
+
+	.has-#{$name}-color {
+		color: $color;
+	}
+
+	.has-#{$name}-background-color {
+		background-color: $color;
+	}
+}

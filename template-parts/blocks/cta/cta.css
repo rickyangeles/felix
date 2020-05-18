@@ -1,0 +1,48 @@
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
+/* Block Defaults */
+section.cta.horizontal .block-buttons {
+  margin: 0; }
+  section.cta.horizontal .block-buttons ul.buttons {
+    margin-bottom: 0; }
+    section.cta.horizontal .block-buttons ul.buttons li {
+      margin: 0 0 1em 0;
+      width: 100%; }
+      section.cta.horizontal .block-buttons ul.buttons li:last-child {
+        margin-bottom: 0; }
+      section.cta.horizontal .block-buttons ul.buttons li a {
+        margin: 0; }
+
+section.cta.horizontal span.cta-sub-text {
+  text-align: center;
+  margin-top: .5em;
+  display: block;
+  width: 100%; }
+
+section.cta.vertical .block-buttons {
+  margin: 0;
+  text-align: left; }
+  section.cta.vertical .block-buttons ul.buttons {
+    margin-bottom: 0; }
+
+section.cta.vertical span.cta-sub-text {
+  text-align: left;
+  margin-top: .5em;
+  display: block;
+  width: 100%; }
+
+section.cta.center {
+  text-align: center; }
+  section.cta.center .block-buttons, section.cta.center span.cta-sub-text {
+    text-align: center; }
+
+section.cta p {
+  margin: 1em 0; }
+  section.cta p:last-child {
+    margin-bottom: 0; }
+  section.cta p:empty {
+    display: none; }

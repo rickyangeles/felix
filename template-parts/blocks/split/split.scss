@@ -1,0 +1,181 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+
+section.split {
+    //Main Content
+    .main-content {
+        a.button {
+            margin: 1em 0 0 0;
+            display: inline-block;
+        }
+    }
+    &.primary {
+        .main-content {
+            a.button {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+    }
+    &.primary-light {
+        .main-content {
+            a.button {
+                background-color: $secondary-light;
+            }
+        }
+    }
+    &.primary-dark {
+        .main-content {
+            a.button {
+                background-color: $secondary-dark;
+            }
+        }
+    }
+    &.secondary {
+        .main-content {
+            a.button {
+                background-color: $primary;
+            }
+        }
+    }
+    &.secondary-light {
+        .main-content {
+            a.button {
+                background-color: $primary-light;
+            }
+        }
+    }
+    &.secondary-dark {
+        .main-content {
+            a.button {
+                background-color: $primary-dark;
+            }
+        }
+    }
+    &.dark {
+        .main-content {
+            a.button {
+                background-color: $light;
+                color: $dark;
+            }
+        }
+    }
+    &.light {
+        .main-content {
+            a.button {
+                background-color: $dark;
+                color: $light;
+            }
+        }
+    }
+    &.light-dark {
+        .main-content {
+            a.button {
+                background-color: $dark;
+                color: $light-dark;
+            }
+        }
+    }
+    &.white {
+        .main-content {
+            a.button {
+                background-color: $primary;
+                color: white;
+            }
+        }
+    }
+    //Secondary Content
+    .bg {
+        &>div {
+            padding: 1.5em;
+        }
+        &.primary {
+            &>div {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        &.secondary {
+            &>div {
+                background-color: $secondary;
+                color: $white;
+            }
+        }
+        &.white {
+            &>div {
+                background-color: $white;
+                color: $dark;
+            }
+        }
+        &.light {
+            &>div {
+                background-color: $light;
+                color: $dark;
+            }
+        }
+        &.dark {
+            &>div {
+                background-color: $dark;
+                color: $light;
+            }
+        }
+
+        &.slideshow {
+            .splide {
+                .splide__arrows {
+                    .splide__arrow--prev {
+                        left: 3em;
+                    }
+                    .splide__arrow--next {
+                        right: 3em;
+                    }
+                }
+            }
+        }
+    }
+    .slideshow {
+        &>div {
+            padding-bottom: 3em;
+        }
+    }
+
+    //Slideshow Styles
+    .splide {
+
+        .splide__pagination {
+            bottom: 1em;
+        }
+        .splide__slide {
+            position: relative;
+            img {
+                position: relative;
+            }
+            &>div {
+                display: block;
+                width: 100%;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                padding: 1em;
+                background-color: rgba($dark, .8);
+                color: $white;
+            }
+        }
+    }
+
+    //Mobile Styles
+    @include respond-below(md) {
+        .main-content {
+            margin-bottom: 2em;
+        }
+        .flip-mobile {
+            flex-direction: column-reverse;
+
+            .main-content {
+                margin-top: 2em;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

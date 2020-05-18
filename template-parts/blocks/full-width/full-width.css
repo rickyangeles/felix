@@ -1,0 +1,17 @@
+section.full-width.med-width > div.container {
+  max-width: 50%; }
+
+section.full-width.small-width > div.container {
+  max-width: 25%; }
+
+section.full-width.center > div {
+  margin: 0 auto; }
+
+section.full-width.center > * {
+  text-align: center; }
+
+section.full-width.left > * {
+  text-align: left; }
+
+section.full-width.right > * {
+  text-align: right; }

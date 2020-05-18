@@ -1,0 +1,71 @@
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
+/* Block Defaults */
+section.post {
+  margin: 0; }
+  @media (max-width: 575px) {
+    section.post.equal-height .row {
+      display: block !important; } }
+  @media (min-width: 992px) {
+    section.post.equal-height .row .col {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      section.post.equal-height .row .col > div {
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        section.post.equal-height .row .col > div ul {
+          margin-top: auto; } }
+  section.post .center .col {
+    text-align: center; }
+  section.post .col:nth-child(n+5) {
+    margin-top: 2em; }
+  section.post .col h4 {
+    font-weight: bold;
+    margin-top: 0; }
+  section.post .col ul.post-meta {
+    margin: 0;
+    padding: 0; }
+    section.post .col ul.post-meta li {
+      margin: 0 1em 0 0;
+      padding: 0;
+      display: inline-block; }
+  section.post .col p:last-child {
+    margin-bottom: 0; }
+  section.post .col a {
+    color: #444; }
+  @media (max-width: 991px) {
+    section.post .col {
+      margin-bottom: 1em; } }
+  section.post.basic .col img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 1em; }
+  section.post.boxed .col img {
+    max-width: 100%;
+    width: 100%; }
+  section.post.boxed .col > div {
+    padding: 1em;
+    background-color: #fff;
+    color: #444; }
+  section.post.primary.basic a, section.post.primary-light.basic a, section.post.primary-dark.basic a, section.post.secondary.basic a, section.post.secondary-light.basic a, section.post.secondary-dark.basic a, section.post.dark.basic a {
+    color: #fff; }
+  section.post.white .basic a, section.post.light .basic a, section.post.light-dark .basic a {
+    color: #444; }

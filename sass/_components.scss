@@ -1,0 +1,28 @@
+////////////////////
+///// Blockquote
+////////////////////
+
+blockquote {
+    margin: 1.5em;
+    padding: 2em;
+    background-color: $light;
+    border-radius: $sm-br;
+
+    &.primary {
+        background-color: $primary;
+        color: white;
+
+        * > {
+            color: inherit;
+        }
+    }
+
+    &.secondary {
+        background-color: $secondary;
+        color: white;
+
+        * > {
+            color: inherit;
+        }
+    }
+}

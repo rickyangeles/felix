@@ -1,0 +1,346 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+section.multi {
+    &.equal-height {
+        .row {
+            @include respond-below(xs) {
+                display: block!important;
+            }
+            @include respond-above(md) {
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    & > div {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        a {
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+
+            &.center {
+                .col {
+                    & > div {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+    .center {
+        .col {
+            text-align: center;
+        }
+    }
+
+    .col {
+        &:nth-child(n+5) {
+            margin-top: 2em;
+        }
+        i {
+            font-size: 2.5em;
+            padding: 1em;
+            color: $primary;
+        }
+        h4 {
+            font-weight: bold;
+            margin-top: 0;
+        }
+        h5 {
+            margin: 0 0 1em 0;
+            font-weight: bold;
+        }
+        p {
+
+        }
+        a {
+            color: inherit;
+        }
+        // a.button {
+        //     background-color: $primary;
+        //     color: $white;
+        //     display: inline-block;
+        //     padding: 14px 30px;
+        //     margin: 1em 0 0 0;
+        //     border-radius: $sm-br;
+        //     text-decoration: none;
+        //     transition: all .3s ease;
+        //     text-align: center;
+        //     border: none;
+        //
+        //     &:hover {
+        //         transition: all .3s ease;
+        //     }
+        // }
+        @include respond-below(md) {
+            margin-bottom: 1em;
+        }
+    }
+    &.basic {
+        .col {
+            img {
+                max-width: 100%; width: 100%;
+                margin-bottom: 1em;
+            }
+            i {
+                background-color: none;
+                color: $primary;
+                font-size: 6em;
+                padding: 0 .5em .25em .5em;
+            }
+        }
+        // &.primary {
+        //     .col {
+        //         a.button {
+        //             color: $primary;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.primary-light {
+        //     .col {
+        //         a.button {
+        //             color: $primary-light;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.primary-dark {
+        //     .col {
+        //         a.button {
+        //             color: $primary-dark;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.secondary {
+        //     .col {
+        //         a.button {
+        //             color: $secondary;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.secondary-light {
+        //     .col {
+        //         a.button {
+        //             color: $secondary-light;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.secondary-dark {
+        //     .col {
+        //         a.button {
+        //             color: $secondary-dark;
+        //             background-color: $white;
+        //         }
+        //     }
+        // }
+        // &.light {
+        //     .col {
+        //         a.button {
+        //             color: $light;
+        //             background-color: $dark;
+        //         }
+        //     }
+        // }
+        // &.light-dark {
+        //     .col {
+        //         a.button {
+        //             color: $light-dark;
+        //             background-color: $dark;
+        //         }
+        //     }
+        // }
+        // &.dark {
+        //     .col {
+        //         a.button {
+        //             color: $dark;
+        //             background-color: $light;
+        //         }
+        //     }
+        // }
+        // &.white {
+        //     .col {
+        //         a.button {
+        //             color: $white;
+        //             background-color: $primary;
+        //         }
+        //     }
+        // }
+    }
+    &.boxed {
+        .col {
+            img {
+                max-width: 100%; width: 100%;
+            }
+            i {
+                background-color: $white;
+                color: $primary;
+                font-size: 6em;
+                padding: .5em .5em .25em .5em;
+            }
+            &>div {
+                padding: 1em;
+                background-color: $white;
+            }
+        }
+        &.primary {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.primary-light {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.primary-dark {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.secondary {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.secondary-light {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.secondary-dark {
+            .col {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.light {
+            .col {
+                &>div {
+                    background-color: $dark;
+                    color: $light;
+                }
+            }
+        }
+        &.light-dark {
+            .col {
+                &>div {
+                    background-color: $dark;
+                    color: $light-dark;
+                }
+            }
+        }
+        &.dark {
+            .col {
+                &>div {
+                    background-color: $light;
+                    color: $dark;
+                }
+            }
+        }
+        &.white {
+            .col {
+                &>div {
+                    background-color: $primary;
+                }
+                color: $white;
+            }
+        }
+    }
+    // // Colors
+    // &.primary {
+    //     a.button {
+    //         background-color: $secondary;
+    //         color: $white;
+    //     }
+    // }
+    // &.primary-light {
+    //     a.button {
+    //         background-color: $secondary-light;
+    //     }
+    // }
+    // &.primary-dark {
+    //     a.button {
+    //         background-color: $secondary-dark;
+    //     }
+    // }
+    // &.secondary {
+    //     a.button {
+    //         background-color: $primary;
+    //     }
+    // }
+    // &.secondary-light {
+    //     a.button {
+    //         background-color: $primary-light;
+    //     }
+    // }
+    // &.secondary-dark {
+    //     a.button {
+    //         background-color: $primary-dark;
+    //     }
+    // }
+    // &.dark {
+    //     a.button {
+    //         background-color: $light;
+    //         color: $dark;
+    //     }
+    //     i {
+    //         color: $light;
+    //     }
+    // }
+    // &.light {
+    //     a.button {
+    //         background-color: $dark;
+    //         color: $light;
+    //     }
+    //     &.basic {
+    //         i {
+    //             color: $dark;
+    //         }
+    //     }
+    // }
+    // &.light-dark {
+    //     a.button {
+    //         background-color: $dark;
+    //         color: $light-dark;
+    //     }
+    //     i {
+    //         color: $light-dark;
+    //     }
+    // }
+    // &.white {
+    //     &.basic {
+    //     }
+    //     &.boxed {
+    //     }
+    // }
+
+}

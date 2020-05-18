@@ -1,0 +1,39 @@
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
+/* Block Defaults */
+section.testimonial .grid .single-testimonial {
+  margin-bottom: 2em; }
+  section.testimonial .grid .single-testimonial ul.rating {
+    margin: 1em 0 0 0;
+    padding-left: 0; }
+    section.testimonial .grid .single-testimonial ul.rating li {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: .5em; }
+      section.testimonial .grid .single-testimonial ul.rating li i {
+        color: gold; }
+
+section.testimonial .slider {
+  padding: 2em 0; }
+  section.testimonial .slider .single-testimonial {
+    text-align: center;
+    list-style-type: none; }
+    section.testimonial .slider .single-testimonial > * {
+      max-width: 80%;
+      width: 100%;
+      margin: 0 auto; }
+    section.testimonial .slider .single-testimonial ul.rating {
+      margin: 1em auto 0;
+      padding-left: 0; }
+      section.testimonial .slider .single-testimonial ul.rating li {
+        display: inline-block;
+        list-style-type: none;
+        margin-right: .5em; }
+        section.testimonial .slider .single-testimonial ul.rating li i {
+          color: gold; }
+  section.testimonial .slider .splide__pagination {
+    bottom: -1.5em; }

@@ -1,0 +1,65 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+section.slider {
+    padding: 0;
+    @each $colorname, $color in $colors {
+        &.#{$colorname} {
+            background-color: #{$color};
+            color: $white;
+            &.light, &.light-dark {
+                color: $dark;
+            }
+
+            &.white {
+                color: $primary;
+            }
+            &.bg-img {
+                .splide__slide {
+                    &:before {
+                        content: '';
+                        background-color: rgba($color, .75);
+                        display: block;
+                        width: 100%; height: 100%;
+                        top: 0;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+
+    .splide__arrows {
+
+    }
+    .splide__track {
+
+    }
+
+    &.content-left {
+        text-align: left;
+
+        .block-header, .block-buttons {
+            text-align: left;
+        }
+    }
+
+    &.content-right {
+        text-align: right;
+        .block-header, .block-buttons {
+            text-align: right;
+        }
+    }
+    .splide__list {
+        .splide__slide {
+            .slide-content {
+                max-width: 1140px; width: 100%;
+                margin: 0 auto;
+                padding-left: 15px;
+                padding-right: 15px;
+                position: relative;
+                z-index: 9;
+            }
+        }
+    }
+}

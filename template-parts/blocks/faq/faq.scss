@@ -1,0 +1,198 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+
+section.faq {
+    .accordion {
+        .card {
+            .card-header {
+                padding: 0;
+                h2 {
+                    padding: 0;
+                    button.btn-link {
+                        padding: 1em;
+                        width: 100%;
+                        text-align: left;
+                        border: none;
+                    }
+                }
+            }
+            .card-body {
+
+            }
+        }
+    }
+    //primary
+    &.primary {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $primary;
+                        }
+                    }
+                }
+                .card-body {
+                    background-color: $white;
+                    & > * {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    //primary-light
+    &.primary-light {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $primary-light;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $primary-light;
+                    }
+                }
+            }
+        }
+    }
+    //primary-dark
+    &.primary-dark {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $primary-dark;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $primary-dark;
+                    }
+                }
+            }
+        }
+    }
+    //secondary
+    &.secondary {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $secondary;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+    //secondary-light
+    &.secondary-light {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $secondary-light;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $secondary-light;
+                    }
+                }
+            }
+        }
+    }
+    //secondary-dark
+    &.secondary-dark {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $secondary-dark;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $secondary-dark;
+                    }
+                }
+            }
+        }
+    }
+    //dark
+    &.dark {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $dark;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+    //light
+    &.light {
+        .accordion {
+            .card {
+                .card-header {
+                    h2 {
+                        button.btn-link {
+                            color: $light;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+    //secondary-dark
+    &.white {
+        .accordion {
+            .card {
+                .card-header {
+                    background-color: $primary;
+                    h2 {
+                        button.btn-link {
+                            color: $white;
+                        }
+                    }
+                }
+                .card-body {
+                    & > * {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+
+section.cta {
+    &.horizontal {
+        .block-buttons {
+            margin: 0;
+
+            ul.buttons {
+                margin-bottom: 0;
+                li {
+                    margin: 0 0 1em 0;
+                    width: 100%;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    a {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        span.cta-sub-text {
+            text-align: center;
+            margin-top: .5em;
+            display: block;
+            width: 100%;
+        }
+    }
+    &.vertical {
+        .block-buttons {
+            margin: 0;
+            text-align: left;
+
+            ul.buttons {
+                margin-bottom: 0;
+            }
+        }
+        span.cta-sub-text {
+            text-align: left;
+            margin-top: .5em;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &.center {
+        text-align: center;
+
+        .block-buttons, span.cta-sub-text {
+            text-align: center;
+        }
+    }
+    p {
+        margin: 1em 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:empty {
+            display: none;
+        }
+    }
+}

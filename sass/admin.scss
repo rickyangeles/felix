@@ -1,0 +1,74 @@
+@import 'variables.scss';
+
+.issue-modal {
+    .modal-lg {
+        max-width: 100%;
+    }
+
+    .modal-content {
+        background-color: transparent;
+        border:none;
+    }
+
+    .cu-form__container {
+        padding: 35px 30px;
+        max-width: 100%;
+    }
+}
+
+.wp-block {
+    max-width: 100%;
+}
+
+
+/* Background Color Field Styles */
+.custom-color-picker {
+    ul.acf-radio-list {
+        li {
+
+            label {
+                input {
+                    &:checked {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            display: inline-block;
+            float: left;
+            margin: 0 5px 5px 0;
+            input {
+                width: 30px;
+                height: 30px;
+                content: '';
+            }
+
+            span {
+                width: 24px;
+                height: 24px;
+                border-radius: 14px;
+                display: block;
+                position: absolute;
+                top: 0;
+                margin: 2px 3px;
+            }
+        }
+    }
+}
+@each $colorname, $color in $colors {
+    .color-sample-#{$colorname} {
+        background-color: #{$color}!important;
+    }
+}
+
+@media (min-width: 782px) {
+    .edit-post-sidebar {
+        width: 352px;
+    }
+}
+
+.editor-styles-wrapper .container-fluid, .editor-styles-wrapper .container-lg, .editor-styles-wrapper .container-md, .editor-styles-wrapper .container-sm, .editor-styles-wrapper .container-xl {
+    padding-left: 0;
+    padding-right: 0; 
+}

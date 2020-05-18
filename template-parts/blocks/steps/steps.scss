@@ -1,0 +1,253 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+
+section.steps {
+
+    .col-sm {
+
+        &>div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .step-number {
+            font-size: 3em;
+            display: inline-block;
+            line-height: 1;
+        }
+        a {
+            margin-top: auto;
+            text-align: center;
+            margin: auto 0 0;
+            border:none;
+        }
+    }
+    .center {
+        .col-sm {
+            text-align: center;
+        }
+    }
+
+    &.basic {
+        &.primary {
+            .col-sm {
+                a {
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+        }
+        &.primary-light {
+            .col-sm {
+                a {
+                    color: $primary-light;
+                    background-color: $white;
+                }
+            }
+        }
+        &.primary-dark {
+            .col-sm {
+                a {
+                    color: $primary-dark;
+                    background-color: $white;
+                }
+            }
+        }
+        &.secondary {
+            .col-sm {
+                a {
+                    color: $secondary;
+                    background-color: $white;
+                }
+            }
+        }
+        &.secondary-light {
+            .col-sm {
+                a {
+                    color: $secondary-light;
+                    background-color: $white;
+                }
+            }
+        }
+        &.secondary-dark {
+            .col-sm {
+                a {
+                    color: $secondary-dark;
+                    background-color: $white;
+                }
+            }
+        }
+        &.light {
+            .col-sm {
+                a {
+                    color: $light;
+                    background-color: $dark;
+                }
+            }
+        }
+        &.light-dark {
+            .col-sm {
+                a {
+                    color: $light-dark;
+                    background-color: $dark;
+                }
+            }
+        }
+        &.dark {
+            .col-sm {
+                a {
+                    color: $dark;
+                    background-color: $light;
+                }
+            }
+        }
+        &.white {
+            .col-sm {
+                a {
+                    color: $white;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+    &.boxed {
+        .col-sm {
+            &>div {
+                padding: 1em;
+                height: 100%;
+            }
+        }
+        &.primary {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $primary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.primary-light {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $primary-light;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.primary-dark {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $primary-dark;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.secondary {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $secondary;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.secondary-light {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $secondary-light;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.secondary-dark {
+            .col-sm {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+
+                    a {
+                        background-color: $secondary-dark;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        &.light {
+            .col-sm {
+                &>div {
+                    background-color: $dark;
+                    color: $light;
+
+                    a {
+                        background-color: $light;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+        &.light-dark {
+            .col-sm {
+                &>div {
+                    background-color: $dark;
+                    color: $light-dark;
+
+                    a {
+                        background-color: $light-dark;
+                        color: $dark;
+                    }
+                }
+            }
+        }
+        &.dark {
+            .col-sm {
+                &>div {
+                    background-color: $light;
+                    color: $dark;
+
+                    a {
+                        background-color: $dark;
+                        color: $light;
+                    }
+                }
+            }
+        }
+        &.white {
+            .col-sm {
+                &>div {
+                    background-color: $primary;
+                }
+                color: $white;
+
+                a {
+                    color: $primary;
+                    background-color: $white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/* Color Scheme */
+$primary: #3D5A80;
+$primary-light: lighten( $primary, 5% );
+$primary-dark: darken( $primary, 5% );
+$secondary: #EE6C4D;
+$secondary-light: lighten( $secondary, 5%);
+$secondary-dark: darken( $secondary, 5% );
+$light: #EEE;
+$light-dark: darken( $light, 5% );
+$dark: #444;
+$white: #fff;
+
+$colors : (primary, $primary),
+        (primary-light, $primary-light),
+		(primary-dark, $primary-dark),
+		(secondary, $secondary),
+        (secondary-light, $secondary-light),
+		(secondary-dark, $secondary-dark),
+		(light, $light),
+		(light-dark, $light-dark),
+        (dark, $dark),
+        (white, $white);
+
+$dark-colors: primary, primary-light, primary-dark, secondary, secondary-light, secondary-dark, dark;
+$light-colors: white, light, light-dark;
+/* Media Breakpoints */
+$breakpoints: (
+  xs: 576px,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+);
+
+/* Fonts */
+$bodyFont: 'Space Mono', monospace;
+$headerFont: 'Space Mono', monospace;
+
+/* Navigation */
+$navItemColor: #fff;
+$navItemPadding: 10px 15px;
+$navItemMargin: 0 10px;
+
+
+/* Footer */
+$footerCTAColor: $secondary;
+
+/* Border Radius */
+$sm-br: 4px;
+$md-br: 8px;
+$lg-br: 12px;
+
+
+/* Block Defaults */

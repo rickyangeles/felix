@@ -1,0 +1,103 @@
+@import '../../../sass/variables';
+@import '../../../sass/media-queries';
+
+section.post {
+    margin: 0;
+    &.equal-height {
+        .row {
+            @include respond-below(xs) {
+                display: block!important;
+            }
+            @include respond-above(md) {
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    & > div {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        ul {
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .center {
+        .col {
+            text-align: center;
+        }
+    }
+
+    .col {
+        &:nth-child(n+5) {
+            margin-top: 2em;
+        }
+        h4 {
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        ul.post-meta {
+            margin: 0;
+            padding: 0;
+            li {
+                margin: 0 1em 0 0;
+                padding: 0;
+                display: inline-block;
+            }
+        }
+        p {
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: $dark;
+        }
+        @include respond-below(md) {
+            margin-bottom: 1em;
+        }
+    }
+    &.basic {
+        .col {
+            img {
+                max-width: 100%; width: 100%;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    &.boxed {
+        .col {
+            img {
+                max-width: 100%; width: 100%;
+            }
+            &>div {
+                padding: 1em;
+                background-color: $white;
+                color: $dark;
+            }
+        }
+    }
+
+    // Colors
+    &.primary, &.primary-light, &.primary-dark, &.secondary, &.secondary-light, &.secondary-dark, &.dark {
+        &.basic {
+            a {
+                color: $white;
+            }
+        }
+    }
+    &.white, &.light, &.light-dark {
+        .basic {
+            a {
+                color: $dark;
+            }
+        }
+    }
+}

@@ -1,0 +1,66 @@
+/* General Page Templates */
+.site-content {
+    margin: 0 auto;
+    padding: 0!important;
+}
+
+.entry-content {
+    margin-top: 0;
+}
+
+body.page, body.post {
+    margin-bottom: 0;
+}
+
+/* Page Header Styles */
+.page {
+    .page-header {
+        padding: 30px 15px;
+        h1,h2,h3,h4,h5,h6 {
+            text-align: center;
+            max-width: 100%; width: 100%;
+            z-index: 9;
+            margin-bottom: 0;
+        }
+
+        &.basic-header {
+            @each $colorname, $color in $colors {
+                &.#{$colorname} {
+                    background-color: $color;
+                    color: $white;
+                    @if $colorname == 'light' or $colorname == 'white' {
+                        color: $dark;
+                    }
+
+                }
+        	}
+        }
+
+        &.banner-header {
+            min-height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            color: $white;
+
+            @each $colorname, $color in $colors {
+                &.#{$colorname} {
+                    &:before {
+                        content: '';
+                        background-color: rgba($color, .5);
+                        width: 100%; height: 100%;
+                        position: absolute;
+                        top: 0; right: 0;
+                    }
+                    @if $colorname == 'light' or $colorname == 'white' {
+                        color: $dark;
+                    }
+
+                }
+        	}
+        }
+    }
+}
+/* Full Width Template */
+
+/* Right Sidebar Template */

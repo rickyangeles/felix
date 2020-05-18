@@ -1,0 +1,74 @@
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
+/* Block Defaults */
+section.faq .accordion .card .card-header {
+  padding: 0; }
+  section.faq .accordion .card .card-header h2 {
+    padding: 0; }
+    section.faq .accordion .card .card-header h2 button.btn-link {
+      padding: 1em;
+      width: 100%;
+      text-align: left;
+      border: none; }
+
+section.faq.primary .accordion .card .card-header h2 button.btn-link {
+  color: #3D5A80; }
+
+section.faq.primary .accordion .card .card-body {
+  background-color: #fff; }
+  section.faq.primary .accordion .card .card-body > * {
+    color: #3D5A80; }
+
+section.faq.primary-light .accordion .card .card-header h2 button.btn-link {
+  color: #456691; }
+
+section.faq.primary-light .accordion .card .card-body > * {
+  color: #456691; }
+
+section.faq.primary-dark .accordion .card .card-header h2 button.btn-link {
+  color: #354e6f; }
+
+section.faq.primary-dark .accordion .card .card-body > * {
+  color: #354e6f; }
+
+section.faq.secondary .accordion .card .card-header h2 button.btn-link {
+  color: #EE6C4D; }
+
+section.faq.secondary .accordion .card .card-body > * {
+  color: #EE6C4D; }
+
+section.faq.secondary-light .accordion .card .card-header h2 button.btn-link {
+  color: #f07f64; }
+
+section.faq.secondary-light .accordion .card .card-body > * {
+  color: #f07f64; }
+
+section.faq.secondary-dark .accordion .card .card-header h2 button.btn-link {
+  color: #ec5936; }
+
+section.faq.secondary-dark .accordion .card .card-body > * {
+  color: #ec5936; }
+
+section.faq.dark .accordion .card .card-header h2 button.btn-link {
+  color: #444; }
+
+section.faq.dark .accordion .card .card-body > * {
+  color: #444; }
+
+section.faq.light .accordion .card .card-header h2 button.btn-link {
+  color: #EEE; }
+
+section.faq.light .accordion .card .card-body > * {
+  color: #444; }
+
+section.faq.white .accordion .card .card-header {
+  background-color: #3D5A80; }
+  section.faq.white .accordion .card .card-header h2 button.btn-link {
+    color: #fff; }
+
+section.faq.white .accordion .card .card-body > * {
+  color: #3D5A80; }
