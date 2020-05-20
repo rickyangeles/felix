@@ -23,7 +23,7 @@
                         	<?php foreach( $images as $image ): ?>
                         		<li class="splide__slide">
                                     <?php $img = wp_get_attachment_image_src( $image, 'medium' ); ?>
-                        			<img src="<?php echo $img[0]; ?>" alt="">
+                        			<img data-splide-lazy="<?php echo $img[0]; ?>" alt="">
                         		</li>
                         	<?php endforeach; ?>
                         <?php endif; ?>
@@ -40,6 +40,7 @@
         new Splide( '.splide.<?php echo $id; ?>', {
             type : 'loop',
             gap: 20,
+            lazyLoad: 'sequential',
             width: '100%',
             perPage: <?php echo $number_of_slides; ?>,
             autoplay : '<?php echo $auto_play; ?>',

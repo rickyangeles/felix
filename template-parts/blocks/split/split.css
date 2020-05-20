@@ -4,20 +4,25 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
-/* Block Defaults */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 section.split .main-content a.button {
   margin: 1em 0 0 0;
   display: inline-block; }
 
 section.split.primary .main-content a.button {
-  background-color: #EE6C4D;
+  background-color: #20C74F;
   color: #fff; }
 
 section.split.primary-light .main-content a.button {
-  background-color: #f07f64; }
+  background-color: #25dc58; }
 
 section.split.primary-dark .main-content a.button {
-  background-color: #ec5936; }
+  background-color: #1cb146; }
 
 section.split.secondary .main-content a.button {
   background-color: #3D5A80; }
@@ -52,7 +57,7 @@ section.split .bg.primary > div {
   color: #fff; }
 
 section.split .bg.secondary > div {
-  background-color: #EE6C4D;
+  background-color: #20C74F;
   color: #fff; }
 
 section.split .bg.white > div {

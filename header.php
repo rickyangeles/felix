@@ -44,7 +44,9 @@
 				<div class="container d-flex align-items-end flex-column">
 					<div class="col-md-12">
 						<?php if ( $topMenuLocation === 'own') : ?>
-							<?php wp_nav_menu( array('theme_location' => 'top-menu') ); ?>
+							<?php if ( has_nav_menu('top-menu') ) : ?>
+								<?php wp_nav_menu( array('theme_location' => 'top-menu') ); ?>
+							<?php endif; ?>
 						<?php endif; ?>
 						<?php if ( $socialHeaderLocation === 'own') : ?>
 							<div class="ml-auto header-social d-md-block">

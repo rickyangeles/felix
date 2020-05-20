@@ -4,7 +4,12 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
-/* Block Defaults */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 section.steps .col-sm > div {
   height: 100%;
   display: -webkit-box;
@@ -42,15 +47,15 @@ section.steps.basic.primary-dark .col-sm a {
   background-color: #fff; }
 
 section.steps.basic.secondary .col-sm a {
-  color: #EE6C4D;
+  color: #20C74F;
   background-color: #fff; }
 
 section.steps.basic.secondary-light .col-sm a {
-  color: #f07f64;
+  color: #25dc58;
   background-color: #fff; }
 
 section.steps.basic.secondary-dark .col-sm a {
-  color: #ec5936;
+  color: #1cb146;
   background-color: #fff; }
 
 section.steps.basic.light .col-sm a {
@@ -98,21 +103,21 @@ section.steps.boxed.secondary .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.secondary .col-sm > div a {
-    background-color: #EE6C4D;
+    background-color: #20C74F;
     color: #fff; }
 
 section.steps.boxed.secondary-light .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.secondary-light .col-sm > div a {
-    background-color: #f07f64;
+    background-color: #25dc58;
     color: #fff; }
 
 section.steps.boxed.secondary-dark .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.secondary-dark .col-sm > div a {
-    background-color: #ec5936;
+    background-color: #1cb146;
     color: #fff; }
 
 section.steps.boxed.light .col-sm > div {

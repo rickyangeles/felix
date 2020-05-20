@@ -4,7 +4,12 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
-/* Block Defaults */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 section.faq .accordion .card .card-header {
   padding: 0; }
   section.faq .accordion .card .card-header h2 {
@@ -36,22 +41,22 @@ section.faq.primary-dark .accordion .card .card-body > * {
   color: #354e6f; }
 
 section.faq.secondary .accordion .card .card-header h2 button.btn-link {
-  color: #EE6C4D; }
+  color: #20C74F; }
 
 section.faq.secondary .accordion .card .card-body > * {
-  color: #EE6C4D; }
+  color: #20C74F; }
 
 section.faq.secondary-light .accordion .card .card-header h2 button.btn-link {
-  color: #f07f64; }
+  color: #25dc58; }
 
 section.faq.secondary-light .accordion .card .card-body > * {
-  color: #f07f64; }
+  color: #25dc58; }
 
 section.faq.secondary-dark .accordion .card .card-header h2 button.btn-link {
-  color: #ec5936; }
+  color: #1cb146; }
 
 section.faq.secondary-dark .accordion .card .card-body > * {
-  color: #ec5936; }
+  color: #1cb146; }
 
 section.faq.dark .accordion .card .card-header h2 button.btn-link {
   color: #444; }

@@ -9,7 +9,22 @@
 
 get_header();
 ?>
-
+	<?php $img = get_the_post_thumbnail_url('page-header') ? get_the_post_thumbnail_url('page-header') : get_field('page_header_image', 'options'); ?>
+	<div class="container-fluid blog-single-header d-flex justify-content-center align-items-center" style="background-image:url('<?php the_post_thumbnail_url('slider_image'); ?>');">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></h1>
+					<div class="entry-meta">
+						<?php
+						felix_posted_on();
+						felix_posted_by();
+						?>
+					</div><!-- .entry-meta -->
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
 			<main id="main" class="site-main col-md-8">
