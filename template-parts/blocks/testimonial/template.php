@@ -106,14 +106,13 @@
         </div>
         <?php echo get_block_button(); ?>
     </div>
+    <script type="text/javascript">
+        jQuery(document).ready(function( $ ) {
+            new Splide( '.splide.<?php echo $id; ?>', {
+                type : 'loop',
+                perPage: 1,
+                width: '100%',
+            }).mount();
+        });
+    </script>
 </section>
-
-<script type="text/javascript">
-jQuery(document).ready(function( $ ) {
-    new Splide( '.splide.<?php echo $id; ?>', {
-        type : 'loop',
-        perPage: 1,
-        width: '100%',
-    }).mount();
-});
-</script>

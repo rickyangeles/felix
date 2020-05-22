@@ -57,7 +57,7 @@
                     "crop_type": "aspect_ratio",
                     "aspect_ratio_width": 4,
                     "aspect_ratio_height": 3,
-                    "return_format": "url",
+                    "return_format": "id",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -344,5 +344,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589988383
+    "modified": 1590119294
 }

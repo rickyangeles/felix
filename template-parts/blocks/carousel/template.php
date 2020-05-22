@@ -33,17 +33,17 @@
         </div>
         <?php echo get_block_button(); ?>
     </div>
-</section>
+    <script>
+        jQuery(document).ready(function( $ ) {
+            new Splide( '.splide.<?php echo $id; ?>', {
+                type : 'loop',
+                gap: 20,
+                lazyLoad: 'sequential',
+                width: '100%',
+                perPage: <?php echo $number_of_slides; ?>,
+                autoplay : '<?php echo $auto_play; ?>',
+            }).mount();
+        });
+    </script>
 
-<script>
-    jQuery(document).ready(function( $ ) {
-        new Splide( '.splide.<?php echo $id; ?>', {
-            type : 'loop',
-            gap: 20,
-            lazyLoad: 'sequential',
-            width: '100%',
-            perPage: <?php echo $number_of_slides; ?>,
-            autoplay : '<?php echo $auto_play; ?>',
-        }).mount();
-    });
-</script>
+</section>

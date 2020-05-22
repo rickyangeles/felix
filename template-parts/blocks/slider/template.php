@@ -15,6 +15,7 @@
     $classes = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
     $id = 'slider-' . $block['id'];
 
+    //Slider or Banner
     if ( $c_slides == 1 ) {
         $banner_type    = 'slide';
         $drag           = 'false';
@@ -35,14 +36,15 @@
             <?php if ( have_rows('slides') ) : ?>
                 <?php while( have_rows('slides') ): the_row(); ?>
                     <?php
-                        $image      = get_sub_field('slide_image');
-                        $header = get_sub_field('header');
-                        $header_size = get_sub_field('header_size');
-                        $subheader = get_sub_field('subheader');
+                        $image          = get_sub_field('slide_image');
+                        $image          = wp_get_attachment_image_src( $image, 'slider_image' );
+                        $header         = get_sub_field('header');
+                        $header_size    = get_sub_field('header_size');
+                        $subheader      = get_sub_field('subheader');
                         $subheader_size = get_sub_field('subheader_size');
-                        $buttons    = get_sub_field('buttons');
+                        $buttons        = get_sub_field('buttons');
                     ?>
-                    <li class="splide__slide d-flex align-items-center" style="background-position: center; background-size: cover; background-image: url('<?php echo $image; ?>');">
+                    <li class="splide__slide d-flex align-items-center" style="background-position: center; background-size: cover; background-image: url('<?php echo $image[0]; ?>');">
                         <div class="slide-content">
                             <?php if ( $header || $subheader ) : ?>
                                 <div class="block-header">
@@ -78,21 +80,20 @@
             <?php endif; ?>
         </ul>
     </div>
+    <script>
+        jQuery(document).ready(function( $ ) {
+            new Splide( '.splide.<?php echo $id; ?>', {
+                type : '<?php echo $banner_type; ?>',
+                cover  : true,
+                perPage: 1,
+                width: '100%',
+                pagination: '<?php $pagination; ?>',
+                arrows: <?php echo $arrows; ?>,
+                drag: <?php echo $drag; ?>,
+                height : '<?php echo $height; ?>',
+                autoplay : '<?php echo $auto_play; ?>',
+                speed : '<?php echo $speed; ?>',
+            }).mount();
+        });
+    </script>
 </section>
-
-<script>
-    jQuery(document).ready(function( $ ) {
-        new Splide( '.splide.<?php echo $id; ?>', {
-            type : '<?php echo $banner_type; ?>',
-            cover  : true,
-            perPage: 1,
-            width: '100%',
-            pagination: '<?php $pagination; ?>',
-            arrows: <?php echo $arrows; ?>,
-            drag: <?php echo $drag; ?>,
-            height : '<?php echo $height; ?>',
-            autoplay : '<?php echo $auto_play; ?>',
-            speed : '<?php echo $speed; ?>',
-        }).mount();
-    });
-</script>

@@ -60,43 +60,42 @@
         </div>
         <?php echo get_block_button(); ?>
     </div>
-</section>
+    <script type="text/javascript">
+    (function($){
 
-<script type="text/javascript">
-(function($){
-
-    var initializeBlock = function( $block ) {
-        $('#<?php echo 'faq-' . $block['id']; ?>').collapse();
-    }
-
-    // Initialize each block on page load (front end).
-    $(document).ready(function(){
-      initializeBlock();
-    });
-
-    // Initialize dynamic block preview (editor).
-    if( window.acf ) {
-        window.acf.addAction( 'render_block_preview', initializeBlock );
-    }
-
-})(jQuery);
-</script>
-
-<?php if ( $schema && have_rows('questions_answers') ) : ?>
-    <?php $c_count = 0; ?>
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [<?php while( have_rows('questions_answers') ): the_row(); $c_count++; $q = get_sub_field('question'); $a = get_sub_field('answer'); ?>{
-            "@type": "Question",
-            "name": "<?php echo $q; ?>",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "<?php echo $a; ?>"
-          }
-      }<?php if ( $c_count < $q_count ) { echo ','; } ?><?php endwhile; ?>]
+        var initializeBlock = function( $block ) {
+            $('#<?php echo 'faq-' . $block['id']; ?>').collapse();
         }
+
+        // Initialize each block on page load (front end).
+        $(document).ready(function(){
+          initializeBlock();
+        });
+
+        // Initialize dynamic block preview (editor).
+        if( window.acf ) {
+            window.acf.addAction( 'render_block_preview', initializeBlock );
+        }
+
+    })(jQuery);
     </script>
 
-<?php endif; ?>
+    <?php if ( $schema && have_rows('questions_answers') ) : ?>
+        <?php $c_count = 0; ?>
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [<?php while( have_rows('questions_answers') ): the_row(); $c_count++; $q = get_sub_field('question'); $a = get_sub_field('answer'); ?>{
+                "@type": "Question",
+                "name": "<?php echo $q; ?>",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "<?php echo $a; ?>"
+              }
+          }<?php if ( $c_count < $q_count ) { echo ','; } ?><?php endwhile; ?>]
+            }
+        </script>
+
+    <?php endif; ?>
+</section>

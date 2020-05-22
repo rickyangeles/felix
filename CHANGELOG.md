@@ -7,7 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.5.2] - 2020-05-22
+## [0.5.3] - 2020-05-22
+
+### Added
+
+### Changed
+- Decreased the footer menu padding by 100%;
+
+### Fixed
+- Right image size for slider
+- Back to back blocks with same colors now decrease the padding between
+
+## [0.5.2] - 2020-05-21
 
 ### Added
 - Field to add a custom excerpt on blog posts, if populated, it shows it instead of content
