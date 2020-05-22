@@ -4,12 +4,6 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
-/* Color Scheme */
-/* Media Breakpoints */
-/* Fonts */
-/* Navigation */
-/* Footer */
-/* Border Radius */
 section.carousel .row {
   margin: 0; }
 
@@ -62,7 +56,7 @@ section.carousel.primary-dark {
     position: absolute; }
 
 section.carousel.secondary {
-  background-color: #20C74F;
+  background-color: #EE6C4D;
   color: #fff; }
   section.carousel.secondary.light, section.carousel.secondary.light-dark {
     color: #444; }
@@ -70,7 +64,7 @@ section.carousel.secondary {
     color: #3D5A80; }
   section.carousel.secondary.bg-img .splide__slide:before {
     content: '';
-    background-color: rgba(32, 199, 79, 0.75);
+    background-color: rgba(238, 108, 77, 0.75);
     display: block;
     width: 100%;
     height: 100%;
@@ -78,7 +72,7 @@ section.carousel.secondary {
     position: absolute; }
 
 section.carousel.secondary-light {
-  background-color: #25dc58;
+  background-color: #f07f64;
   color: #fff; }
   section.carousel.secondary-light.light, section.carousel.secondary-light.light-dark {
     color: #444; }
@@ -86,7 +80,7 @@ section.carousel.secondary-light {
     color: #3D5A80; }
   section.carousel.secondary-light.bg-img .splide__slide:before {
     content: '';
-    background-color: rgba(37, 220, 88, 0.75);
+    background-color: rgba(240, 127, 100, 0.75);
     display: block;
     width: 100%;
     height: 100%;
@@ -94,7 +88,7 @@ section.carousel.secondary-light {
     position: absolute; }
 
 section.carousel.secondary-dark {
-  background-color: #1cb146;
+  background-color: #ec5936;
   color: #fff; }
   section.carousel.secondary-dark.light, section.carousel.secondary-dark.light-dark {
     color: #444; }
@@ -102,7 +96,7 @@ section.carousel.secondary-dark {
     color: #3D5A80; }
   section.carousel.secondary-dark.bg-img .splide__slide:before {
     content: '';
-    background-color: rgba(28, 177, 70, 0.75);
+    background-color: rgba(236, 89, 54, 0.75);
     display: block;
     width: 100%;
     height: 100%;

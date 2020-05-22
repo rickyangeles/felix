@@ -22,12 +22,12 @@
     padding: 60px 0;
     color: white;
 
-    .footer-left {
+    .footer-one {
         .footer-logo {
             margin-bottom: 20px;
         }
     }
-    .footer-center {
+    .footer-two, .footer-three {
         .menu {
             list-style-type: none;
             margin: 0;
@@ -52,7 +52,7 @@
             }
         }
     }
-    .footer-right {
+    .footer-four {
         .footer-cta {
             background-color: $footerCTAColor;
             border: none;

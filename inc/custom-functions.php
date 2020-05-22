@@ -111,8 +111,8 @@ function register_widget_areas() {
     ));
 
     register_sidebar( array(
-        'name'          => 'Footer Left',
-        'id'            => 'footer_left',
+        'name'          => 'Footer One',
+        'id'            => 'footer_one',
         'description'   => 'Logo/About Area',
         'before_widget' => '<section class="footer-widget f1">',
         'after_widget'  => '</section>',
@@ -121,8 +121,8 @@ function register_widget_areas() {
     ));
 
     register_sidebar( array(
-        'name'          => 'Footer Center',
-        'id'            => 'footer_center',
+        'name'          => 'Footer Two',
+        'id'            => 'footer_two',
         'description'   => 'Navigation Area',
         'before_widget' => '<section class="footer-widget f2">',
         'after_widget'  => '</section>',
@@ -131,10 +131,20 @@ function register_widget_areas() {
     ));
 
     register_sidebar( array(
-        'name'          => 'Footer Right',
-        'id'            => 'footer_right',
-        'description'   => 'CTA and Contact Info',
+        'name'          => 'Footer Three',
+        'id'            => 'footer_three',
+        'description'   => 'Navigation Area',
         'before_widget' => '<section class="footer-widget f3">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+
+    register_sidebar( array(
+        'name'          => 'Footer Four',
+        'id'            => 'footer_four',
+        'description'   => 'CTA and Contact Info',
+        'before_widget' => '<section class="footer-widget f4">',
         'after_widget'  => '</section>',
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',

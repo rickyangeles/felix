@@ -27,7 +27,11 @@ get_header();
 	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
+		<?php if ( !get_field('hide_sidebar') ) : ?>
 			<main id="main" class="site-main col-md-8">
+		<?php else : ?>
+			<main id="main" class="site-main col">
+		<?php endif; ?>
 				<?php
 					while ( have_posts() ) :
 						the_post();
@@ -47,7 +51,9 @@ get_header();
 					endwhile; // End of the loop.
 				?>
 			</main><!-- #main -->
-			<?php get_sidebar(); ?>
+			<?php if ( !get_field('hide_sidebar') ) : ?>
+				<?php get_sidebar(); ?>
+			<?php endif; ?>
 		</div>
 	</div><!-- #primary -->
 

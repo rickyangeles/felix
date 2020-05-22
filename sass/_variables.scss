@@ -32,8 +32,8 @@ $breakpoints: (
 );
 
 /* Fonts */
-$bodyFont: 'Space Mono', monospace;
-$headerFont: 'Space Mono', monospace;
+$bodyFont: 'Open Sans', monospace;
+$headerFont: 'Nunito', sans-serif;
 
 /* Navigation */
 $navItemColor: #fff;
@@ -50,5 +50,4 @@ $md-br: 8px;
 $lg-br: 12px;
 
 
-@import '../../IGStarter/sass/child-variables.scss';
- 
+//@import '../../IGStarter/sass/child-variables.scss';

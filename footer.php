@@ -32,28 +32,34 @@
 		<footer id="footer" class="site-footer">
 			<div class="container">
 				<div class="row">
-					<!-- Left Footer -->
-					<div class="col-md-3 footer-left">
+					<!-- Footer One -->
+					<div class="col-md footer-one">
 						<?php if ( $footerLogo ) : ?>
 							<a href="<?php bloginfo('url') ?>"><img src="<?php echo $footerLogo['url']; ?>" class="footer-logo"></a>
 						<?php endif; ?>
-						<?php if ( is_active_sidebar('footer_left') ) : ?>
-							<?php dynamic_sidebar('footer_left'); ?>
+						<?php if ( is_active_sidebar('footer_one') ) : ?>
+							<?php dynamic_sidebar('footer_one'); ?>
 						<?php endif; ?>
 					</div>
-					<!-- Center Footer -->
-					<div class="col-md-6 footer-center">
-						<?php if ( is_active_sidebar('footer_center') ) : ?>
-							<?php dynamic_sidebar('footer_center'); ?>
+					<!-- Footer Two -->
+					<div class="col-md footer-two">
+						<?php if ( is_active_sidebar('footer_two') ) : ?>
+							<?php dynamic_sidebar('footer_two'); ?>
 						<?php endif; ?>
 					</div>
-					<!-- Right Footer-->
-					<div class="col-md-3 footer-right">
+					<!-- Footer Three -->
+					<div class="col-md footer-three">
+						<?php if ( is_active_sidebar('footer_three') ) : ?>
+							<?php dynamic_sidebar('footer_three'); ?>
+						<?php endif; ?>
+					</div>
+					<!-- Footer Four -->
+					<div class="col-md footer-four">
 						<?php if ( $footerCTA ) : ?>
 							<a href="<?php echo $footerCTA['url']; ?>" class="footer-cta btn btn-primary btn-lg"><?php echo $footerCTA['title']; ?></a>
 						<?php endif; ?>
-						<?php if ( is_active_sidebar('footer_right') ) : ?>
-							<?php dynamic_sidebar('footer_right'); ?>
+						<?php if ( is_active_sidebar('footer_four') ) : ?>
+							<?php dynamic_sidebar('footer_four'); ?>
 						<?php endif; ?>
 					</div>
 				</div>

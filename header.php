@@ -17,7 +17,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
-	<link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,7 +31,6 @@
 	$topMenuLocation = get_field('top_menu_location', 'options');
 	$socialHeader = get_field('social_header', 'options');
 	$socialHeaderLocation = get_field('social_header_location', 'options');
-
 	$pID = get_the_ID();
 ?>
 
@@ -59,7 +57,7 @@
 		<?php endif; ?>
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
-				<a class="navbar-brand logo" href="<?php echo bloginfo('site_url'); ?>">
+				<a class="navbar-brand logo" href="<?php echo get_option("siteurl"); ?>">
 					<img src="<?php echo header_logo(); ?>" alt="<?php echo get_site_url(); ?>">
 				</a>
 				<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>

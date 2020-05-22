@@ -150,6 +150,9 @@ add_action( 'widgets_init', 'felix_widgets_init' );
  * Enqueue scripts and styles.
  */
 function felix_scripts() {
+
+	//google font
+	wp_enqueue_style( 'google-font-nunito', 'https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap', array(), null);
 	wp_enqueue_style( 'font-awesome-5', 'https://pro.fontawesome.com/releases/v5.12.0/css/all.css', array(), null );
 	add_action( 'enqueue_block_editor_assets', 'font-awesome-5' );
 	wp_enqueue_style( 'felix-style', get_stylesheet_uri() );
