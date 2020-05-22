@@ -1,18 +1,32 @@
 <?php
     //Content
-    $slides = get_field('slides');
+    $slides         = get_field('slides');
+    $c_slides       = count($slides);
 
     //Styles
-    $bg_color = get_field('background_color');
-    $height = get_field('height');
-    $align = get_field('align_content') ? 'content-' . get_field('align_content') : '';
-    $c_width = get_field('width_of_content') ? get_field('width_of_content') . '-width' : '';
-    $auto_play = get_field('auto_play');
-    $speed = get_field('speed');
+    $bg_color       = get_field('background_color');
+    $height         = get_field('height');
+    $align          = get_field('align_content') ? 'content-' . get_field('align_content') : '';
+    $c_width        = get_field('width_of_content') ? get_field('width_of_content') . '-width' : '';
+    $auto_play      = get_field('auto_play');
+    $speed          = get_field('speed');
 
-
+    //Other
     $classes = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
     $id = 'slider-' . $block['id'];
+
+    if ( $c_slides == 1 ) {
+        $banner_type    = 'slide';
+        $drag           = 'false';
+        $arrows         = 'false';
+        $auto_play      = 'false';
+        $pagination     = 'false';
+    } else {
+        $banner_type    = 'loop';
+        $drag           = 'true';
+        $arrows         = 'true';
+        $pagination     = 'true';
+    }
 ?>
 
 <section class="block splide slider container-fluid bg-img <?php echo $id; ?> <?php echo $classes; ?>">
@@ -69,12 +83,15 @@
 <script>
     jQuery(document).ready(function( $ ) {
         new Splide( '.splide.<?php echo $id; ?>', {
-            type : 'loop',
+            type : '<?php echo $banner_type; ?>',
             cover  : true,
             perPage: 1,
             width: '100%',
+            pagination: '<?php $pagination; ?>',
+            arrows: <?php echo $arrows; ?>,
+            drag: <?php echo $drag; ?>,
             height : '<?php echo $height; ?>',
-            autoplay : <?php echo $auto_play; ?>,
+            autoplay : '<?php echo $auto_play; ?>',
             speed : '<?php echo $speed; ?>',
         }).mount();
     });

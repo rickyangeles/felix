@@ -2,7 +2,6 @@
     //Content
     $p_count        = get_field('use_latest_posts') ? get_field('number_of_posts') : count(get_field('select_posts'));
 
-
     if ( get_field('use_latest_posts') ) {
         $posts = wp_get_recent_posts(array('numberposts' => $p_count, 'post_status' => 'publish'), OBJECT);
     } else {
@@ -35,6 +34,7 @@
                         $title      = get_the_title($pID);
                         $author     = get_the_author_meta('display_name');
                         $date       = get_the_date('M dS, Y', $pID);
+                        $excerpt    = get_field('custom_excerpt', $pID);
                         $link       = get_the_permalink($pID);
                     ?>
                 <?php if ( $p_count < 4 ) : ?>
@@ -63,7 +63,11 @@
                             <?php endif; ?>
                             <?php if ( $show_excerpt ) : ?>
                                 <div class="post-excerpt">
-                                    <?php echo excerpt(10, $pID); ?>
+                                    <?php if ( $excerpt ) : ?>
+                                        <?php echo $excerpt; ?>
+                                    <?php else : ?>
+                                        <?php echo excerpt(10, $pID); ?>
+                                    <?php endif; ?>
                                 </div>
                             <?php endif; ?>
                         </div>

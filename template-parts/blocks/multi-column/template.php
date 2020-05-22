@@ -6,6 +6,7 @@
     //Styles
     $bg_color       = get_field('background_color');
     $style          = get_field('style');
+    $columns        = get_field('number_of_columns');
     $media_type     = get_field('media_type');
     $equal_height   = get_field('equal_height');
     $center         = get_field('center_content') ? 'center' : '';
@@ -38,12 +39,7 @@
                     }
                     $icon       = get_sub_field('icon');
                 ?>
-                <?php if ( $c_count < 4 ) : ?>
-                    <div class="col col-md-4">
-                <?php else : ?>
-                    <div class="col col-md-3">
-                <?php endif; ?>
-
+                <div class="col <?php echo $columns; ?>">
                 <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?>
 
                     <?php if ( $media_type == 'image') : ?>

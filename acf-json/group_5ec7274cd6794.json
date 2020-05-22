@@ -21,6 +21,27 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_5ec74781aad94",
+            "label": "Custom Excerpt",
+            "name": "custom_excerpt",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 55,
+            "rows": "",
+            "new_lines": "",
+            "acfe_textarea_code": 0
         }
     ],
     "location": [
@@ -48,5 +69,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590110117
+    "modified": 1590118388
 }

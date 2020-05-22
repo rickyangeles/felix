@@ -4,6 +4,7 @@
     $main_content_btn       = get_field('main_content_button');
     $secondary_content_type = get_field('secondary_content_type');
     $secondary_content      = get_field('secondary_content_' . $secondary_content_type);
+    $secondary_image_link   = get_field('secondary_image_link');
     //Styles
     $bg_color               = get_field('background_color');
     $h_padding              = get_field('horizontal_padding');
@@ -51,10 +52,16 @@
                         </div>
                     <?php elseif ( $secondary_content_type == 'image' ) : ?>
                         <div>
+                            <?php if ( $secondary_image_link ) : ?>
+                                <a href="<?php echo $secondary_image_link; ?>">
+                            <?php endif; ?>
                             <?php $img = wp_get_attachment_image_src($secondary_content, 'slideshow_image'); ?>
                             <img src="<?php echo $img[0]; ?>" alt="">
                             <?php if ( wp_get_attachment_caption($secondary_content) ) : ?>
                                 <caption><?php echo wp_get_attachment_caption($secondary_content); ?></caption>
+                            <?php endif; ?>
+                            <?php if ( $secondary_image_link ) : ?>
+                                </a>
                             <?php endif; ?>
                         </div>
                     <?php elseif ( $secondary_content_type == 'video') : ?>

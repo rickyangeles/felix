@@ -40,7 +40,8 @@ section.post {
     font-weight: bold;
     margin-top: 0; }
   section.post .col ul.post-meta {
-    margin: 0;
+    font-size: .8em;
+    margin: 0 0 1em 0;
     padding: 0; }
     section.post .col ul.post-meta li {
       margin: 0 1em 0 0;

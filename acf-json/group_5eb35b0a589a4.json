@@ -164,6 +164,30 @@
             "mime_types": ""
         },
         {
+            "key": "field_5ec748f12517b",
+            "label": "Image Link",
+            "name": "secondary_image_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eb35b98aeb60",
+                        "operator": "==",
+                        "value": "image"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "return_format": "url"
+        },
+        {
             "key": "field_5eb35df956645",
             "label": "Secondary Content (Video)",
             "name": "secondary_content_video",
@@ -480,5 +504,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804533
+    "modified": 1590118695
 }

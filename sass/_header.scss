@@ -12,7 +12,7 @@
         .col-md-12 {
             padding-right: 0;
         }
-        .menu-top-menu-container { 
+        .menu-top-menu-container {
             margin: 0;
             float: right;
             .menu {
@@ -87,6 +87,12 @@
         //navigation
         .navbar-nav {
              & > .menu-item {
+
+                a {
+                    &:hover {
+                        background-color: $primary-dark;
+                    }
+                }
                 &:last-child {
                     a:not(.header-cta) {
                         padding-right: 0;
