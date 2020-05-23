@@ -119,6 +119,11 @@ section.block {
         &.white {
             background-color: $white;
             color: $primary;
+
+            &:hover {
+                background-color: $primary-dark;
+                color: $white;
+            }
             &.reverse {
                 background-color: transparent;
                 border-width: 2px;
@@ -130,14 +135,44 @@ section.block {
                 }
             }
 
+
         }
         &.light {
             background-color: $light;
             color: $dark;
+
+            &:hover {
+                background-color: darken($light, 5%);
+            }
+            &.reverse {
+                background-color: transparent;
+                border-width: 2px;
+                border-color: $light;
+                color: $light;
+                &:hover {
+                    background-color: $light;
+                    color: $dark;
+                }
+            }
         }
         &.dark {
             background-color: $dark;
             color: $white;
+
+            &.reverse {
+                background-color: transparent;
+                border-width: 2px;
+                border-color: $dark;
+                color: $dark;
+                &:hover {
+                    background-color: $dark;
+                    color: $light;
+                }
+            }
+
+            &:hover {
+                background-color: darken($dark, 5%);
+            }
         }
     }
     .block-buttons {
@@ -149,8 +184,11 @@ section.block {
             overflow: hidden;
             display: inline-block;
             li {
+                display: inline-block;
+                max-width: 33%;
                 list-style: none;
-                float: left;
+                float:none;
+                    vertical-align: middle;
                 &:first-child {
                     a {
                         margin-left: 0;

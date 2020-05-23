@@ -32,7 +32,11 @@ section.testimonial .slider {
         display: inline-block;
         list-style-type: none;
         margin-right: .5em; }
+        section.testimonial .slider .single-testimonial ul.rating li:last-child {
+          margin-right: 0; }
         section.testimonial .slider .single-testimonial ul.rating li i {
           color: gold; }
   section.testimonial .slider .splide__pagination {
     bottom: -1.5em; }
+    section.testimonial .slider .splide__pagination .is-active {
+      background: #eee; }

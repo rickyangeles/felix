@@ -59,6 +59,10 @@
             width: 100%;
             color: white;
             margin-bottom: 20px;
+
+            &:hover {
+                background-color: darken($footerCTAColor, 5%);
+            }
         }
     }
 }

@@ -256,8 +256,10 @@ function get_block_button() {
             if ( get_sub_field('reverse') == 1 ) {
                 $color .= ' reverse';
             }
-            print_r($style);
-            echo '<li><a href="' . $link['url'] .'" class="' . $color . '"' . $link_title . '>' . $link['title'] . '</a></li>';
+            //print_r($style);
+            if ( $link['title'] ) {
+                echo '<li><a href="' . $link['url'] .'" class="' . $color . '"' . $link_title . '>' . $link['title'] . '</a></li>';
+            }
         }
         echo '</ul></div>';
     }

@@ -1,6 +1,7 @@
 <?php
     //Content
-    $p_count        = get_field('use_latest_posts') ? get_field('number_of_posts') : count(get_field('select_posts'));
+    $select_post    = get_field('select_posts');
+    $p_count        = get_field('use_latest_posts') ? get_field('number_of_posts') : count($select_post);
 
     if ( get_field('use_latest_posts') ) {
         $posts = wp_get_recent_posts(array('numberposts' => $p_count, 'post_status' => 'publish'), OBJECT);
@@ -30,7 +31,7 @@
                     <?php setup_postdata($post); ?>
                     <?php
                         $pID        =  $post->ID;
-                        $image      = get_the_post_thumbnail( $pID, 'column_image' );
+                        $image      = get_the_post_thumbnail( $pID, 'column_image_three' );
                         $title      = get_the_title($pID);
                         $author     = get_the_author_meta('display_name');
                         $date       = get_the_date('M dS, Y', $pID);

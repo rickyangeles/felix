@@ -67,9 +67,9 @@
                             <?php if ( $button && $link_column ) : ?></a><?php endif; ?>
                         <?php endif; ?>
                         <?php if ( $content ) : ?>
-                            <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?>
+                            <!-- <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?> -->
                             <?php echo $content; ?>
-                            <?php if ( $button && $link_column ) : ?></a><?php endif; ?>
+                            <!-- <?php if ( $button && $link_column ) : ?></a><?php endif; ?> -->
                         <?php endif; ?>
                         <?php if ( $button ) : ?>
                             <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?>

@@ -6,13 +6,14 @@
     $bg_color               = get_field('background_color');
     $h_padding              = get_field('horizontal_padding');
     $center                 = get_field('center_content') ? 'center' : '';
+    $equal_height           = get_field('equal_height') ?  'equal_height' : '';
 
 
     $id = 'testimonial-' . $block['id'];
 
 ?>
 
-<section class="block steps container-fluid <?php echo $bg_color . ' ' . $style . ' ' . $h_padding; ?>">
+<section class="block steps container-fluid <?php echo $bg_color . ' ' . $style . ' ' . $h_padding . ' ' . $equal_height; ?>">
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row <?php echo $center; ?>">
@@ -20,8 +21,8 @@
             <?php while( have_rows('steps') ): $count++; the_row(); ?>
 
                 <?php
-                    $header         = get_sub_field('header');
-                    $subheader      = get_sub_field('subheader');
+                    $header         = get_sub_field('heading');
+                    $subheader      = get_sub_field('subheading');
                     $content        = get_sub_field('content');
                     $link           = get_sub_field('link');
                     if ( $link ) {

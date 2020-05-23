@@ -27,18 +27,17 @@
                                     <?php
                                         $pID        = $post->ID;
                                         $title      = get_the_title($pID);
-                                        $name       = get_field('name', $pID);
-                                        $company    = get_field('company', $pID);
+                                        $name       = get_field('name', $pID) ? get_field('name', $pID) : '';
+                                        $company    = get_field('company', $pID) ? ', ' .get_field('company', $pID) : '';
                                         $rating     = get_field('rating', $pID);
                                     ?>
                                     <li class="slide__slide single-testimonial">
                                         <h4><?php echo $title; ?></h4>
                                         <p><?php echo get_the_content($pID); ?></p>
                                         <?php if ( $show_details ) : ?>
-                                            <span><?php echo $name; ?>, <?php echo $company; ?></span>
+                                            <span><?php echo $name; ?><?php echo $company; ?></span>
                                         <?php endif; ?>
                                         <?php if ( $show_rating) : ?>
-                                            <?php echo $rating; ?>
                                             <?php $i = 0; ?>
                                             <ul class="rating">
                                                 <?php

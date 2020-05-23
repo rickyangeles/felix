@@ -88,7 +88,7 @@
                     "label": "Icon",
                     "name": "icon",
                     "type": "text",
-                    "instructions": "<a href=\"https:\/\/fontawesome.com\/cheatsheet\" target=\"_blank\">Font Awesome Cheatsheet<\/a>",
+                    "instructions": "<a href=\"https:\/\/fontawesome.com\/icons?d=gallery\" target=\"_blank\">Font Awesome Cheatsheet<\/a> Ex: fal fa-abacus",
                     "required": 0,
                     "conditional_logic": [
                         [
@@ -436,5 +436,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590118025
+    "modified": 1590189852
 }

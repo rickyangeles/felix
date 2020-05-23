@@ -19,3 +19,27 @@ body.logged-in {
 html, body {
   overflow-x: hidden;
 }
+
+.content-area {
+    ul, ol {
+        margin-left: 0;
+    }
+}
+
+ul.checked-list {
+    li {
+        list-style-type: none;
+        &:before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Pro";
+            margin-right: .5em;
+        }
+    }
+}
+
+figure {
+    .wp-caption-text {
+        font-size: .9em;
+        font-style: italic;
+    }
+}

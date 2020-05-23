@@ -39,6 +39,10 @@ section.testimonial {
                     display: inline-block;
                     list-style-type: none;
                     margin-right: .5em;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                     i {
                         color: gold;
                     }
@@ -47,6 +51,10 @@ section.testimonial {
         }
         .splide__pagination {
             bottom: -1.5em;
+
+            .is-active {
+                background: #eee;
+            }
         }
     }
 }

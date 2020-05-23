@@ -172,10 +172,10 @@
         },
         {
             "key": "field_5e5e9caec0919",
-            "label": "Direction Link",
+            "label": "Google Maps Directions Link",
             "name": "direction_link",
             "type": "text",
-            "instructions": "",
+            "instructions": "Google Maps Directions Link\" and add helper text saying: Google the business name\/location, click on \"Directions\", wait 10 seconds for the URL to finalize, copy everything before \"data=\". Example: https:\/\/www.google.com\/maps\/dir\/40.0228352,-76.23",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -183,6 +183,7 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "default_value": "",
             "placeholder": "",
             "prepend": "",
@@ -209,7 +210,7 @@
             "key": "field_5e3479ebdd264",
             "label": "Page Header Image",
             "name": "page_header_image",
-            "type": "image",
+            "type": "image_aspect_ratio_crop",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -218,22 +219,26 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
+            "acfe_permissions": "",
+            "crop_type": "pixel_size",
+            "aspect_ratio_width": 1300,
+            "aspect_ratio_height": 400,
+            "return_format": "url",
             "preview_size": "page-header",
             "library": "all",
-            "min_width": 1500,
-            "min_height": 300,
             "min_size": "",
             "max_width": "",
             "max_height": "",
             "max_size": "",
-            "mime_types": ""
+            "mime_types": "",
+            "min_width": 0,
+            "min_height": 0
         },
         {
             "key": "field_5e347a13dd265",
-            "label": "Blog Post Thubmnail",
+            "label": "Blog Post Thumbnail",
             "name": "blog_post_thumbnail",
-            "type": "image",
+            "type": "image_aspect_ratio_crop",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -242,11 +247,15 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
+            "crop_type": "aspect_ratio",
+            "aspect_ratio_width": 4,
+            "aspect_ratio_height": 3,
             "return_format": "array",
-            "preview_size": "post-thumb",
+            "preview_size": "medium",
             "library": "all",
-            "min_width": 450,
-            "min_height": 450,
+            "min_width": "",
+            "min_height": "",
             "min_size": "",
             "max_width": "",
             "max_height": "",
@@ -508,6 +517,55 @@
             "endpoint": 0
         },
         {
+            "key": "field_5ec5246e459f8",
+            "label": "Blog",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_5ec5247f459f9",
+            "label": "Featured Blog Post",
+            "name": "featured_blog_post",
+            "type": "relationship",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "post_type": [
+                "post"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search",
+                "taxonomy"
+            ],
+            "elements": [
+                "featured_image"
+            ],
+            "min": "",
+            "max": 1,
+            "return_format": "id",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            }
+        },
+        {
             "key": "field_5e5e692eeedc2",
             "label": "Footer",
             "name": "",
@@ -583,5 +641,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804421
+    "modified": 1590200132
 }

@@ -17,6 +17,7 @@
 	$footerLogo = get_field('footer_logo', 'options');
 	$footerCTA = get_field('override_footer_cta', $pID) ? get_field('override_footer_cta', $pID) : get_field('footer_cta', 'options');
 	$disableFooter = get_field('hide_footer', $pID);
+	$footer_copyright_text = get_field('footer_copyright_text', 'options');
 
 ?>
 	<?php if ( !$disableFooter ) : ?>
@@ -66,6 +67,9 @@
 			</div>
 		</footer><!-- #colophon -->
 		<div class="site-info">
+			<?php if ( $footer_copyright_text ) : ?>
+				<p><?php echo $footer_copyright_text; ?></p>
+			<?php endif; ?>
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'felix' ) ); ?>">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */

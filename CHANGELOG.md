@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [0.6] - 2020-05-22
+
+### Added
+
+### Changed
+- Steps Columns: Equal height is now a field instead of automatically being same height
+- Post Picker: Removed the link in the content section
+- Block Buttons: Max-width on buttons. 3 columns max
+
+### Fixed
+- Steps Columns: header/subheader are now showing
+- Thumbnail Sizes: updated block templates with the new 3-col or 4-col image sizes
+- Blocks: blocks with column buttons now have a hover background on all colors
+
+
 ## [0.5.3] - 2020-05-22
 
 ### Added
