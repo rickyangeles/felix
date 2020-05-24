@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1] - 20200-05-23
+
+### Added
+
+### Changed
+- Mobile Menu: small changes
+
+### Fixed
+- Block Buttons: Fixed spacing issue on mobile
+- Mobile Menu: wrong menu location slug
 
 ## [0.6] - 2020-05-22
 

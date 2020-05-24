@@ -43,6 +43,10 @@ section.split.white .main-content a.button {
   background-color: #3D5A80;
   color: white; }
 
+section.split .text a.button {
+  margin: 0;
+  display: inline-block; }
+
 section.split .bg > div {
   padding: 1.5em; }
 

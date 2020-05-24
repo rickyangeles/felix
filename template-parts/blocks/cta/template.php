@@ -12,6 +12,7 @@
     $h_padding              = get_field('horizontal_padding');
     $c_width                = get_field('content_width') ? get_field('content_width') . '-width' : '';
     $center                 = get_field('center_content') ? 'center' : '';
+    $subtext_location       = get_field('subtext_location');
     $id                     = 'cta-' . $block['id'];
 
     $classes                = $bg_color . ' ' . $layout . ' ' . $h_padding . ' ' . $center . ' ' . $c_width;
@@ -27,9 +28,16 @@
                     <?php echo $content; ?>
                 </div>
                 <div class="col-md-3">
+                    <?php if ( $subtext_location == 'top' ) : ?>
+                        <?php if ( $sub_text ) : ?>
+                            <span class="cta-sub-text"><?php echo $sub_text; ?></span>
+                        <?php endif; ?>
+                    <?php endif; ?>
                     <?php echo get_block_button(); ?>
-                    <?php if ( $sub_text ) : ?>
-                        <span class="cta-sub-text"><?php echo $sub_text; ?></span>
+                    <?php if ( $subtext_location == 'bottom' ) : ?>
+                        <?php if ( $sub_text ) : ?>
+                            <span class="cta-sub-text"><?php echo $sub_text; ?></span>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </div>
             </div>

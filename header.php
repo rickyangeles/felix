@@ -62,7 +62,7 @@
 				</a>
 				<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
 				<nav id="mmenu" class="mmenu mobile-menu">
-					<?php wp_nav_menu( array('theme_location'  => 'mobile-nav', 'menu'  => 'mobile-nav' )); ?>
+					<?php wp_nav_menu( array('theme_location'  => 'mobile-menu' )); ?>
 					<?php //wp_nav_menu( array('theme_location'  => 'main-nav', 'menu'  => 'main-nav' )); ?>
 				</nav>
 				<?php if ( !get_field('hide_header_menu', $pID) ): ?>

@@ -6,12 +6,16 @@ section.cta {
     &.horizontal {
         .block-buttons {
             margin: 0;
+            @include respond-below(md) {
+                margin-top: 2em;
+            }
 
             ul.buttons {
                 margin-bottom: 0;
                 li {
                     margin: 0 0 1em 0;
                     width: 100%;
+                    max-width: 100%;
 
                     &:last-child {
                         margin-bottom: 0;
@@ -28,6 +32,10 @@ section.cta {
             margin-top: .5em;
             display: block;
             width: 100%;
+
+            & + .block-buttons {
+                margin-top: 1em;
+            }
         }
     }
     &.vertical {

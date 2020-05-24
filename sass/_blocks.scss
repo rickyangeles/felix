@@ -185,10 +185,16 @@ section.block {
             display: inline-block;
             li {
                 display: inline-block;
-                max-width: 33%;
                 list-style: none;
                 float:none;
-                    vertical-align: middle;
+                vertical-align: middle;
+
+                @include respond-above(sm) {
+                    max-width: 33%;
+                }
+                @include respond-below(md) {
+                    margin-top: 1em;
+                }
                 &:first-child {
                     a {
                         margin-left: 0;
@@ -206,6 +212,10 @@ section.block {
                     border-radius: $sm-br;
                     text-decoration: none;
                     transition: all .3s ease;
+
+                    @include respond-below(md) {
+                        margin: 0;
+                    }
 
                     &:hover {
                         transition: all .3s ease;

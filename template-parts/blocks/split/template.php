@@ -5,6 +5,8 @@
     $secondary_content_type = get_field('secondary_content_type');
     $secondary_content      = get_field('secondary_content_' . $secondary_content_type);
     $secondary_image_link   = get_field('secondary_image_link');
+    $secondary_button       = get_field('secondary_content_button');
+    $secondary_button_color = get_field('secondary_button_color');
     //Styles
     $bg_color               = get_field('background_color');
     $h_padding              = get_field('horizontal_padding');
@@ -49,6 +51,9 @@
                     <?php if ( $secondary_content_type == 'text') : ?>
                         <div>
                             <?php echo $secondary_content; ?>
+                            <?php if ( $secondary_button['title'] ) : ?>
+                                <a class="button <?php echo $secondary_button_color; ?>" href="<?php echo $secondary_button['url']; ?>"><?php echo $secondary_button['title']; ?></a>
+                            <?php endif; ?>
                         </div>
                     <?php elseif ( $secondary_content_type == 'image' ) : ?>
                         <div>

@@ -1,5 +1,12 @@
 (function ($) {
     $(document).ready(function(){
+
+        //Closing Mobile menu when clicking on title
+
+        var API = $("#mmenu").data( "mmenu" );
+        $(".mm-navbar__title").click(function() {
+            API.close();
+        });
         //Changing icon on mobile menu open/close
         $('#searchform .far').click(function(){
             $('.search-input').slideToggle();

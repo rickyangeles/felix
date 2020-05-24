@@ -117,7 +117,7 @@
             "label": "Sub Text",
             "name": "sub_text",
             "type": "text",
-            "instructions": "Text under the CTA Buttons",
+            "instructions": "Only shows directly below the buttons",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -200,7 +200,7 @@
             "label": "Layout",
             "name": "layout",
             "type": "button_group",
-            "instructions": "",
+            "instructions": "Horizontal: Buttons on Right of Content; Vertical: Buttons Below Content",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -261,6 +261,29 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_5ec93b061b4fb",
+            "label": "Subtext Location",
+            "name": "subtext_location",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "top": "Top",
+                "bottom": "Bottom"
+            },
+            "allow_null": 0,
+            "default_value": "bottom",
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -288,5 +311,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804173
+    "modified": 1590246509
 }

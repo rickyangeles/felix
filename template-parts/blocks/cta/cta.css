@@ -6,11 +6,15 @@
 /* Border Radius */
 section.cta.horizontal .block-buttons {
   margin: 0; }
+  @media (max-width: 991px) {
+    section.cta.horizontal .block-buttons {
+      margin-top: 2em; } }
   section.cta.horizontal .block-buttons ul.buttons {
     margin-bottom: 0; }
     section.cta.horizontal .block-buttons ul.buttons li {
       margin: 0 0 1em 0;
-      width: 100%; }
+      width: 100%;
+      max-width: 100%; }
       section.cta.horizontal .block-buttons ul.buttons li:last-child {
         margin-bottom: 0; }
       section.cta.horizontal .block-buttons ul.buttons li a {
@@ -21,6 +25,8 @@ section.cta.horizontal span.cta-sub-text {
   margin-top: .5em;
   display: block;
   width: 100%; }
+  section.cta.horizontal span.cta-sub-text + .block-buttons {
+    margin-top: 1em; }
 
 section.cta.vertical .block-buttons {
   margin: 0;

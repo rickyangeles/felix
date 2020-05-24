@@ -360,7 +360,12 @@
         background: $primary-dark;
     }
     .mm-navbar {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        text-align: right;
         background-color: $primary-dark;
+
 
         a {
             color: white;
