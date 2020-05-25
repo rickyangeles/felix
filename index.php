@@ -17,18 +17,18 @@ get_header();
 	<?php
 		$blogLayout		= get_field('blog_layout', 'options');
 		$featured_post	= get_field('featured_blog_post', 'options');
-		$header_bg		= get_the_post_thumbnail_url($featured_post[0], 'page-header') ? get_the_post_thumbnail_url($featured_post[0], 'page-header') : get_field('blog_archive_banner', 'options');
+		$post_img		= get_the_post_thumbnail_url($featured_post[0], 'page-header') ? get_the_post_thumbnail_url($featured_post[0], 'page-header') : get_field('blog_archive_banner', 'options');
 	?>
 
 	<?php if ( $featured_post ) : ?>
 		<?php $id = $featured_post; ?>
-		<div class="container-fluid blog-archive-feature-header" style="background-image:url('<?php echo $header_bg; ?>');">
+		<div class="container-fluid blog-archive-feature-header" style="background-image:url('<?php the_field('blog_archive_banner', 'options'); ?>');">
 			<div class="container">
 				<div class="row d-flex justify-content-center align-items-center">
 					<?php foreach( $featured_post as $post): ?>
 						<?php setup_postdata($post); ?>
 						<div class="col-md-6">
-							<h1>Blog | Featured Post</h1>
+							<h1><?php echo single_post_title(); ?> | Featured Post</h1>
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 							<div class="entry-meta">
 								<?php
@@ -38,7 +38,7 @@ get_header();
 							</div><!-- .entry-meta -->
 						</div>
 						<div class="col-md-6">
-							<a href="<?php the_permalink(); ?>"><img src="<?php echo $header_bg; ?>" alt="" class="featured-post-image"></a>
+							<a href="<?php the_permalink(); ?>"><img src="<?php echo $post_img; ?>" alt="" class="featured-post-image"></a>
 						</div>
 
 					<?php endforeach; ?>
@@ -51,7 +51,7 @@ get_header();
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<h1>Blog</h1>
+						<h1><?php the_title(); ?></h1>
 					</div>
 				</div>
 			</div>

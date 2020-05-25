@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.4] - 2020-05-25
+
+### Added
+
+### Changed
+- Theme: Merged global content page into the theme settings
+- ACF Fields: label and layout changes. 
+
+### Fixed
+- Blog: Instead of 'blog', it picks up the page title of the blog page in the backend
 
 ## [0.6.3] - 2020-05-25
 

@@ -15,12 +15,12 @@
 	$hideCat		= get_field('hide_categories', 'options');
 	$hideRelated 	= get_field('hide_related_posts', 'options');
 ?>
- 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 		<img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'post-thumbnail'); ?>" alt="">
 	<?php else : ?>
-		<img src="<?php echo get_field('default_featured_image', 'options') ?>">
+		<img src="<?php echo get_field('blog_post_thumbnail', 'options') ?>">
 	<?php endif; ?>
 
 	<header class="entry-header">
