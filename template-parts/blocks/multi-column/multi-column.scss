@@ -81,7 +81,7 @@ section.multi {
         //     }
         // }
         @include respond-below(md) {
-            margin-bottom: 1em;
+            margin-bottom: 3em;
         }
     }
     &.basic {

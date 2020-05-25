@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [0.6.2] - 20200-05-24
+
+### Added
+
+### Changed
+
+### Fixed
+- Footer: added proper copyright text and a field for text above it
+
+
 ## [0.6.1] - 20200-05-23
 
 ### Added
@@ -17,6 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Block Buttons: Fixed spacing issue on mobile
 - Mobile Menu: wrong menu location slug
+- Footer: added proper copyright text and a field for text above it
 
 ## [0.6] - 2020-05-22
 

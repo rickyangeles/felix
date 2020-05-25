@@ -9,6 +9,11 @@
         text-align: center;
         li {
             display: inline-block;
+            @include respond-below(md) {
+                display: block;
+                width: 100%;
+                margin-bottom: .5em;
+            }
             a {
                 color: white;
                 margin: 0 20px;
@@ -28,7 +33,7 @@
         }
     }
     .footer-two, .footer-three {
-        .menu {
+        .menu, ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
