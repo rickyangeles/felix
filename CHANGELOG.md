@@ -8,17 +8,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
-## [0.6.2] - 20200-05-24
+## [0.6.3] - 2020-05-25
+
+### Added
+- Post Picker: Ability to choose the number of columns
+
+### Changed
+- Blog: Archive image now used as the background for post headers too
+- Blog: Removed Comments
+
+### Fixed
+- Theme: Category Archive Page
+
+
+## [0.6.2] - 2020-05-24
 
 ### Added
 
 ### Changed
+- Theme: Minor design fixes
 
 ### Fixed
 - Footer: added proper copyright text and a field for text above it
 
 
-## [0.6.1] - 20200-05-23
+## [0.6.1] - 2020-05-23
 
 ### Added
 

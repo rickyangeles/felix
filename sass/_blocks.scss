@@ -189,8 +189,9 @@ section.block {
                 float:none;
                 vertical-align: middle;
 
-                @include respond-above(sm) {
+                @include respond-below(sm) {
                     max-width: 33%;
+                    width: 100%;
                 }
                 @include respond-below(md) {
                     margin-top: 1em;

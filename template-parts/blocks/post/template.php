@@ -12,6 +12,7 @@
     //Styles
     $bg_color       = get_field('background_color');
     $style          = get_field('style');
+    $columns        = get_field('number_of_columns');
     $show_images    = get_field('show_images');
     $show_post_meta = get_field('show_post_meta');
     $show_excerpt   = get_field('show_excerpt');
@@ -38,41 +39,37 @@
                         $excerpt    = get_field('custom_excerpt', $pID);
                         $link       = get_the_permalink($pID);
                     ?>
-                <?php if ( $p_count < 4 ) : ?>
-                    <div class="col col-md-4">
-                <?php else : ?>
-                    <div class="col col-md-3">
-                <?php endif; ?>
-                        <?php if ( $show_images ) : ?>
-                            <a href="<?php echo $link; ?>">
-                                <?php echo $image; ?>
-                            </a>
+                <div class="col <?php echo $columns; ?>">
+                    <?php if ( $show_images ) : ?>
+                        <a href="<?php echo $link; ?>">
+                            <?php echo $image; ?>
+                        </a>
+                    <?php endif; ?>
+                    <div>
+                        <h5 class="post-title"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h5>
+                        <?php if ( $show_post_meta != 'none' ) : ?>
+                            <ul class="post-meta">
+                                <?php if ( $show_post_meta == 'date' ) : ?>
+                                    <li><?php echo $date; ?></li>
+                                <?php elseif ( $show_post_meta == 'author' ) : ?>
+                                    <li><?php echo $author; ?></li>
+                                <?php elseif ( $show_post_meta == 'all') : ?>
+                                    <li><?php echo $date; ?></li>
+                                    <li><?php echo $author; ?></li>
+                                <?php endif; ?>
+                            </ul>
                         <?php endif; ?>
-                        <div>
-                            <h5 class="post-title"><a href="<?php echo $link; ?>"><?php echo $title; ?></a></h5>
-                            <?php if ( $show_post_meta != 'none' ) : ?>
-                                <ul class="post-meta">
-                                    <?php if ( $show_post_meta == 'date' ) : ?>
-                                        <li><?php echo $date; ?></li>
-                                    <?php elseif ( $show_post_meta == 'author' ) : ?>
-                                        <li><?php echo $author; ?></li>
-                                    <?php elseif ( $show_post_meta == 'all') : ?>
-                                        <li><?php echo $date; ?></li>
-                                        <li><?php echo $author; ?></li>
-                                    <?php endif; ?>
-                                </ul>
-                            <?php endif; ?>
-                            <?php if ( $show_excerpt ) : ?>
-                                <div class="post-excerpt">
-                                    <?php if ( $excerpt ) : ?>
-                                        <?php echo $excerpt; ?>
-                                    <?php else : ?>
-                                        <?php echo excerpt(10, $pID); ?>
-                                    <?php endif; ?>
-                                </div>
-                            <?php endif; ?>
-                        </div>
+                        <?php if ( $show_excerpt ) : ?>
+                            <div class="post-excerpt">
+                                <?php if ( $excerpt ) : ?>
+                                    <?php echo $excerpt; ?>
+                                <?php else : ?>
+                                    <?php echo excerpt(10, $pID); ?>
+                                <?php endif; ?>
+                            </div>
+                        <?php endif; ?>
                     </div>
+                </div>
             <?php endforeach; ?><?php wp_reset_postdata(); ?>
         <?php endif; ?>
         </div>

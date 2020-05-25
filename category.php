@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * The main category template file
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -20,43 +20,15 @@ get_header();
 		$header_bg		= get_the_post_thumbnail_url($featured_post[0], 'page-header') ? get_the_post_thumbnail_url($featured_post[0], 'page-header') : get_field('blog_archive_banner', 'options');
 	?>
 
-	<?php if ( $featured_post ) : ?>
-		<?php $id = $featured_post; ?>
-		<div class="container-fluid blog-archive-feature-header" style="background-image:url('<?php echo $header_bg; ?>');">
-			<div class="container">
-				<div class="row d-flex justify-content-center align-items-center">
-					<?php foreach( $featured_post as $post): ?>
-						<?php setup_postdata($post); ?>
-						<div class="col-md-6">
-							<h1>Blog | Featured Post</h1>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<div class="entry-meta">
-								<?php
-									felix_posted_on();
-									felix_posted_by();
-								?>
-							</div><!-- .entry-meta -->
-						</div>
-						<div class="col-md-6">
-							<a href="<?php the_permalink(); ?>"><img src="<?php echo $header_bg; ?>" alt="" class="featured-post-image"></a>
-						</div>
-
-					<?php endforeach; ?>
-					<?php wp_reset_postdata(); ?>
+	<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php echo $header_bg; ?>');">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1><?php echo single_term_title(); ?></h1>
 				</div>
 			</div>
 		</div>
-	<?php else: ?>
-		<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php echo $header_bg; ?>');">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h1>Blog</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	<?php endif; ?>
+	</div>
 	<div id="primary" class="content-area container">
 		<div class="row">
 			<header>

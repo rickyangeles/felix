@@ -43,9 +43,6 @@ section.multi.equal-height .row.center .col > div {
 section.multi .center .col {
   text-align: center; }
 
-section.multi .col:nth-child(n+5) {
-  margin-top: 2em; }
-
 section.multi .col i {
   font-size: 2.5em;
   padding: 1em;

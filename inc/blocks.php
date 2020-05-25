@@ -53,8 +53,8 @@
         if(function_exists('acf_register_block_type')) {
             acf_register_block_type(array(
                 'name' => 'slider',
-                'title' => __('Slider'),
-                'description' => __('Starter Slider'),
+                'title' => __('Banner Slider'),
+                'description' => __('Starter Banner Slider'),
                 'render_template' => '/template-parts/blocks/slider/template.php',
                 'enqueue_assets'	=> function(){
                     wp_enqueue_style('slider-style', get_template_directory_uri() . '/template-parts/blocks/slider/slider.css');

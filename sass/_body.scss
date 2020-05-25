@@ -27,6 +27,7 @@ html, body {
 }
 
 ul.checked-list {
+    padding-left: 1em;
     li {
         list-style-type: none;
         &:before {
