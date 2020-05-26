@@ -10,7 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.6.5] - 2020-05-25
 
 ### Added
-- ACF Field: added field to disable top bar
+- ACF Field: Added field to disable top bar
+- Mobile Menu: Added reverse option to the cta buttons 
 
 ### Changed
 - Footer: Copyright text. All in one line now
