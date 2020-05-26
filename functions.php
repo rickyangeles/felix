@@ -237,16 +237,6 @@ if( function_exists('acf_add_options_page') ) {
     ));
 }
 
-if( function_exists('acf_add_options_page') ) {
-	$parent = acf_add_options_page(array(
-		'page_title' 	=> 'Global Content',
- 	   'menu_title'	=> 'Global Content',
- 	   'menu_slug' 	=> 'global-content',
- 	   'capability'	=> 'edit_posts',
- 	   'redirect'		=> false
-    ));
-}
-
 function add_font_awesome_5_cdn_attributes( $html, $handle ) {
     if ( 'font-awesome-5' === $handle ) {
         return str_replace( "media='all'", "media='all' integrity='sha384-ekOryaXPbeCpWQNxMwSWVvQ0+1VrStoPJq54shlYhR8HzQgig1v5fas6YgOqLoKz' crossorigin='anonymous'", $html );

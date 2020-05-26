@@ -7,11 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.6] - 2020-05-26
+
+### Added
+
+### Changed
+- Mobile Menu: Removed social media icons
+
+### Fixed
+- Mobile Menu: proper hiding and overriding of the header cta
+
+
 ## [0.6.5] - 2020-05-25
 
 ### Added
 - ACF Field: Added field to disable top bar
-- Mobile Menu: Added reverse option to the cta buttons 
+- Mobile Menu: Added reverse option to the cta buttons
 
 ### Changed
 - Footer: Copyright text. All in one line now

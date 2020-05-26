@@ -113,20 +113,18 @@
 	$yelp = get_field('yelp_url', 'options') ? '"<a class=\'fab fa-yelp\' href=\'' . get_field('yelp_url', 'options') . '\'></a>"' : '';
 ?>
 
+
 <?php
-	$mobileCTAs = '';
-	if ( have_rows('mobile_menu_cta', 'options') ) {
-		while ( have_rows('mobile_menu_cta', 'options') ) : the_row();
-			$cta = get_sub_field('cta');
-			$ctaLink = $cta['url'];
-			$ctaText = $cta['title'];
-			$buttonColor = get_sub_field('button_color');
-			$reverse = get_sub_field('reverse') ? ' reverse' : '';
-			$mobileCTAs .= '"<a class=\'mm-cta ' . $buttonColor . ' ' . $reverse . '\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';
-		endwhile;
+	$disableHeaderCTA 	= get_field('disable_header_cta', $pID);
+	$cta			  	= get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
+	$ctaLink			= $cta['url'];
+	$ctaText			= $cta['title'];
+
+	if ( !$disableHeaderCTA ) {
+		$mobileCTA = '"<a class=\'mm-cta secondary button\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';
 	}
-	//echo $mobileCTAs;
 ?>
+
 <script>
 	if ($("#mmenu").length) {
 		// init mmenu
@@ -142,25 +140,14 @@
                         "close"
                      ]
                   },
-				  {
-  					"position": "bottom",
-  					"content": [
-  						<?php echo $mobileCTAs; ?>
-  					]
-  				},
-                  {
-                     "position": "bottom",
-					 "content": [
- 						<?php echo $facebook; ?>,
- 						<?php echo $twitter; ?>,
- 						<?php echo $instagram; ?>,
- 						<?php echo $linkedin; ?>,
- 						<?php echo $pinterest; ?>,
- 						<?php echo $youtube; ?>,
- 						<?php echo $tripadvisor; ?>,
- 						<?php echo $yelp; ?>
- 					]
-				},
+				  <?php if ( !$disableHeaderCTA ) : ?>
+					  {
+	  					"position": "bottom",
+	  					"content": [
+	  						<?php echo $mobileCTA; ?>
+	  					]
+					},
+				  <?php endif; ?>
                ]
 			}, {
 			// configuration

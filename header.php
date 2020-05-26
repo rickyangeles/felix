@@ -63,13 +63,12 @@
 				<a class="navbar-brand logo" href="<?php echo get_option("siteurl"); ?>">
 					<img src="<?php echo header_logo(); ?>" alt="<?php echo get_site_url(); ?>">
 				</a>
-				<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
 				<nav id="mmenu" class="mmenu mobile-menu">
 					<?php wp_nav_menu( array('theme_location'  => 'mobile-menu' )); ?>
 					<?php //wp_nav_menu( array('theme_location'  => 'main-nav', 'menu'  => 'main-nav' )); ?>
 				</nav>
 				<?php if ( !get_field('hide_header_menu', $pID) ): ?>
-					<div class="d-flex align-items-end flex-column social-nav-wrap">
+					<div class="d-sm-none d-md-block d-flex align-items-end flex-column social-nav-wrap">
 						<?php if ( $socialHeaderLocation === 'menu' || $topMenuLocation === 'menu') : ?>
 							<div class="social-top-nav">
 								<?php if ( $socialHeaderLocation === 'menu') : ?>
@@ -102,6 +101,9 @@
 					<ul id="main-menu" class="nav navbar-nav">
 						<?php echo get_header_cta(); ?>
 					</ul>
+				<?php endif; ?>
+				<?php if ( !get_field('hide_header_menu', $pID) ): ?>
+					<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
 				<?php endif; ?>
 			</div>
 		</nav>
