@@ -18,12 +18,13 @@ function header_logo() {
 add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
 function your_custom_menu_item ( $items, $args ) {
     global $post;
-    $headerCTA = get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
-    $disableHeaderCTA = get_field('disable_header_cta');
+    $ctaLocation 			= get_field('header_cta_location', 'options') ? 'd-blog d-md-block' : '';
+    $headerCTA              = get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
+    $disableHeaderCTA       = get_field('disable_header_cta');
 
     if ( !get_field('disable_header_cta', $post->ID) ) {
         if ( $headerCTA && $args->theme_location == 'main-menu') {
-            $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
+            $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap ' . $ctaLocation . '"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
         }
     }
     return $items;

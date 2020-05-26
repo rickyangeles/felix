@@ -20,7 +20,7 @@ get_header();
 		$header_bg		= get_the_post_thumbnail_url($featured_post[0], 'page-header') ? get_the_post_thumbnail_url($featured_post[0], 'page-header') : get_field('blog_archive_banner', 'options');
 	?>
 
-	<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php echo $header_bg; ?>');">
+	<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php the_field('blog_archive_banner', 'options'); ?>');">
 		<div class="container">
 			<div class="row">
 				<div class="col">

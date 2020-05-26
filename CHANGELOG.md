@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.7] - 2020-05-26
+
+### Added
+
+### Changed
+- Menu: Removed CTA from the menu. It is now its own element.
+### Fixed
+- Blog Archive: Right title and image showing up on the header
+- Category Archive: Right image is on the header
+
 ## [0.6.6.1] - 2020-05-26
 
 ### Added

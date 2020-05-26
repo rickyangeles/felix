@@ -47,11 +47,11 @@ get_header();
 			</div>
 		</div>
 	<?php else: ?>
-		<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php echo $header_bg; ?>');">
+		<div class="container-fluid blog-archive-header d-flex justify-content-center align-items-center" style="background-image: url('<?php the_field('blog_archive_banner', 'options'); ?>');">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<h1><?php the_title(); ?></h1>
+						<h1><?php echo single_post_title(); ?></h1>
 					</div>
 				</div>
 			</div>
