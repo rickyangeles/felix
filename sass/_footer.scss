@@ -27,6 +27,16 @@
     padding: 60px 0;
     color: white;
 
+
+    @include respond-below(sm) {
+        .col-md {
+            margin-bottom: 2em;
+
+            &.footer-four {
+                margin-bottom: 0;
+            }
+        }
+    }
     .footer-one {
         .footer-logo {
             margin-bottom: 20px;

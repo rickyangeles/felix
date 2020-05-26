@@ -23,37 +23,40 @@
 
 <!-- Get Fields -->
 <?php
-	$fixed = get_field('fixed_header', 'options') ? ' fixed-top' : '';
-	$search = get_field('search_icon', 'options');
-	$iconLocation = get_field('header_icon_location', 'options');
-	$searchLocation = get_field('header_search_location', 'options');
-	$ctaLocation = get_field('header_cta_location', 'options');
-	$topMenuLocation = get_field('top_menu_location', 'options');
-	$socialHeader = get_field('social_header', 'options');
-	$socialHeaderLocation = get_field('social_header_location', 'options');
-	$pID = get_the_ID();
+	$fixed 					= get_field('fixed_header', 'options') ? ' fixed-top' : '';
+	$search 				= get_field('search_icon', 'options');
+	$iconLocation 			= get_field('header_icon_location', 'options');
+	$searchLocation 		= get_field('header_search_location', 'options');
+	$ctaLocation 			= get_field('header_cta_location', 'options');
+	$topMenu				= get_field('disable_top_menu', 'options');
+	$topMenuLocation 		= get_field('top_menu_location', 'options');
+	$socialHeader 			= get_field('social_header', 'options');
+	$socialHeaderLocation 	= get_field('social_header_location', 'options');
+	$pID 					= get_the_ID();
 ?>
 
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'felix' ); ?></a>
 	<header id="masthead" class="site-header<?php echo $fixed; ?>">
-		<?php if ( ($topMenuLocation === 'own' || $socialHeaderLocation === 'own')) : ?>
-			<div class="container-fluid top-nav d-lg-block">
-				<div class="container d-flex align-items-end flex-column">
-					<div class="col-md-12">
-						<?php if ( $topMenuLocation === 'own') : ?>
-							<?php if ( has_nav_menu('top-menu') ) : ?>
-								<?php wp_nav_menu( array('theme_location' => 'top-menu') ); ?>
+		<?php if ( !$topMenu ) : ?>
+			<?php if ( ($topMenuLocation === 'own' || $socialHeaderLocation === 'own')) : ?>
+				<div class="container-fluid top-nav d-lg-block">
+					<div class="container d-flex align-items-end flex-column">
+						<div class="col-md-12">
+							<?php if ( $topMenuLocation === 'own') : ?>
+								<?php if ( has_nav_menu('top-menu') ) : ?>
+									<?php wp_nav_menu( array('theme_location' => 'top-menu') ); ?>
+								<?php endif; ?>
 							<?php endif; ?>
-						<?php endif; ?>
-						<?php if ( $socialHeaderLocation === 'own') : ?>
-							<div class="ml-auto header-social d-md-block">
-								<?php echo header_social(); ?>
-							</div>
-						<?php endif; ?>
+							<?php if ( $socialHeaderLocation === 'own') : ?>
+								<div class="ml-auto header-social d-md-block">
+									<?php echo header_social(); ?>
+								</div>
+							<?php endif; ?>
+						</div>
 					</div>
 				</div>
-			</div>
+			<?php endif; ?>
 		<?php endif; ?>
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">
@@ -95,6 +98,10 @@
 					        ?>
 						</div>
 					</div>
+				<?php else : ?>
+					<ul id="main-menu" class="nav navbar-nav">
+						<?php echo get_header_cta(); ?>
+					</ul>
 				<?php endif; ?>
 			</div>
 		</nav>

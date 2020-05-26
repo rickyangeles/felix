@@ -382,9 +382,39 @@
                 margin: 10px;
                 &.primary {
                     background-color: $primary;
+                    color: $white;
+                    &.reverse {
+                        border: 2px solid $white;
+                        background-color: transparent;
+                        color: $white;
+                    }
                 }
                 &.secondary {
                     background-color: $secondary;
+                    color: $white;
+                    &.reverse {
+                        border: 2px solid $white;
+                        background-color: transparent;
+                        color: $white;
+                    }
+                }
+                &.light {
+                    background-color: $light;
+                    color: $dark;
+                    &.reverse {
+                        border: 2px solid $light;
+                        background-color: transparent;
+                        color: $light;
+                    }
+                }
+                &.dark {
+                    background-color: $dark;
+                    color: $light;
+                    &.reverse {
+                        border: 2px solid $dark;
+                        background-color: transparent;
+                        color: $dark;
+                    }
                 }
             }
         }

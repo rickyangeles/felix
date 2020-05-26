@@ -100,6 +100,26 @@
             "return_format": "array"
         },
         {
+            "key": "field_5ecc6ed430baf",
+            "label": "Disable Top Menu",
+            "name": "disable_top_menu",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5e5570e3fd78e",
             "label": "Top Menu Location",
             "name": "top_menu_location",
@@ -384,10 +404,11 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "message": "",
             "default_value": 0,
             "ui": 1,
@@ -427,25 +448,6 @@
             "ajax": 0,
             "return_format": "value",
             "placeholder": ""
-        },
-        {
-            "key": "field_5e347e3a339e4",
-            "label": "Use Global CTA Content",
-            "name": "use_global_cta_content",
-            "type": "true_false",
-            "instructions": "Enable to use main CTA title as the mobile content.",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
         },
         {
             "key": "field_5e557edc218bc",
@@ -843,6 +845,26 @@
                     "ajax": 0,
                     "return_format": "value",
                     "placeholder": ""
+                },
+                {
+                    "key": "field_5ecc88e870fe8",
+                    "label": "Reverse",
+                    "name": "reverse",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "message": "",
+                    "default_value": 0,
+                    "ui": 0,
+                    "ui_on_text": "",
+                    "ui_off_text": ""
                 }
             ]
         },
@@ -873,25 +895,6 @@
             "placeholder": ""
         },
         {
-            "key": "field_5e347a9cdd26f",
-            "label": "City",
-            "name": "city",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
             "key": "field_5e347e5f339e5",
             "label": "Mobile CTA Title",
             "name": "mobile_cta_title",
@@ -912,8 +915,8 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e347a49dd266",
-            "label": "Contact Information",
+            "key": "field_5ecc2063c1183",
+            "label": "Contact Info",
             "name": "",
             "type": "tab",
             "instructions": "",
@@ -924,27 +927,9 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "placement": "left",
             "endpoint": 0
-        },
-        {
-            "key": "field_5e347a9bdd26d",
-            "label": "Zip Code",
-            "name": "zip_code",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         },
         {
             "key": "field_5e347a5fdd26c",
@@ -985,9 +970,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5e347a5edd26a",
-            "label": "Fax Number",
-            "name": "fax_number",
+            "key": "field_5e347a5edd269",
+            "label": "Email",
+            "name": "email_address",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1004,26 +989,9 @@
             "maxlength": ""
         },
         {
-            "key": "field_5ecc2063c1183",
-            "label": "Contact Info",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "placement": "left",
-            "endpoint": 0
-        },
-        {
-            "key": "field_5e347a5edd269",
-            "label": "Email",
-            "name": "email_address",
+            "key": "field_5e347a5edd26a",
+            "label": "Fax Number",
+            "name": "fax_number",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1059,9 +1027,47 @@
             "maxlength": ""
         },
         {
+            "key": "field_5e347a9cdd26f",
+            "label": "City",
+            "name": "city",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5e347a9bdd26e",
             "label": "State",
             "name": "state",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e347a9bdd26d",
+            "label": "Zip Code",
+            "name": "zip_code",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -1201,5 +1207,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590438057
+    "modified": 1590462709
 }

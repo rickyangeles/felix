@@ -190,8 +190,12 @@ section.block {
                 vertical-align: middle;
 
                 @include respond-below(sm) {
-                    max-width: 33%;
                     width: 100%;
+                    display: inline-block;
+                    a {
+                        width: auto;
+                        display: inline-block!important;
+                    }
                 }
                 @include respond-below(md) {
                     margin-top: 1em;

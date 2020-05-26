@@ -17,9 +17,11 @@ function header_logo() {
 //Adding Header CTA to menu
 add_filter( 'wp_nav_menu_items', 'your_custom_menu_item', 10, 2 );
 function your_custom_menu_item ( $items, $args ) {
+    global $post;
     $headerCTA = get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
+    $disableHeaderCTA = get_field('disable_header_cta');
 
-    if ( !get_field('disable_header_cta') ) {
+    if ( !get_field('disable_header_cta', $post->ID) ) {
         if ( $headerCTA && $args->theme_location == 'main-menu') {
             $items .= '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
         }
@@ -27,6 +29,16 @@ function your_custom_menu_item ( $items, $args ) {
     return $items;
 }
 
+//Get header CTA
+function get_header_cta() {
+    global $post;
+    $headerCTA = get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
+    $cta = '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
+
+    if ( !get_field('disable_header_cta', $post->ID) ) {
+        return $cta;
+    }
+}
 //Get Search in Header
 add_filter( 'wp_nav_menu_items', 'header_search', 10, 2 );
 function header_search($items, $args) {
@@ -163,6 +175,7 @@ function mobile_menu_cta() {
 			$ctaLink = $cta['url'];
 			$ctaText = $cta['title'];
 			$buttonColor = get_sub_field('button_color');
+            $reverse = get_sub_field('reverse') ? $buttonColor .' reverse' : '';
 			$mobileCTAs .= '"<a class=\'mm-cta ' . $buttonColor . '\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';
 		endwhile;
 	}

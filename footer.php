@@ -67,11 +67,12 @@
 			</div>
 		</footer><!-- #colophon -->
 		<div class="site-info">
-			<?php if ( $footer_copyright_text ) : ?>
-				<p><?php echo $footer_copyright_text; ?></p>
-			<?php endif; ?>
 			<div>
-				<span>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>, All Rights Reserved</span>
+				<span>Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>, All Rights Reserved
+					<?php if ( $footer_copyright_text ) : ?>
+						<?php echo $footer_copyright_text; ?>
+					<?php endif; ?>
+				</span>
 			</div>
 		</div><!-- .site-info -->
 	<?php endif; ?>
@@ -120,7 +121,8 @@
 			$ctaLink = $cta['url'];
 			$ctaText = $cta['title'];
 			$buttonColor = get_sub_field('button_color');
-			$mobileCTAs .= '"<a class=\'mm-cta ' . $buttonColor . '\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';
+			$reverse = get_sub_field('reverse') ? ' reverse' : '';
+			$mobileCTAs .= '"<a class=\'mm-cta ' . $buttonColor . ' ' . $reverse . '\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';
 		endwhile;
 	}
 	//echo $mobileCTAs;

@@ -10,11 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( !is_front_page() && get_field('header_type') == 'none' ) : ?>
-		<header class="entry-header">
-			<?php echo get_field('header_type'); ?>
-			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		</header><!-- .entry-header -->
+	<?php $pID = get_the_ID(); ?>
+	<?php if ( get_field('header_type', $pID) != 'none' ) : ?>
+		<?php get_page_header($pID); ?>
 	<?php endif; ?>
 
 	<div class="entry-content">

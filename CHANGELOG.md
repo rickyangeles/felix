@@ -7,13 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.5] - 2020-05-25
+
+### Added
+- ACF Field: added field to disable top bar
+
+### Changed
+- Footer: Copyright text. All in one line now
+- Header: Hiding header menu doesn't hide cta button now
+
+### Fixed
+- Blocks: Buttons are now displaying properly, I think.
+- Page Options: Hide Header CTA now works
+- Page Options: Header Styles now working.
+
 ## [0.6.4] - 2020-05-25
 
 ### Added
 
 ### Changed
 - Theme: Merged global content page into the theme settings
-- ACF Fields: label and layout changes. 
+- ACF Fields: label and layout changes.
 
 ### Fixed
 - Blog: Instead of 'blog', it picks up the page title of the blog page in the backend
