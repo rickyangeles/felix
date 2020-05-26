@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.6.1] - 2020-05-26
+
+### Added
+
+### Changed
+
+### Fixed
+- Header: CTAs are fixed
+- Header: Minor CSS fix
+
 ## [0.6.6] - 2020-05-26
 
 ### Added
