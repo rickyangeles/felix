@@ -117,8 +117,10 @@
 <?php
 	$disableHeaderCTA 	= get_field('disable_header_cta', $pID);
 	$cta			  	= get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
-	$ctaLink			= $cta['url'];
-	$ctaText			= $cta['title'];
+	if ( $cta ) {
+		$ctaLink			= $cta['url'];
+		$ctaText			= $cta['title'];
+	}
 
 	if ( !$disableHeaderCTA ) {
 		$mobileCTA = '"<a class=\'mm-cta secondary button\' href=\'' . $ctaLink . '\'>' . $ctaText . '</a>",';

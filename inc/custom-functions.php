@@ -34,7 +34,9 @@ function your_custom_menu_item ( $items, $args ) {
 function get_header_cta() {
     global $post;
     $headerCTA = get_field('header_cta_override') ? get_field('header_cta_override') : get_field('header_cta', 'options');
-    $cta = '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
+    if ( $headerCTA ) {
+        $cta = '<li class="menu-item menu-item-type-post_type menu-item-object-page header-cta-wrap"><a class="nav-link header-cta rounded" href="' . $headerCTA['url'] . '">' . $headerCTA['title'] . '</a></li>';
+    }
 
     if ( !get_field('disable_header_cta', $post->ID) ) {
         return $cta;
@@ -163,7 +165,6 @@ function register_widget_areas() {
         'after_title'   => '</h4>',
     ));
 }
-
 add_action( 'widgets_init', 'register_widget_areas' );
 
 
@@ -216,7 +217,9 @@ function get_page_header($pID) {
     $headerType = get_field('header_type');
     $title = get_field('override_page_title') ? get_field('override_page_title') : get_the_title();
     $bgColor = get_field('page_header_color');
-    $color = array_shift(array_values($bgColor));
+    if ( $bgColor ) {
+        $color = array_shift(array_values($bgColor));
+    }
     if ( $headerType == 'banner') {
         $subtitle = get_field('page_subtitle');
         if ( get_field('page_header_color') ) {

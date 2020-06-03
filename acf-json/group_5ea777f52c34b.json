@@ -55,10 +55,10 @@
                     },
                     "acfe_permissions": "",
                     "crop_type": "aspect_ratio",
-                    "aspect_ratio_width": 4,
-                    "aspect_ratio_height": 3,
+                    "aspect_ratio_width": 1300,
+                    "aspect_ratio_height": 400,
                     "return_format": "id",
-                    "preview_size": "medium",
+                    "preview_size": "page-header",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -163,6 +163,26 @@
                     "return_format": "value"
                 },
                 {
+                    "key": "field_5ed52659366ce",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
                     "key": "field_5eaed85bf2086",
                     "label": "Buttons",
                     "name": "buttons",
@@ -252,13 +272,45 @@
             "return_format": "value"
         },
         {
+            "key": "field_5ed547ff12835",
+            "label": "Content Width",
+            "name": "content_width",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "small-width": "Small (50%)",
+                "med-width": "Medium (75%)",
+                "full-width": "Full"
+            },
+            "allow_null": 0,
+            "default_value": "full-width",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5eaefb27f6764",
             "label": "Auto Play",
             "name": "auto_play",
             "type": "button_group",
             "instructions": "Enable\/Disable Slider Autoplay",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ea7780754cbb",
+                        "operator": ">",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "25",
                 "class": "",
@@ -281,7 +333,15 @@
             "type": "text",
             "instructions": "Calculated in Milliseconds (ms)",
             "required": 0,
-            "conditional_logic": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5ea7780754cbb",
+                        "operator": ">",
+                        "value": "1"
+                    }
+                ]
+            ],
             "wrapper": {
                 "width": "25",
                 "class": "",
@@ -334,7 +394,7 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": 1,
+    "active": true,
     "description": "",
     "acfe_display_title": "",
     "acfe_autosync": [
@@ -343,6 +403,5 @@
     "acfe_permissions": "",
     "acfe_form": 0,
     "acfe_meta": "",
-    "acfe_note": "",
-    "modified": 1590244095
+    "acfe_note": ""
 }

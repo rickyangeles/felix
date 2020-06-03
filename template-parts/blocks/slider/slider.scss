@@ -62,4 +62,50 @@ section.slider {
             }
         }
     }
+
+    &.content-left {
+        .slide-content {
+            &>div {
+                float: left;
+            }
+        }
+    }
+    &.content-center {
+        .slide-content {
+            &>div {
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    &.content-right {
+        .slide-content {
+            &>div {
+                float: right;
+                text-align: right;
+            }
+        }
+    }
+    &.med-width {
+        .splide__list {
+            .splide__slide {
+                .slide-content {
+                    &>div {
+                        width: 75%;
+                    }
+                }
+            }
+        }
+    }
+    &.small-width {
+        .splide__list {
+            .splide__slide {
+                .slide-content {
+                    &>div {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
 }

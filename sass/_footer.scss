@@ -37,20 +37,23 @@
             }
         }
     }
-    .footer-one {
+    .footer-widget {
         .footer-logo {
             margin-bottom: 20px;
         }
     }
-    .footer-two, .footer-three {
+    .footer-widget {
+        margin-bottom: 2em;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
         .menu, ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             li {
                 color: white;
-                font-weight: bold;
-
                 &.menu-item-has-children {
                     .sub-menu {
                         margin-left: 0;
@@ -67,7 +70,7 @@
             }
         }
     }
-    .footer-four {
+    .footer-widget {
         .footer-cta {
             background-color: $footerCTAColor;
             border: none;
