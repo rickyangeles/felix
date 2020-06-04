@@ -267,14 +267,14 @@ function get_block_button() {
             the_row();
             $link       = get_sub_field('link');
             $color      = get_sub_field('color');
-            if ( $link['title'] ) {
+            if ( $link ) {
                 $link_title = ' alt="' . $link['title'] . '"';
             }
             if ( get_sub_field('reverse') == 1 ) {
                 $color .= ' reverse';
             }
             //print_r($style);
-            if ( $link['title'] ) {
+            if ( $link ) {
                 echo '<li><a href="' . $link['url'] .'" class="' . $color . '"' . $link_title . '>' . $link['title'] . '</a></li>';
             }
         }

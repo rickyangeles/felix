@@ -114,7 +114,7 @@
             "label": "Buttons",
             "name": "buttons",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "Buttons will be placed below the content.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -225,5 +225,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804189
+    "modified": 1591205414
 }

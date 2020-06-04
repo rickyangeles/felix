@@ -10,6 +10,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.6.8] - 2020-06-03
 
 ### Added
+- Post Picker: Added column selectors similar to the multi-column
+
+### Changed
+- ACF: Updates to field labels and instructions
+
+### Fixed
+- Testimonial & Slider Block: Hiding navigation when only one row or posts is added.
+- Split Block: removed splide script if secondary content isn't slideshow.
+- Blocks: slider arrows now match background color.
+
+## [0.6.8] - 2020-06-03
+
+### Added
 
 ### Changed
 

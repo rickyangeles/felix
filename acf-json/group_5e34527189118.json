@@ -40,8 +40,8 @@
             "min_width": "",
             "min_height": 100,
             "min_size": "",
-            "max_width": "",
-            "max_height": 125,
+            "max_width": 50,
+            "max_height": 300,
             "max_size": "",
             "mime_types": ""
         },
@@ -50,7 +50,7 @@
             "label": "Fixed Header",
             "name": "fixed_header",
             "type": "true_false",
-            "instructions": "Set the header to be fixed",
+            "instructions": "Keep header in view when scrolling down.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -58,6 +58,7 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_permissions": "",
             "message": "",
             "default_value": 0,
             "ui": 1,
@@ -802,7 +803,7 @@
             "min": 0,
             "max": 0,
             "layout": "table",
-            "button_label": "Add CTA",
+            "button_label": "Add Button",
             "sub_fields": [
                 {
                     "key": "field_5e594ef1856e6",
@@ -1207,5 +1208,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590462709
+    "modified": 1591194228
 }

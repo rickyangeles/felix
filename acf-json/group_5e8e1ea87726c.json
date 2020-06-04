@@ -94,7 +94,7 @@
                 "basic": "Basic",
                 "banner": "Banner"
             },
-            "default_value": "basic",
+            "default_value": "none",
             "allow_null": 0,
             "multiple": 0,
             "ui": 0,
@@ -296,5 +296,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590457979
+    "modified": 1591196170
 }

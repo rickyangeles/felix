@@ -55,10 +55,10 @@
                     },
                     "acfe_permissions": "",
                     "crop_type": "aspect_ratio",
-                    "aspect_ratio_width": 1300,
-                    "aspect_ratio_height": 400,
+                    "aspect_ratio_width": 4,
+                    "aspect_ratio_height": 3,
                     "return_format": "id",
-                    "preview_size": "page-header",
+                    "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
                     "min_height": "",
@@ -163,26 +163,6 @@
                     "return_format": "value"
                 },
                 {
-                    "key": "field_5ed52659366ce",
-                    "label": "Content",
-                    "name": "content",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "acfe_permissions": "",
-                    "default_value": "",
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0
-                },
-                {
                     "key": "field_5eaed85bf2086",
                     "label": "Buttons",
                     "name": "buttons",
@@ -272,26 +252,26 @@
             "return_format": "value"
         },
         {
-            "key": "field_5ed547ff12835",
-            "label": "Content Width",
-            "name": "content_width",
+            "key": "field_5ea77997cf6c2",
+            "label": "Align Content",
+            "name": "align_content",
             "type": "button_group",
-            "instructions": "",
+            "instructions": "Horizontal Alignment",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "25",
                 "class": "",
                 "id": ""
             },
             "acfe_permissions": "",
             "choices": {
-                "small-width": "Small (50%)",
-                "med-width": "Medium (75%)",
-                "full-width": "Full"
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
             },
             "allow_null": 0,
-            "default_value": "full-width",
+            "default_value": "",
             "layout": "horizontal",
             "return_format": "value"
         },
@@ -328,10 +308,10 @@
         },
         {
             "key": "field_5eaefbd152c08",
-            "label": "Speed",
+            "label": "Slide Interval",
             "name": "speed",
             "type": "text",
-            "instructions": "Calculated in Milliseconds (ms)",
+            "instructions": "Autoplay interval in milliseconds.",
             "required": 0,
             "conditional_logic": [
                 [
@@ -353,30 +333,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_5ea77997cf6c2",
-            "label": "Align Content",
-            "name": "align_content",
-            "type": "button_group",
-            "instructions": "Horizontal Alignment",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "25",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "choices": {
-                "left": "Left",
-                "center": "Center",
-                "right": "Right"
-            },
-            "allow_null": 0,
-            "default_value": "",
-            "layout": "horizontal",
-            "return_format": "value"
         }
     ],
     "location": [
@@ -394,7 +350,7 @@
     "label_placement": "left",
     "instruction_placement": "label",
     "hide_on_screen": "",
-    "active": true,
+    "active": 1,
     "description": "",
     "acfe_display_title": "",
     "acfe_autosync": [
@@ -403,5 +359,6 @@
     "acfe_permissions": "",
     "acfe_form": 0,
     "acfe_meta": "",
-    "acfe_note": ""
+    "acfe_note": "",
+    "modified": 1591196621
 }

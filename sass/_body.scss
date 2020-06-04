@@ -7,7 +7,7 @@ body {
 }
 
 body.logged-in {
-    .site-header {
+    .site-header, .content-area {
         padding-top: 32px;
 
         @include respond-below(md) {

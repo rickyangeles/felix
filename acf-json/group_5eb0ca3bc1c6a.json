@@ -214,34 +214,6 @@
                     "layout": "vertical",
                     "return_format": "value",
                     "save_other_choice": 0
-                },
-                {
-                    "key": "field_5ec93429fad0b",
-                    "label": "Button Color (copy)",
-                    "name": "button_color_copy",
-                    "type": "radio",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "custom-color-picker",
-                        "id": ""
-                    },
-                    "acfe_permissions": "",
-                    "choices": {
-                        "primary": "<span class=\"color-sample-primary\"><\/span>",
-                        "secondary": "<span class=\"color-sample-secondary\"><\/span>",
-                        "white": "<span class=\"color-sample-white\"><\/span>",
-                        "light": "<span class=\"color-sample-light\"><\/span>",
-                        "dark": "<span class=\"color-sample-dark\"><\/span>"
-                    },
-                    "allow_null": 0,
-                    "other_choice": 0,
-                    "default_value": "primary",
-                    "layout": "vertical",
-                    "return_format": "value",
-                    "save_other_choice": 0
                 }
             ]
         },
@@ -379,6 +351,30 @@
             "return_format": "value"
         },
         {
+            "key": "field_5ed7e76c9c0f6",
+            "label": "Number of Columns (copy)",
+            "name": "number_of_columns_copy",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "col-md-6": "Two",
+                "col-md-4": "Three",
+                "col-md-3": "Four"
+            },
+            "allow_null": 0,
+            "default_value": "col-md-4",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5eb0cccedb949",
             "label": "Equal Height",
             "name": "equal_height",
@@ -464,5 +460,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590244402
+    "modified": 1591207792
 }

@@ -34,9 +34,6 @@ section.post {
     }
 
     .col {
-        &:nth-child(n+5) {
-            margin-top: 2em;
-        }
         h4 {
             font-weight: bold;
             margin-top: 0;

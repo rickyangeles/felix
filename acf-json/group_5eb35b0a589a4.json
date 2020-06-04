@@ -228,7 +228,7 @@
             "label": "Secondary Content (Video)",
             "name": "secondary_content_video",
             "type": "oembed",
-            "instructions": "Embed media, see supported sites <a href=\"https:\/\/wordpress.org\/support\/article\/embeds\/#okay-so-what-sites-can-i-embed-from\">here<\/a>",
+            "instructions": "Embed media, see supported sites <a href=\"https:\/\/wordpress.org\/support\/article\/embeds\/#okay-so-what-sites-can-i-embed-from\" target=\"_blank\">here<\/a>.<br> Ex: https:\/\/www.youtube.com\/watch?v=NsLKQTh-Bqo",
             "required": 0,
             "conditional_logic": [
                 [
@@ -392,26 +392,6 @@
             "acfe_clone_modal": 0
         },
         {
-            "key": "field_5eb589e8f4e2e",
-            "label": "Enable Secondary Background",
-            "name": "enable_secondary_background",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "acfe_permissions": "",
-            "message": "",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
-        },
-        {
             "key": "field_5eb58847adda1",
             "label": "Secondary Background Color",
             "name": "secondary_background_color",
@@ -446,6 +426,26 @@
             "layout": "vertical",
             "return_format": "value",
             "save_other_choice": 0
+        },
+        {
+            "key": "field_5eb589e8f4e2e",
+            "label": "Enable Secondary Background",
+            "name": "enable_secondary_background",
+            "type": "true_false",
+            "instructions": "Adds a design element to the secondary background.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         },
         {
             "key": "field_5eb35d090f9db",
@@ -540,5 +540,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1590246500
+    "modified": 1591206378
 }

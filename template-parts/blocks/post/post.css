@@ -34,8 +34,6 @@ section.post {
           margin-top: auto; } }
   section.post .center .col {
     text-align: center; }
-  section.post .col:nth-child(n+5) {
-    margin-top: 2em; }
   section.post .col h4 {
     font-weight: bold;
     margin-top: 0; }

@@ -4,6 +4,9 @@
 
 section.faq {
     .accordion {
+        @include respond-below(md) {
+            margin-bottom: 2em;
+        }
         .card {
             .card-header {
                 padding: 0;

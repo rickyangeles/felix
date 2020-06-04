@@ -1,6 +1,7 @@
 <?php
     //Content
     $posts                  = get_field('select_testimonials');
+    $c_posts                = $posts ? count($posts) : '1';
     //Styles
     $layout                 = get_field('layout');
     $show_details           = get_field('show_details');
@@ -10,6 +11,19 @@
 
 
     $id = 'testimonial-' . $block['id'];
+
+    if ( $c_posts == 1 ) {
+        $banner_type    = 'slide';
+        $drag           = 'false';
+        $arrows         = 'false';
+        $auto_play      = 'false';
+        $pagination     = 'false';
+    } else {
+        $banner_type    = 'loop';
+        $drag           = 'true';
+        $arrows         = 'true';
+        $pagination     = 'true';
+    }
 
 ?>
 
@@ -33,27 +47,29 @@
                                     ?>
                                     <li class="slide__slide single-testimonial">
                                         <h4><?php echo $title; ?></h4>
-                                        <p><?php echo get_the_content($pID); ?></p>
+                                        <p><?php echo content(600); ?></p>
                                         <?php if ( $show_details ) : ?>
                                             <span><?php echo $name; ?><?php echo $company; ?></span>
                                         <?php endif; ?>
-                                        <?php if ( $show_rating) : ?>
+                                        <?php if ( $show_rating ) : ?>
                                             <?php $i = 0; ?>
-                                            <ul class="rating">
-                                                <?php
-                                                for($x=1;$x<=$rating;$x++) {
-                                                    echo '<li><i class="fas fa-star"></i></li>';
-                                                }
-                                                if (strpos($rating,'.')) {
-                                                    echo '<li class="half-star"></i><i class="far fa-star"></i><i class="fas fa-star-half"></li>';
-                                                    $x++;
-                                                }
-                                                while ($x<=5) {
-                                                    echo '<li><i class="far fa-star"></i></li>';
-                                                    $x++;
-                                                }
-                                                ?>
-                                            </ul>
+                                            <?php if ( $rating ) : ?>
+                                                <ul class="rating">
+                                                    <?php
+                                                        for($x=1;$x<=$rating;$x++) {
+                                                            echo '<li><i class="fas fa-star"></i></li>';
+                                                        }
+                                                        if (strpos($rating,'.')) {
+                                                            echo '<li class="half-star"></i><i class="far fa-star"></i><i class="fas fa-star-half"></li>';
+                                                            $x++;
+                                                        }
+                                                        while ($x<=5) {
+                                                            echo '<li><i class="far fa-star"></i></li>';
+                                                            $x++;
+                                                        }
+                                                    ?>
+                                                </ul>
+                                            <?php endif; ?>
                                         <?php endif; ?>
                                     </li>
                             	<?php endforeach; ?>
@@ -108,7 +124,10 @@
     <script type="text/javascript">
         jQuery(document).ready(function( $ ) {
             new Splide( '.splide.<?php echo $id; ?>', {
-                type : 'loop',
+                type : '<?php echo $banner_type; ?>',
+                pagination: <?php echo $pagination; ?>,
+                arrows: <?php echo $arrows; ?>,
+                drag: <?php echo $drag; ?>,
                 perPage: 1,
                 width: '100%',
             }).mount();

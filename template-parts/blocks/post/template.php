@@ -10,14 +10,19 @@
     }
 
     //Styles
-    $bg_color       = get_field('background_color');
-    $style          = get_field('style');
-    $columns        = get_field('number_of_columns');
-    $show_images    = get_field('show_images');
-    $show_post_meta = get_field('show_post_meta');
-    $show_excerpt   = get_field('show_excerpt');
-    $classes        = $bg_color . ' ' . $style . ' equal-height';
+    $bg_color           = get_field('background_color');
+    $style              = get_field('style');
+    $columns            = get_field('number_of_columns');
+    $show_images        = get_field('show_images');
+    $show_post_meta     = get_field('show_post_meta');
+    $show_excerpt       = get_field('show_excerpt');
+    $classes            = $bg_color . ' ' . $style . ' equal-height';
 
+    if ( $p_count % 4 == 0 ) {
+        $col_thumb_size = 'column_image_four';
+    } else {
+        $col_thumb_size = 'column_iamge_three';
+    }
     // if ( $equal_height ) {
     //     $classes .= ' equal-height';
     // }
@@ -32,7 +37,7 @@
                     <?php setup_postdata($post); ?>
                     <?php
                         $pID        =  $post->ID;
-                        $image      = get_the_post_thumbnail( $pID, 'column_image_three' );
+                        $image      = get_the_post_thumbnail( $pID, $col_thumb_size );
                         $title      = get_the_title($pID);
                         $author     = get_the_author_meta('display_name');
                         $date       = get_the_date('M dS, Y', $pID);

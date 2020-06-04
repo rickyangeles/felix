@@ -1,5 +1,5 @@
-//@import 'variables';
-@import '../../felix-child/sass/child-variable.scss';
+@import 'variables';
+// @import '../../felix-child/sass/child-variable.scss';
 
 /* General Block Styles */
 
@@ -17,6 +17,25 @@ section.block {
 
             &.white {
                 color: $primary;
+
+                .block-buttons {
+                    ul.buttons {
+                        li {
+                            a.white {
+                                background-color: transparent;
+                                border-width: 3px;
+                                padding: 12px 28px;
+                                border-style: solid;
+                                border-color: $primary;
+
+                                &.reverse {
+                                    background-color: $primary;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             &.bg-img {
                 background-size: cover;
@@ -28,6 +47,22 @@ section.block {
                     width: 100%; height: 100%;
                     top: 0;
                     position: absolute;
+                }
+            }
+            .splide__arrow {
+                background-color: $white;
+                opacity: 1;
+                path {
+                    fill: $color;
+                }
+            }
+            &.light, &.light-dark, &.white {
+                .splide__arrow {
+                    background-color: $white;
+                    opacity: 1;
+                    path {
+                        fill: $dark;
+                    }
                 }
             }
         }
@@ -279,10 +314,39 @@ section.block {
                     &.light {
                         background-color: $light;
                         color: $dark;
+
+                        &:hover {
+                            background-color: darken($light, 5%);
+                        }
+                        &.reverse {
+                            background-color: transparent;
+                            border-width: 2px;
+                            border-color: $light;
+                            color: $light;
+                            &:hover {
+                                background-color: $light;
+                                color: $dark;
+                            }
+                        }
                     }
                     &.dark {
                         background-color: $dark;
                         color: $white;
+
+                        &.reverse {
+                            background-color: transparent;
+                            border-width: 2px;
+                            border-color: $dark;
+                            color: $dark;
+                            &:hover {
+                                background-color: $dark;
+                                color: $light;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: darken($dark, 5%);
+                        }
                     }
                 }
             }

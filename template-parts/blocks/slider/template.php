@@ -1,7 +1,7 @@
 <?php
     //Content
     $slides         = get_field('slides');
-    $c_slides       = count($slides);
+    $c_slides       = $slides ? count($slides) : '1';
 
     //Styles
     $bg_color       = get_field('background_color');
@@ -91,12 +91,12 @@
                 cover  : true,
                 perPage: 1,
                 width: '100%',
-                pagination: '<?php $pagination; ?>',
+                pagination: <?php echo $pagination; ?>,
                 arrows: <?php echo $arrows; ?>,
                 drag: <?php echo $drag; ?>,
                 height : '<?php echo $height; ?>',
                 autoplay : '<?php echo $auto_play; ?>',
-                speed : '<?php echo $speed; ?>',
+                interval : '<?php echo $speed; ?>',
             }).mount();
         });
     </script>
