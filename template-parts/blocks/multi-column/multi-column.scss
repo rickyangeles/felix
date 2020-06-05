@@ -8,7 +8,7 @@ section.multi {
                 display: block!important;
             }
             @include respond-above(md) {
-                .col {
+                [class*="col-"] {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -27,7 +27,7 @@ section.multi {
             }
 
             &.center {
-                .col {
+                [class*="col-"] {
                     & > div {
                         align-items: center;
                     }
@@ -36,12 +36,12 @@ section.multi {
         }
     }
     .center {
-        .col {
+        [class*="col-"] {
             text-align: center;
         }
     }
 
-    .col {
+    [class*="col-"] {
         i {
             font-size: 2.5em;
             padding: 1em;
@@ -82,7 +82,7 @@ section.multi {
         }
     }
     &.basic {
-        .col {
+        [class*="col-"] {
             img {
                 max-width: 100%; width: 100%;
                 margin-bottom: 1em;
@@ -176,7 +176,7 @@ section.multi {
         // }
     }
     &.boxed {
-        .col {
+        [class*="col-"] {
             img {
                 max-width: 100%; width: 100%;
             }
@@ -192,7 +192,7 @@ section.multi {
             }
         }
         &.primary {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -200,7 +200,7 @@ section.multi {
             }
         }
         &.primary-light {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -208,7 +208,7 @@ section.multi {
             }
         }
         &.primary-dark {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -216,7 +216,7 @@ section.multi {
             }
         }
         &.secondary {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -224,7 +224,7 @@ section.multi {
             }
         }
         &.secondary-light {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -232,7 +232,7 @@ section.multi {
             }
         }
         &.secondary-dark {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
@@ -240,7 +240,7 @@ section.multi {
             }
         }
         &.light {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $dark;
                     color: $light;
@@ -248,7 +248,7 @@ section.multi {
             }
         }
         &.light-dark {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $dark;
                     color: $light-dark;
@@ -256,7 +256,7 @@ section.multi {
             }
         }
         &.dark {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $light;
                     color: $dark;
@@ -264,7 +264,7 @@ section.multi {
             }
         }
         &.white {
-            .col {
+            [class*="col-"] {
                 &>div {
                     background-color: $primary;
                 }

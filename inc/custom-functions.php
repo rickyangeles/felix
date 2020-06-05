@@ -247,11 +247,13 @@ function get_page_header($pID) {
 }
 
 function get_block_header() {
-    $header = get_field('header');
-    $header_size = get_field('header_size');
-    $subheader = get_field('subheader');
+    $header         = get_field('header');
+    $header_size    = get_field('header_size');
+    $subheader      = get_field('subheader');
     $subheader_size = get_field('subheader_size');
-    if ( $header || $subheader ) { echo '<div class="block-header">'; }
+    $heaader_align  = get_field('header_align');
+
+    if ( $header || $subheader ) { echo '<div class="block-header ' . $heaader_align . '">'; }
     if ( $header ) { echo '<' . $header_size . ' class="header">' . $header . '</' . $header_size . '>'; }
     if ( $subheader ) { echo '<' . $subheader_size . ' class="subheader">' . $subheader . '</' . $subheader_size . '>'; }
     if ( $header || $subheader ) { echo '</div>'; }

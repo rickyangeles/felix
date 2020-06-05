@@ -39,7 +39,7 @@
                     }
                     $icon       = get_sub_field('icon');
                 ?>
-                <div class="col <?php echo $columns; ?>">
+                <div class="<?php echo $columns; ?>">
                 <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?>
 
                     <?php if ( $media_type == 'image') : ?>

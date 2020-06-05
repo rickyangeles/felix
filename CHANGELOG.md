@@ -7,6 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+
+## [0.6.9] - 2020-06-04
+
+### Added
+- FAQ Block: Open/Close indicator icons
+
+### Changed
+- Blocks: Headers can now be aligned
+
+### Fixed
+- Full Width: buttons in small width are fixed
+- FontAwesome Cheatsheet link update
+- Multi Columns: breakpoint issue fixed
+
+
 ## [0.6.8] - 2020-06-03
 
 ### Added

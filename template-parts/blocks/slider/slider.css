@@ -22,7 +22,7 @@ section.slider {
       top: 0;
       position: absolute; }
   section.slider.primary-light {
-    background-color: #456691;
+    background-color: #4d72a3;
     color: #fff; }
     section.slider.primary-light.light, section.slider.primary-light.light-dark {
       color: #444; }
@@ -30,14 +30,14 @@ section.slider {
       color: #3D5A80; }
     section.slider.primary-light.bg-img .splide__slide:before {
       content: '';
-      background-color: rgba(69, 102, 145, 0.75);
+      background-color: rgba(77, 114, 163, 0.75);
       display: block;
       width: 100%;
       height: 100%;
       top: 0;
       position: absolute; }
   section.slider.primary-dark {
-    background-color: #354e6f;
+    background-color: #2d425d;
     color: #fff; }
     section.slider.primary-dark.light, section.slider.primary-dark.light-dark {
       color: #444; }
@@ -45,7 +45,7 @@ section.slider {
       color: #3D5A80; }
     section.slider.primary-dark.bg-img .splide__slide:before {
       content: '';
-      background-color: rgba(53, 78, 111, 0.75);
+      background-color: rgba(45, 66, 93, 0.75);
       display: block;
       width: 100%;
       height: 100%;
@@ -67,7 +67,7 @@ section.slider {
       top: 0;
       position: absolute; }
   section.slider.secondary-light {
-    background-color: #f07f64;
+    background-color: #f2927c;
     color: #fff; }
     section.slider.secondary-light.light, section.slider.secondary-light.light-dark {
       color: #444; }
@@ -75,14 +75,14 @@ section.slider {
       color: #3D5A80; }
     section.slider.secondary-light.bg-img .splide__slide:before {
       content: '';
-      background-color: rgba(240, 127, 100, 0.75);
+      background-color: rgba(242, 146, 124, 0.75);
       display: block;
       width: 100%;
       height: 100%;
       top: 0;
       position: absolute; }
   section.slider.secondary-dark {
-    background-color: #ec5936;
+    background-color: #ea461e;
     color: #fff; }
     section.slider.secondary-dark.light, section.slider.secondary-dark.light-dark {
       color: #444; }
@@ -90,7 +90,7 @@ section.slider {
       color: #3D5A80; }
     section.slider.secondary-dark.bg-img .splide__slide:before {
       content: '';
-      background-color: rgba(236, 89, 54, 0.75);
+      background-color: rgba(234, 70, 30, 0.75);
       display: block;
       width: 100%;
       height: 100%;
@@ -112,7 +112,7 @@ section.slider {
       top: 0;
       position: absolute; }
   section.slider.light-dark {
-    background-color: #e1e1e1;
+    background-color: #d5d5d5;
     color: #fff; }
     section.slider.light-dark.light, section.slider.light-dark.light-dark {
       color: #444; }
@@ -120,7 +120,7 @@ section.slider {
       color: #3D5A80; }
     section.slider.light-dark.bg-img .splide__slide:before {
       content: '';
-      background-color: rgba(225, 225, 225, 0.75);
+      background-color: rgba(213, 213, 213, 0.75);
       display: block;
       width: 100%;
       height: 100%;

@@ -63,11 +63,11 @@ section.steps.basic.primary .col-sm a {
   background-color: #fff; }
 
 section.steps.basic.primary-light .col-sm a {
-  color: #456691;
+  color: #4d72a3;
   background-color: #fff; }
 
 section.steps.basic.primary-dark .col-sm a {
-  color: #354e6f;
+  color: #2d425d;
   background-color: #fff; }
 
 section.steps.basic.secondary .col-sm a {
@@ -75,11 +75,11 @@ section.steps.basic.secondary .col-sm a {
   background-color: #fff; }
 
 section.steps.basic.secondary-light .col-sm a {
-  color: #f07f64;
+  color: #f2927c;
   background-color: #fff; }
 
 section.steps.basic.secondary-dark .col-sm a {
-  color: #ec5936;
+  color: #ea461e;
   background-color: #fff; }
 
 section.steps.basic.light .col-sm a {
@@ -87,7 +87,7 @@ section.steps.basic.light .col-sm a {
   background-color: #444; }
 
 section.steps.basic.light-dark .col-sm a {
-  color: #e1e1e1;
+  color: #d5d5d5;
   background-color: #444; }
 
 section.steps.basic.dark .col-sm a {
@@ -113,14 +113,14 @@ section.steps.boxed.primary-light .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.primary-light .col-sm > div a {
-    background-color: #456691;
+    background-color: #4d72a3;
     color: #fff; }
 
 section.steps.boxed.primary-dark .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.primary-dark .col-sm > div a {
-    background-color: #354e6f;
+    background-color: #2d425d;
     color: #fff; }
 
 section.steps.boxed.secondary .col-sm > div {
@@ -134,14 +134,14 @@ section.steps.boxed.secondary-light .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.secondary-light .col-sm > div a {
-    background-color: #f07f64;
+    background-color: #f2927c;
     color: #fff; }
 
 section.steps.boxed.secondary-dark .col-sm > div {
   background-color: #fff;
   color: #444; }
   section.steps.boxed.secondary-dark .col-sm > div a {
-    background-color: #ec5936;
+    background-color: #ea461e;
     color: #fff; }
 
 section.steps.boxed.light .col-sm > div {
@@ -153,9 +153,9 @@ section.steps.boxed.light .col-sm > div {
 
 section.steps.boxed.light-dark .col-sm > div {
   background-color: #444;
-  color: #e1e1e1; }
+  color: #d5d5d5; }
   section.steps.boxed.light-dark .col-sm > div a {
-    background-color: #e1e1e1;
+    background-color: #d5d5d5;
     color: #444; }
 
 section.steps.boxed.dark .col-sm > div {

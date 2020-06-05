@@ -25,6 +25,29 @@ section.faq {
             }
         }
     }
+    .accordion .card-header .btn-link.collapsed:after {
+        font-family: "Font Awesome 5 Pro";
+        content: "\f067";
+        float: right;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        right: 15px;
+        display: inline-block;
+    }
+    .accordion .card-header .btn-link:after {
+        /* symbol for "collapsed" panels */
+        content: "\f068";
+        font-family: "Font Awesome 5 Pro";
+        float: right;
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 16px;
+        right: 15px;
+        display: inline-block;
+    }
     //primary
     &.primary {
         .accordion {

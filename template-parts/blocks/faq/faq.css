@@ -18,6 +18,29 @@ section.faq .accordion .card .card-header {
       text-align: left;
       border: none; }
 
+section.faq .accordion .card-header .btn-link.collapsed:after {
+  font-family: "Font Awesome 5 Pro";
+  content: "\f067";
+  float: right;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  right: 15px;
+  display: inline-block; }
+
+section.faq .accordion .card-header .btn-link:after {
+  /* symbol for "collapsed" panels */
+  content: "\f068";
+  font-family: "Font Awesome 5 Pro";
+  float: right;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  right: 15px;
+  display: inline-block; }
+
 section.faq.primary .accordion .card .card-header h2 button.btn-link {
   color: #3D5A80; }
 
@@ -27,16 +50,16 @@ section.faq.primary .accordion .card .card-body {
     color: #3D5A80; }
 
 section.faq.primary-light .accordion .card .card-header h2 button.btn-link {
-  color: #456691; }
+  color: #4d72a3; }
 
 section.faq.primary-light .accordion .card .card-body > * {
-  color: #456691; }
+  color: #4d72a3; }
 
 section.faq.primary-dark .accordion .card .card-header h2 button.btn-link {
-  color: #354e6f; }
+  color: #2d425d; }
 
 section.faq.primary-dark .accordion .card .card-body > * {
-  color: #354e6f; }
+  color: #2d425d; }
 
 section.faq.secondary .accordion .card .card-header h2 button.btn-link {
   color: #EE6C4D; }
@@ -45,16 +68,16 @@ section.faq.secondary .accordion .card .card-body > * {
   color: #EE6C4D; }
 
 section.faq.secondary-light .accordion .card .card-header h2 button.btn-link {
-  color: #f07f64; }
+  color: #f2927c; }
 
 section.faq.secondary-light .accordion .card .card-body > * {
-  color: #f07f64; }
+  color: #f2927c; }
 
 section.faq.secondary-dark .accordion .card .card-header h2 button.btn-link {
-  color: #ec5936; }
+  color: #ea461e; }
 
 section.faq.secondary-dark .accordion .card .card-body > * {
-  color: #ec5936; }
+  color: #ea461e; }
 
 section.faq.dark .accordion .card .card-header h2 button.btn-link {
   color: #444; }

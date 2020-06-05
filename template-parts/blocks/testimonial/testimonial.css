@@ -17,7 +17,7 @@ section.testimonial .grid .single-testimonial {
         color: gold; }
 
 section.testimonial .slider {
-  padding: 2em 0; }
+  padding: 0; }
   section.testimonial .slider .single-testimonial {
     text-align: center;
     list-style-type: none; }

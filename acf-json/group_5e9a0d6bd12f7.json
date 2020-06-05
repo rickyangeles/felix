@@ -112,6 +112,30 @@
             "default_value": "h3",
             "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_5ed85db969957",
+            "label": "Header Align",
+            "name": "header_align",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "left": "Left",
+                "center": "Center",
+                "right": "Right"
+            },
+            "allow_null": 0,
+            "default_value": "center",
+            "layout": "horizontal",
+            "return_format": "value"
         }
     ],
     "location": [
@@ -149,5 +173,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804203
+    "modified": 1591238329
 }

@@ -8,6 +8,16 @@ section.full-width {
         &>div.container {
             max-width: 25%;
         }
+        .block-buttons {
+            ul.buttons {
+                li {
+                    margin-top: 1em;
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
     }
     &.center {
         &>div {
@@ -28,4 +38,3 @@ section.full-width {
         }
     }
 }
- 

@@ -9,7 +9,7 @@
     display: block !important; } }
 
 @media (min-width: 992px) {
-  section.multi.equal-height .row .col {
+  section.multi.equal-height .row [class*="col-"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -20,7 +20,7 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
-    section.multi.equal-height .row .col > div {
+    section.multi.equal-height .row [class*="col-"] > div {
       height: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -32,99 +32,99 @@
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start; }
-      section.multi.equal-height .row .col > div a {
+      section.multi.equal-height .row [class*="col-"] > div a {
         margin-top: auto; } }
 
-section.multi.equal-height .row.center .col > div {
+section.multi.equal-height .row.center [class*="col-"] > div {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
-section.multi .center .col {
+section.multi .center [class*="col-"] {
   text-align: center; }
 
-section.multi .col i {
+section.multi [class*="col-"] i {
   font-size: 2.5em;
   padding: 1em;
   color: #3D5A80; }
 
-section.multi .col h4 {
+section.multi [class*="col-"] h4 {
   font-weight: bold;
   margin-top: 0; }
 
-section.multi .col h5 {
+section.multi [class*="col-"] h5 {
   margin: 0 0 1em 0;
   font-weight: bold; }
 
-section.multi .col a {
+section.multi [class*="col-"] a {
   color: inherit; }
 
 @media (max-width: 991px) {
-  section.multi .col {
+  section.multi [class*="col-"] {
     margin-bottom: 3em; } }
 
-section.multi.basic .col img {
+section.multi.basic [class*="col-"] img {
   max-width: 100%;
   width: 100%;
   margin-bottom: 1em; }
 
-section.multi.basic .col i {
+section.multi.basic [class*="col-"] i {
   background-color: none;
   color: #3D5A80;
   font-size: 6em;
   padding: 0 .5em .25em .5em; }
 
-section.multi.boxed .col img {
+section.multi.boxed [class*="col-"] img {
   max-width: 100%;
   width: 100%; }
 
-section.multi.boxed .col i {
+section.multi.boxed [class*="col-"] i {
   background-color: #fff;
   color: #3D5A80;
   font-size: 6em;
   padding: .5em .5em .25em .5em; }
 
-section.multi.boxed .col > div {
+section.multi.boxed [class*="col-"] > div {
   padding: 1em;
   background-color: #fff; }
 
-section.multi.boxed.primary .col > div {
+section.multi.boxed.primary [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.primary-light .col > div {
+section.multi.boxed.primary-light [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.primary-dark .col > div {
+section.multi.boxed.primary-dark [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.secondary .col > div {
+section.multi.boxed.secondary [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.secondary-light .col > div {
+section.multi.boxed.secondary-light [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.secondary-dark .col > div {
+section.multi.boxed.secondary-dark [class*="col-"] > div {
   background-color: #fff;
   color: #444; }
 
-section.multi.boxed.light .col > div {
+section.multi.boxed.light [class*="col-"] > div {
   background-color: #444;
   color: #EEE; }
 
-section.multi.boxed.light-dark .col > div {
+section.multi.boxed.light-dark [class*="col-"] > div {
   background-color: #444;
-  color: #e1e1e1; }
+  color: #d5d5d5; }
 
-section.multi.boxed.dark .col > div {
+section.multi.boxed.dark [class*="col-"] > div {
   background-color: #EEE;
   color: #444; }
 
-section.multi.boxed.white .col {
+section.multi.boxed.white [class*="col-"] {
   color: #fff; }
-  section.multi.boxed.white .col > div {
+  section.multi.boxed.white [class*="col-"] > div {
     background-color: #3D5A80; }

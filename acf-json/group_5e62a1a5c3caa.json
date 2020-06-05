@@ -18,7 +18,7 @@
             "acfe_permissions": "",
             "default_value": "",
             "tabs": "all",
-            "toolbar": "basic",
+            "toolbar": "full",
             "media_upload": 1,
             "delay": 1
         },
@@ -210,5 +210,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804484
+    "modified": 1591237827
 }
