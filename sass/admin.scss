@@ -1,4 +1,6 @@
 @import 'variables.scss';
+@import '../../felix-child/sass/child-variable.scss';
+
 
 .issue-modal {
     .modal-lg {
@@ -31,7 +33,7 @@
                     &:checked {
                         &:before {
                             display: none;
-                        } 
+                        }
                     }
                 }
             }

@@ -4,6 +4,12 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 section.post {
   margin: 0; }
   @media (max-width: 575px) {
@@ -48,7 +54,7 @@ section.post {
   section.post .col p:last-child {
     margin-bottom: 0; }
   section.post .col a {
-    color: #444; }
+    color: #1B291E; }
   @media (max-width: 991px) {
     section.post .col {
       margin-bottom: 1em; } }
@@ -62,8 +68,8 @@ section.post {
   section.post.boxed .col > div {
     padding: 1em;
     background-color: #fff;
-    color: #444; }
+    color: #1B291E; }
   section.post.primary.basic a, section.post.primary-light.basic a, section.post.primary-dark.basic a, section.post.secondary.basic a, section.post.secondary-light.basic a, section.post.secondary-dark.basic a, section.post.dark.basic a {
     color: #fff; }
   section.post.white .basic a, section.post.light .basic a, section.post.light-dark .basic a {
-    color: #444; }
+    color: #1B291E; }

@@ -33,7 +33,7 @@ $breakpoints: (
 
 /* Fonts */
 $bodyFont: 'Open Sans', monospace;
-$headerFont: 'Nunito', sans-serif;
+$headerFont: 'Nunito', sans-serif;  
 
 /* Navigation */
 $navItemColor: #fff;
@@ -48,3 +48,6 @@ $footerCTAColor: $secondary;
 $sm-br: 4px;
 $md-br: 8px;
 $lg-br: 12px;
+
+
+@import '../../felix-child/sass/child-variable.scss';
