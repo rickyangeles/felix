@@ -8,15 +8,18 @@
   section.faq .accordion {
     margin-bottom: 2em; } }
 
-section.faq .accordion .card .card-header {
-  padding: 0; }
-  section.faq .accordion .card .card-header h2 {
+section.faq .accordion .card {
+  max-width: 100%;
+  width: 100%; }
+  section.faq .accordion .card .card-header {
     padding: 0; }
-    section.faq .accordion .card .card-header h2 button.btn-link {
-      padding: 1em;
-      width: 100%;
-      text-align: left;
-      border: none; }
+    section.faq .accordion .card .card-header h2 {
+      padding: 0; }
+      section.faq .accordion .card .card-header h2 button.btn-link {
+        padding: 1em;
+        width: 100%;
+        text-align: left;
+        border: none; }
 
 section.faq .accordion .card-header .btn-link.collapsed:after {
   font-family: "Font Awesome 5 Pro";

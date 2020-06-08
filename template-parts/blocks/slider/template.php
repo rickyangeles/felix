@@ -1,19 +1,20 @@
 <?php
     //Content
-    $slides         = get_field('slides');
-    $c_slides       = $slides ? count($slides) : '1';
+    $slides             = get_field('slides');
+    $c_slides           = $slides ? count($slides) : '1';
 
     //Styles
-    $bg_color       = get_field('background_color');
-    $height         = get_field('height');
-    $align          = get_field('align_content') ? 'content-' . get_field('align_content') : '';
-    $c_width        = get_field('content_width');
-    $auto_play      = get_field('auto_play');
-    $speed          = get_field('speed');
+    $bg_color           = get_field('background_color');
+    $height             = get_field('height');
+    $align              = get_field('align_content') ? 'content-' . get_field('align_content') : '';
+    $c_width            = get_field('content_width');
+    $auto_play          = get_field('auto_play');
+    $speed              = get_field('speed');
 
     //Other
-    $classes = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
-    $id = 'slider-' . $block['id'];
+    $classes            = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
+    $id                 = 'slider-' . $block['id'];
+    $c_id               = get_field('custom_id') ? 'id="' . get_field('custom_id') . '"' : '';
 
     //Slider or Banner
     if ( $c_slides == 1 ) {
@@ -30,7 +31,8 @@
     }
 ?>
 
-<section class="block splide slider container-fluid bg-img <?php echo $id; ?> <?php echo $classes; ?>">
+<section class="block splide slider container-fluid bg-img <?php echo $id; ?> <?php echo $classes; ?>" >
+    <?php block_custom_id(); ?>
     <div class="splide__track">
         <ul class="splide__list">
             <?php if ( have_rows('slides') ) : ?>

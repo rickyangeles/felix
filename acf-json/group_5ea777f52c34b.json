@@ -188,6 +188,26 @@
             ]
         },
         {
+            "key": "field_5edcef9a9e005",
+            "label": "Custom ID",
+            "name": "custom_id",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5ea77932cf6c0",
             "label": "Settings",
             "name": "",
@@ -242,6 +262,7 @@
             },
             "acfe_permissions": "",
             "choices": {
+                "0": "Auto",
                 "40vh": "50%",
                 "75vh": "75%",
                 "100vh": "100%"
@@ -360,5 +381,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591196621
+    "modified": 1591543859
 }

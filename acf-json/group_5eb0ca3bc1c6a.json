@@ -7,7 +7,7 @@
             "label": "Media Type",
             "name": "media_type",
             "type": "button_group",
-            "instructions": "",
+            "instructions": "Media will display at the top of the column.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -436,5 +436,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591236460
+    "modified": 1591546453
 }

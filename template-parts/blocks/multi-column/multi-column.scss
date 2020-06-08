@@ -87,93 +87,62 @@ section.multi {
                 max-width: 100%; width: 100%;
                 margin-bottom: 1em;
             }
+        }
+        i {
+            background-color: none;
+            font-size: 6em;
+            padding: 0 0 .25em 0;
+        }
+        &.primary {
             i {
-                background-color: none;
-                color: $primary;
-                font-size: 6em;
-                padding: 0 .5em .25em .5em;
+                color: $white;
             }
         }
-        // &.primary {
-        //     .col {
-        //         a.button {
-        //             color: $primary;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.primary-light {
-        //     .col {
-        //         a.button {
-        //             color: $primary-light;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.primary-dark {
-        //     .col {
-        //         a.button {
-        //             color: $primary-dark;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.secondary {
-        //     .col {
-        //         a.button {
-        //             color: $secondary;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.secondary-light {
-        //     .col {
-        //         a.button {
-        //             color: $secondary-light;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.secondary-dark {
-        //     .col {
-        //         a.button {
-        //             color: $secondary-dark;
-        //             background-color: $white;
-        //         }
-        //     }
-        // }
-        // &.light {
-        //     .col {
-        //         a.button {
-        //             color: $light;
-        //             background-color: $dark;
-        //         }
-        //     }
-        // }
-        // &.light-dark {
-        //     .col {
-        //         a.button {
-        //             color: $light-dark;
-        //             background-color: $dark;
-        //         }
-        //     }
-        // }
-        // &.dark {
-        //     .col {
-        //         a.button {
-        //             color: $dark;
-        //             background-color: $light;
-        //         }
-        //     }
-        // }
-        // &.white {
-        //     .col {
-        //         a.button {
-        //             color: $white;
-        //             background-color: $primary;
-        //         }
-        //     }
-        // }
+        &.primary-light {
+            i {
+                color: $white;
+            }
+        }
+        &.primary-dark {
+            i {
+                color: $white;
+            }
+        }
+        &.secondary {
+            i {
+                color: $white;
+            }
+        }
+        &.secondary-light {
+            i {
+                color: $white;
+            }
+        }
+        &.secondary-dark {
+            i {
+                color: $white;
+            }
+        }
+        &.light {
+            i {
+                color: $dark;
+            }
+        }
+        &.light-dark {
+            i {
+                color: $dark;
+            }
+        }
+        &.dark {
+            i {
+                color: $light;
+            }
+        }
+        &.white {
+            i {
+                color: $dark;
+            }
+        }
     }
     &.boxed {
         [class*="col-"] {
@@ -181,10 +150,11 @@ section.multi {
                 max-width: 100%; width: 100%;
             }
             i {
+                display: block;
                 background-color: $white;
                 color: $primary;
                 font-size: 6em;
-                padding: .5em .5em .25em .5em;
+                padding: 15px;
             }
             &>div {
                 padding: 1em;
@@ -197,6 +167,10 @@ section.multi {
                     background-color: $white;
                     color: $dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $primary;
+                }
             }
         }
         &.primary-light {
@@ -204,6 +178,10 @@ section.multi {
                 &>div {
                     background-color: $white;
                     color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $primary-light;
                 }
             }
         }
@@ -213,6 +191,10 @@ section.multi {
                     background-color: $white;
                     color: $dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $primary-dark;
+                }
             }
         }
         &.secondary {
@@ -220,6 +202,10 @@ section.multi {
                 &>div {
                     background-color: $white;
                     color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $secondary;
                 }
             }
         }
@@ -229,6 +215,10 @@ section.multi {
                     background-color: $white;
                     color: $dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $secondary-light;
+                }
             }
         }
         &.secondary-dark {
@@ -237,12 +227,20 @@ section.multi {
                     background-color: $white;
                     color: $dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $secondary-dark;
+                }
             }
         }
         &.light {
             [class*="col-"] {
                 &>div {
                     background-color: $dark;
+                    color: $light;
+                }
+                i {
+                    background-color: $white;
                     color: $light;
                 }
             }
@@ -253,6 +251,10 @@ section.multi {
                     background-color: $dark;
                     color: $light-dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $light-dark;
+                }
             }
         }
         &.dark {
@@ -261,12 +263,20 @@ section.multi {
                     background-color: $light;
                     color: $dark;
                 }
+                i {
+                    background-color: $white;
+                    color: $dark;
+                }
             }
         }
         &.white {
             [class*="col-"] {
                 &>div {
                     background-color: $primary;
+                }
+                i {
+                    background-color: $primary;
+                    color: $white;
                 }
                 color: $white;
             }

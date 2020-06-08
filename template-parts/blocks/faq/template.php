@@ -8,8 +8,8 @@
     $main_content_width     = get_field('main_content_width');
     $main_content_side      = get_field('main_content_side') == 'right' ? 'flex-row-reverse': '';
     $schema                 = get_field('enable_faq_schema');
-    $c_count      = 0;
-    $q_count    = count($questions_answers);
+    $c_count                = 0;
+    $q_count                = count($questions_answers);
 
     if ( $addition_content ) {
         if ( $main_content_width == 'col-md-9') {
@@ -22,11 +22,11 @@
     } else {
         $main_content_width = 'col-12';
     }
-    $id = 'faq-' . $block['id'];
-
+    $id                     = 'faq-' . $block['id'];
 ?>
 
 <section class="block faq container-fluid <?php echo $bg_color . ' ' . $h_padding; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row d-flex <?php echo $main_content_side; ?>">

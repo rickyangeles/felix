@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7] - 2020-06-05
+
+### Added
+- Slider: Auto height option
+- Blocks: Custom ID for Starter blocks
+- Core Blocks: Better compatibility with our theme, using the group block as a wrapper
+
+### Changed
+
+### Fixed
+- Blocks: Font Awesome icons now show on the block editor
+- Multi Column: Icon in boxed layout fixed
+
 
 ## [0.6.9] - 2020-06-04
 

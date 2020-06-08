@@ -7,12 +7,12 @@
     $number_of_slides   = get_field('number_of_slides') ? get_field('number_of_slides') : '5';
     $auto_play          = get_field('autoplay')? 'true' : 'false';
 
-
-    $classes = $bg_color . ' ' . $h_padding;
-    $id = 'carouse-' . $block['id'];
+    $classes            = $bg_color . ' ' . $h_padding;
+    $id                 = 'carouse-' . $block['id'];
 ?>
 
 <section class="block carousel container-fluid <?php echo $id; ?> <?php echo $classes; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row">

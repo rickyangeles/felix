@@ -284,6 +284,13 @@ function get_block_button() {
     }
 }
 
+//Get Block Custom ID
+function block_custom_id() {
+    $c_id = get_field('custom_id') ? 'id="' . get_field('custom_id') . '"' : '';
+    if ( get_field('custom_id') ) {
+        echo '<div class="c_anchor"' . $c_id . '></div>';
+    }
+}
 
 // remove wp version param from any enqueued scripts
 function vc_remove_wp_ver_css_js( $src ) {
@@ -293,4 +300,28 @@ function vc_remove_wp_ver_css_js( $src ) {
 }
 add_filter( 'style_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
+
+
+//Core Block edits
+// function wporg_block_wrapper( $block_content, $block ) {
+//     if ( $block['blockName'] === 'core/paragraph' ) {
+//         $content = '<div class="wp-block-wrap-paragraph">';
+//         $content .= $block_content;
+//         $content .= '</div>';
+//         return $content;
+//     } elseif ( $block['blockName'] === 'core/heading' ) {
+//         $content = '<div class="wp-block-wrap-heading">';
+//         $content .= $block_content;
+//         $content .= '</div>';
+//         return $content;
+//     } elseif ( $block['blockName'] === 'core/latest-posts' ) {
+//         $content = '<div class="wp-block-wrap-latest-posts">';
+//         $content .= $block_content;
+//         $content .= '</div>';
+//         return $content;
+//     }
+//     return $block_content;
+// }
+//
+// add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
 ?>

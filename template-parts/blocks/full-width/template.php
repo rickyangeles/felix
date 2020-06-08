@@ -19,6 +19,7 @@
 ?>
 
 <section class="block full-width container-fluid <?php echo $classes; ?>" <?php echo $bg_image; ?>>
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row">

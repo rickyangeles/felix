@@ -34,6 +34,7 @@ if ( ! function_exists( 'felix_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function felix_setup() {
+		add_theme_support( 'align-wide' );
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
@@ -184,6 +185,7 @@ function gutenberg_editor_assets() {
 	// Load the theme styles within Gutenberg.
 	wp_enqueue_style('my-gutenberg-editor-styles', get_theme_file_uri('/css/admin.min.css'), FALSE);
 	wp_enqueue_style('bootstrap-editor-css', get_theme_file_uri('/css/bootstrap.min.css'), FALSE);
+	wp_enqueue_style( 'font-awesome-5', 'https://pro.fontawesome.com/releases/v5.12.0/css/all.css', array(), null );
 	//wp_enqueue_style( 'starter', get_template_directory_uri() . '/css/starter.min.css' );
 }
 /**

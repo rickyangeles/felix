@@ -37,6 +37,7 @@
 ?>
 
 <section class="block split container-fluid <?php echo $bg_color . ' ' . $h_padding; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row d-flex<?php echo $main_content_side; ?><?php echo $flip_column_mobile; ?>">

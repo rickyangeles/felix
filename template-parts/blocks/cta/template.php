@@ -20,6 +20,7 @@
 ?>
 
 <section class="block cta container-fluid <?php echo $classes; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php if ( $layout == 'horizontal') : ?>
             <div class="row d-flex align-items-center">

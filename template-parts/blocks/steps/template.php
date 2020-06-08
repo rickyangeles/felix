@@ -14,6 +14,7 @@
 ?>
 
 <section class="block steps container-fluid <?php echo $bg_color . ' ' . $style . ' ' . $h_padding . ' ' . $equal_height; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row <?php echo $center; ?>">

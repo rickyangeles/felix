@@ -29,6 +29,7 @@
 ?>
 
 <section class="block post container-fluid <?php echo $classes; ?>">
+    <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row d-md-flex justify-content-center <?php echo $center; ?>">
