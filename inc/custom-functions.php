@@ -303,25 +303,46 @@ add_filter( 'script_loader_src', 'vc_remove_wp_ver_css_js', 9999 );
 
 
 //Core Block edits
-// function wporg_block_wrapper( $block_content, $block ) {
-//     if ( $block['blockName'] === 'core/paragraph' ) {
-//         $content = '<div class="wp-block-wrap-paragraph">';
-//         $content .= $block_content;
-//         $content .= '</div>';
-//         return $content;
-//     } elseif ( $block['blockName'] === 'core/heading' ) {
-//         $content = '<div class="wp-block-wrap-heading">';
-//         $content .= $block_content;
-//         $content .= '</div>';
-//         return $content;
-//     } elseif ( $block['blockName'] === 'core/latest-posts' ) {
-//         $content = '<div class="wp-block-wrap-latest-posts">';
-//         $content .= $block_content;
-//         $content .= '</div>';
-//         return $content;
-//     }
-//     return $block_content;
-// }
-//
-// add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
+function wporg_block_wrapper( $block_content, $block ) {
+    if ( $block['blockName'] === 'core/paragraph' ) {
+        $content = '<div class="wp-block-wrap-paragraph">';
+        $content .= $block_content;
+        $content .= '</div>';
+        return $content;
+    } elseif ( $block['blockName'] === 'core/heading' ) {
+        $content = '<div class="wp-block-wrap-heading">';
+        $content .= $block_content;
+        $content .= '</div>';
+        return $content;
+    } elseif ( $block['blockName'] === 'core/latest-posts' ) {
+        $content = '<div class="wp-block-wrap-latest-posts">';
+        $content .= $block_content;
+        $content .= '</div>';
+        return $content;
+    }
+    elseif ( $block['blockName'] === 'core/image' ) {
+        $content = '<div class="wp-block-wrap-image">';
+        $content .= $block_content;
+        $content .= '</div>';
+        return $content;
+    }
+    return $block_content;
+}
+
+add_filter( 'render_block', 'wporg_block_wrapper', 10, 2 );
+
+
+add_action( 'admin_menu', 'admin_menu_add_external_link_top_level' );
+function admin_menu_add_external_link_top_level() {
+    global $menu;
+
+    $menu_slug = "external_slug"; // just a placeholder for when we call add_menu_page
+    $menu_pos = 1; // whatever position you want your menu to appear
+
+    // create the top level menu, using $menu_slug as a placeholder for the link
+    add_menu_page( 'admin_menu_add_external_link_top_level', 'Documentation', 'read', $menu_slug, '', 'dashicons-format-aside', $menu_pos );
+
+    // replace the slug with your external url
+    $menu[$menu_pos][2] = "/doc/index.php";
+}
 ?>

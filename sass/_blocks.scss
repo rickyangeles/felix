@@ -1,5 +1,5 @@
 @import 'variables';
-@import '../../felix-child/sass/child-variable.scss';
+//@import '../../felix-child/sass/child-variable.scss';
 
 /* General Block Styles */
 
@@ -113,6 +113,14 @@ section.block {
         }
         &.center {
             text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                opacity: .9;
+            }
         }
     }
 
@@ -407,6 +415,30 @@ section.block {
     }
 }
 
+.wp-block-wrap-heading, .wp-block-wrap-paragraph, .wp-block-wrap-image {
+    &>* {
+        max-width: 1140px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+[class*="wp-block-embed"] {
+    &>* {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.wp-block-wrap-heading {
+    &>* {
+        padding: 1em 15px;
+    }
+}
+
 .wp-block-group {
     position: relative;
     padding: 7em 0;
@@ -414,6 +446,11 @@ section.block {
         padding: 0 15px;
         max-width: 1140px; width: 100%;
         margin: 0 auto;
+    }
+    [class*="wp-block-wrap"] {
+        &>* {
+            padding: 15px 0px;
+        }
     }
     &.alignwide > div {
         max-width: 1140; width: 100%;

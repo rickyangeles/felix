@@ -15,6 +15,7 @@
     $enable_secondary_bg    = get_field('enable_secondary_background');
     $secondary_bg           = get_field('enable_secondary_background') ? get_field('secondary_background_color') .' bg' : '';
     $flip_column_mobile     = get_field('flip_column_mobile') ? ' flip-mobile' : '';
+    $block_buttons_main     = get_field('use_block_buttons');
 
     if ( $secondary_content_type == 'text' && $enable_secondary_bg ) {
         $margin = 'style="margin-top: 1.6em;"';
@@ -43,8 +44,12 @@
         <div class="row d-flex<?php echo $main_content_side; ?><?php echo $flip_column_mobile; ?>">
             <div class="main-content <?php echo $main_content_width; ?>" <?php echo $margin; ?>>
                 <?php echo $main_content; ?>
-                <?php if ( $main_content_btn ) : ?>
-                    <a href="<?php echo $main_content_btn['url']; ?>" class="button"><?php echo $main_content_btn['title']; ?></a>
+                <?php if ( $block_buttons_main ) : ?>
+                    <?php echo get_block_button(); ?>
+                <?php else : ?>
+                    <?php if ( $main_content_btn ) : ?>
+                        <a href="<?php echo $main_content_btn['url']; ?>" class="button"><?php echo $main_content_btn['title']; ?></a>
+                    <?php endif; ?>
                 <?php endif; ?>
             </div>
             <?php if ( $secondary_content ) : ?>
@@ -102,7 +107,9 @@
                 </div>
             <?php endif; ?>
         </div>
-        <?php echo get_block_button(); ?>
+        <?php if ( !$block_buttons_main ) : ?>
+            <?php echo get_block_button(); ?>
+        <?php endif; ?>
     </div>
     <?php if ( $secondary_content_type == 'slideshow') : ?>
         <script type="text/javascript">

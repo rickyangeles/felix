@@ -37,6 +37,13 @@ section.post {
         h4 {
             font-weight: bold;
             margin-top: 0;
+
+            a {
+                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
 
         ul.post-meta {

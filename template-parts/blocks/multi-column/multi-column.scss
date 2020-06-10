@@ -1,4 +1,4 @@
-@import '../../../sass/variables'; 
+@import '../../../sass/variables';
 @import '../../../sass/media-queries';
 
 section.multi {
@@ -54,6 +54,16 @@ section.multi {
         h5 {
             margin: 0 0 1em 0;
             font-weight: bold;
+        }
+
+        h4, h4 {
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         p {
 

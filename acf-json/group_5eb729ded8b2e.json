@@ -23,6 +23,40 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_5ee137309fce9",
+            "label": "Select Category",
+            "name": "select_category",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eb729eaad889",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "taxonomy": "category",
+            "field_type": "checkbox",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "id",
+            "acfe_bidirectional": {
+                "acfe_bidirectional_enabled": "0"
+            },
+            "multiple": 0,
+            "allow_null": 0
+        },
+        {
             "key": "field_5eb72d8567a63",
             "label": "Number of Posts",
             "name": "number_of_posts",
@@ -290,5 +324,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591207835
+    "modified": 1591818257
 }

@@ -20,7 +20,6 @@
         <div class="row <?php echo $center; ?>">
         <?php if( have_rows('steps') ): $count = 0; ?>
             <?php while( have_rows('steps') ): $count++; the_row(); ?>
-
                 <?php
                     $header         = get_sub_field('heading');
                     $subheader      = get_sub_field('subheading');

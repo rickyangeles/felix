@@ -59,7 +59,9 @@
                                             <?php echo '<' . $subheader_size . '>' . $subheader . '</' . $subheader_size . '>'; ?>
                                         <?php endif; ?>
                                     </div>
-                                <?php echo $content; ?>
+                                <?php endif; ?>
+                                <?php if ( $content ) : ?>
+                                    <?php echo $content; ?>
                                 <?php endif; ?>
                                 <?php if( have_rows('buttons') ) : ?>
                                     <div class="block-buttons"><ul class="buttons">

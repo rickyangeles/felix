@@ -7,10 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.2] - 2020-06-10
+
+### Added
+- Split Block: Ability to replace the main content button with the block buttons.
+- Post Picker Block: Added "...Read More" at the end of the excerpt
+- Core Blocks: Embed, Heading, Image, Paragraph blocks match content width of the Theme
+- Theme: Added the main files for our documentation
+- Blocks: Added additional ACF field instructions
+- Post Picker: Add field to select category when using latest posts
+
+### Changed
+- Theme: Updated documentation to reflect the new 3.0 starter theme
+
+## Fixed
+- Various UI/UX changes
+
 ## [0.7.1] - 2020-06-08
 
 ### Changed
-- Making child theme more compatable
+- Theme: Making child theme more compatible
 
 ## [0.7] - 2020-06-05
 

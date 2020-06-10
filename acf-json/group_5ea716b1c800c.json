@@ -21,7 +21,7 @@
             "min": 0,
             "max": 0,
             "layout": "block",
-            "button_label": "",
+            "button_label": "Add Question\/Answer",
             "sub_fields": [
                 {
                     "key": "field_5ea71846be4c7",
@@ -70,7 +70,7 @@
             "label": "Additional Content",
             "name": "additional_content",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "Content can be located on either side of the QA section",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -298,5 +298,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591537971
+    "modified": 1591747384
 }

@@ -37,18 +37,20 @@
                             $q = get_sub_field('question');
                             $a = get_sub_field('answer');
                         ?>
-                        <div class="card">
-                            <div class="card-header" id="heading<?php echo $count;?>">
-                                <h2 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse<?php echo $count;?>" aria-expanded="true" aria-controls="collapse<?php echo $count;?>">
-                                <?php echo $q; ?>
-                                </button>
-                                </h2>
+                        <?php if ( $q || $a ) : ?>
+                            <div class="card">
+                                <div class="card-header" id="heading<?php echo $count;?>">
+                                    <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse<?php echo $count;?>" aria-expanded="true" aria-controls="collapse<?php echo $count;?>">
+                                    <?php echo $q; ?>
+                                    </button>
+                                    </h2>
+                                </div>
+                                <div id="collapse<?php echo $count;?>" class="collapse" aria-labelledby="heading<?php echo $count;?>" data-parent="#<?php echo 'faq-' . $block['id']; ?>">
+                                    <div class="card-body"><?php echo $a; ?></div>
+                                </div>
                             </div>
-                            <div id="collapse<?php echo $count;?>" class="collapse" aria-labelledby="heading<?php echo $count;?>" data-parent="#<?php echo 'faq-' . $block['id']; ?>">
-                                <div class="card-body"><?php echo $a; ?></div>
-                            </div>
-                        </div>
+                        <?php endif; ?>
                     <?php $c_count++; $count++; endwhile; ?>
                 <?php endif; ?>
             </div>

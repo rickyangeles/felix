@@ -163,6 +163,26 @@
                     "return_format": "value"
                 },
                 {
+                    "key": "field_5ee022afa4d99",
+                    "label": "Content",
+                    "name": "content",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "acfe_permissions": "",
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
                     "key": "field_5eaed85bf2086",
                     "label": "Buttons",
                     "name": "buttons",
@@ -381,5 +401,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591543859
+    "modified": 1591747259
 }
