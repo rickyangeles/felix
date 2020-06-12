@@ -28,7 +28,7 @@
                     "label": "Question",
                     "name": "question",
                     "type": "text",
-                    "instructions": "",
+                    "instructions": "Images in answer won't appear on SERP.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -298,5 +298,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591747384
+    "modified": 1591886293
 }

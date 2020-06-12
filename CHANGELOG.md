@@ -7,10 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.3] - 2020-06-12
+
+### Added
+- Post Block: Able to select post category when pulling latests posts
+- Split Block: Ability to replace the main content button with the block buttons
+- Blocks: Added various ACF field instruction
+- FAQ: Background color in card body
+### Changed
+- Theme: Button classes now expand to the whole site, it was just content area before.
+ 
+### Fixed
+- Theme: Issues cleared from PH
+
+
 ## [0.7.2] - 2020-06-10
 
 ### Added
-- Split Block: Ability to replace the main content button with the block buttons.
 - Post Picker Block: Added "...Read More" at the end of the excerpt
 - Core Blocks: Embed, Heading, Image, Paragraph blocks match content width of the Theme
 - Theme: Added the main files for our documentation

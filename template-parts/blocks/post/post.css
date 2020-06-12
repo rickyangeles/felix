@@ -41,6 +41,10 @@ section.post {
       text-decoration: none; }
       section.post .col h4 a:hover {
         text-decoration: none; }
+  section.post .col h5 a {
+    text-decoration: none; }
+    section.post .col h5 a:hover {
+      text-decoration: none; }
   section.post .col ul.post-meta {
     font-size: .8em;
     margin: 0 0 1em 0;

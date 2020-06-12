@@ -26,3 +26,112 @@ blockquote {
         }
     }
 }
+
+
+/* buttons */
+a.button {
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 0 10px;
+    border-radius: $sm-br;
+    text-decoration: none;
+    transition: all .3s ease;
+    font-weight: normal;
+
+    &:hover {
+        transition: all .3s ease;
+    }
+    &.reverse {
+        background-color: transparent;
+        border-width: 3px;
+        padding: 12px 28px;
+        border-style: solid;
+    }
+    &.primary {
+        background-color: $primary;
+        color: $white;
+        &.reverse {
+            background-color: transparent;
+            border-color: $primary;
+            color: $primary;
+            &:hover {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        &:hover {
+            background-color: $primary-dark;
+        }
+    }
+    &.secondary {
+        background-color: $secondary;
+        color: $white;
+        &.reverse {
+            background-color: transparent;
+            border-color: $secondary;
+            color: $secondary;
+        }
+        &:hover {
+            background-color: $secondary-dark;
+            color: $white;
+        }
+    }
+    &.white {
+        background-color: $white;
+        color: $primary;
+
+        &:hover {
+            background-color: $primary-dark;
+            color: $white;
+        }
+        &.reverse {
+            background-color: transparent;
+            border-width: 2px;
+            border-color: $white;
+            color: $white;
+            &:hover {
+                background-color: $white;
+                color: $primary;
+            }
+        }
+
+
+    }
+    &.light {
+        background-color: $light;
+        color: $dark;
+
+        &:hover {
+            background-color: darken($light, 5%);
+        }
+        &.reverse {
+            background-color: transparent;
+            border-width: 2px;
+            border-color: $light;
+            color: $light;
+            &:hover {
+                background-color: $light;
+                color: $dark;
+            }
+        }
+    }
+    &.dark {
+        background-color: $dark;
+        color: $white;
+
+        &.reverse {
+            background-color: transparent;
+            border-width: 2px;
+            border-color: $dark;
+            color: $dark;
+            &:hover {
+                background-color: $dark;
+                color: $light;
+            }
+        }
+
+        &:hover {
+            background-color: darken($dark, 5%);
+        }
+    }
+}

@@ -1,10 +1,15 @@
 <?php
     //Content
-    $select_post    = get_field('select_posts');
-    $p_count        = get_field('use_latest_posts') ? get_field('number_of_posts') : count($select_post);
+    $select_post        = get_field('select_posts');
+    $select_category    = get_field('select_category') ? implode(', ', get_field('select_category')) : '';
+    $p_count            = get_field('use_latest_posts') ? get_field('number_of_posts') : count($select_post);
 
     if ( get_field('use_latest_posts') ) {
-        $posts = wp_get_recent_posts(array('numberposts' => $p_count, 'post_status' => 'publish'), OBJECT);
+        if ( $select_category ) {
+            $posts = wp_get_recent_posts(array('numberposts' => $p_count, 'post_status' => 'publish', 'category' => $select_category), OBJECT);
+        } else {
+            $posts = wp_get_recent_posts(array('numberposts' => $p_count, 'post_status' => 'publish'), OBJECT);
+        }
     } else {
         $posts = get_field('select_posts');
     }

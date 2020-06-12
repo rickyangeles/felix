@@ -22,13 +22,13 @@
 ?>
 	<?php if ( !$disableFooter ) : ?>
 		<?php if ( is_active_sidebar('footer_menu') ) : ?>
-		<div class="container-fluid footer-menu">
-			<div class="row">
-				<div class="col">
-					<?php dynamic_sidebar('footer_menu'); ?>
+			<div class="container-fluid footer-menu">
+				<div class="row">
+					<div class="col">
+						<?php dynamic_sidebar('footer_menu'); ?>
+					</div>
 				</div>
 			</div>
-		</div>
 		<?php endif; ?>
 		<footer id="footer" class="site-footer">
 			<div class="container">
@@ -57,7 +57,7 @@
 					<!-- Footer Four -->
 					<div class="col-md footer-four">
 						<?php if ( $footerCTA ) : ?>
-							<a href="<?php echo $footerCTA['url']; ?>" class="footer-cta btn btn-primary btn-lg"><?php echo $footerCTA['title']; ?></a>
+							<a href="<?php echo $footerCTA['url']; ?>" class="footer-cta button primary"><?php echo $footerCTA['title']; ?></a>
 						<?php endif; ?>
 						<?php if ( is_active_sidebar('footer_four') ) : ?>
 							<?php dynamic_sidebar('footer_four'); ?>

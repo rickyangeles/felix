@@ -84,11 +84,12 @@
 
     <?php if ( $schema && have_rows('questions_answers') ) : ?>
         <?php $c_count = 0; ?>
+
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [<?php while( have_rows('questions_answers') ): the_row(); $c_count++; $q = get_sub_field('question'); $a = get_sub_field('answer'); ?>{
+              "mainEntity": [<?php while( have_rows('questions_answers') ): the_row(); $c_count++; $q = get_sub_field('question'); $q = str_replace('"', "'", $q); $a = get_sub_field('answer'); $a = str_replace('"', "'", $a);  ?>{
                 "@type": "Question",
                 "name": "<?php echo $q; ?>",
                 "acceptedAnswer": {

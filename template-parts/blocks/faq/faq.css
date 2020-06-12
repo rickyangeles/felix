@@ -10,7 +10,10 @@
 
 section.faq .accordion .card {
   max-width: 100%;
-  width: 100%; }
+  width: 100%;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0; }
   section.faq .accordion .card .card-header {
     padding: 0; }
     section.faq .accordion .card .card-header h2 {
@@ -20,6 +23,8 @@ section.faq .accordion .card {
         width: 100%;
         text-align: left;
         border: none; }
+  section.faq .accordion .card .card-body p:last-child {
+    margin-bottom: 0; }
 
 section.faq .accordion .card-header .btn-link.collapsed:after {
   font-family: "Font Awesome 5 Pro";
@@ -44,60 +49,85 @@ section.faq .accordion .card-header .btn-link:after {
   right: 15px;
   display: inline-block; }
 
-section.faq.primary .accordion .card .card-header h2 button.btn-link {
-  color: #3D5A80; }
-
-section.faq.primary .accordion .card .card-body {
-  background-color: #fff; }
-  section.faq.primary .accordion .card .card-body > * {
+section.faq.primary .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.primary .accordion .card .card-header h2 button.btn-link {
     color: #3D5A80; }
+  section.faq.primary .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.primary .accordion .card .card-body > * {
+      color: #3D5A80; }
 
-section.faq.primary-light .accordion .card .card-header h2 button.btn-link {
-  color: #4d72a3; }
+section.faq.primary-light .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.primary-light .accordion .card .card-header h2 button.btn-link {
+    color: #4d72a3; }
+  section.faq.primary-light .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.primary-light .accordion .card .card-body > * {
+      color: #4d72a3; }
 
-section.faq.primary-light .accordion .card .card-body > * {
-  color: #4d72a3; }
+section.faq.primary-dark .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.primary-dark .accordion .card .card-header h2 button.btn-link {
+    color: #2d425d; }
+  section.faq.primary-dark .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.primary-dark .accordion .card .card-body > * {
+      color: #2d425d; }
 
-section.faq.primary-dark .accordion .card .card-header h2 button.btn-link {
-  color: #2d425d; }
+section.faq.secondary .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.secondary .accordion .card .card-header h2 button.btn-link {
+    color: #EE6C4D; }
+  section.faq.secondary .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.secondary .accordion .card .card-body > * {
+      color: #EE6C4D; }
 
-section.faq.primary-dark .accordion .card .card-body > * {
-  color: #2d425d; }
+section.faq.secondary-light .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.secondary-light .accordion .card .card-header h2 button.btn-link {
+    color: #f2927c; }
+  section.faq.secondary-light .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.secondary-light .accordion .card .card-body > * {
+      color: #f2927c; }
 
-section.faq.secondary .accordion .card .card-header h2 button.btn-link {
-  color: #EE6C4D; }
+section.faq.secondary-dark .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.secondary-dark .accordion .card .card-header h2 button.btn-link {
+    color: #ea461e; }
+  section.faq.secondary-dark .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.secondary-dark .accordion .card .card-body > * {
+      color: #ea461e; }
 
-section.faq.secondary .accordion .card .card-body > * {
-  color: #EE6C4D; }
+section.faq.dark .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.dark .accordion .card .card-header h2 button.btn-link {
+    color: #444; }
+  section.faq.dark .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.dark .accordion .card .card-body > * {
+      color: #444; }
 
-section.faq.secondary-light .accordion .card .card-header h2 button.btn-link {
-  color: #f2927c; }
+section.faq.light .accordion .card {
+  border-bottom: 1px solid #fff; }
+  section.faq.light .accordion .card .card-header h2 button.btn-link {
+    color: #EEE; }
+  section.faq.light .accordion .card .card-body {
+    background-color: #fff; }
+    section.faq.light .accordion .card .card-body > * {
+      color: #444; }
 
-section.faq.secondary-light .accordion .card .card-body > * {
-  color: #f2927c; }
-
-section.faq.secondary-dark .accordion .card .card-header h2 button.btn-link {
-  color: #ea461e; }
-
-section.faq.secondary-dark .accordion .card .card-body > * {
-  color: #ea461e; }
-
-section.faq.dark .accordion .card .card-header h2 button.btn-link {
-  color: #444; }
-
-section.faq.dark .accordion .card .card-body > * {
-  color: #444; }
-
-section.faq.light .accordion .card .card-header h2 button.btn-link {
-  color: #EEE; }
-
-section.faq.light .accordion .card .card-body > * {
-  color: #444; }
-
-section.faq.white .accordion .card .card-header {
-  background-color: #3D5A80; }
-  section.faq.white .accordion .card .card-header h2 button.btn-link {
-    color: #fff; }
-
-section.faq.white .accordion .card .card-body > * {
-  color: #3D5A80; }
+section.faq.white .accordion .card {
+  border-bottom: 1px solid #EEE; }
+  section.faq.white .accordion .card .card-header {
+    background-color: #3D5A80; }
+    section.faq.white .accordion .card .card-header h2 button.btn-link {
+      color: #fff; }
+  section.faq.white .accordion .card .card-body {
+    background-color: #EEE; }
+    section.faq.white .accordion .card .card-body > * {
+      color: #3D5A80; }
