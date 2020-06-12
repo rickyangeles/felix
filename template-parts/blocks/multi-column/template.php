@@ -6,7 +6,7 @@
     //Styles
     $bg_color       = get_field('background_color');
     $style          = get_field('style');
-    $columns        = get_field('number_of_columns');
+    $columns        = get_field('number_of_columns') ? get_field('number_of_columns') : 'col';
     $media_type     = get_field('media_type');
     $equal_height   = get_field('equal_height');
     $center         = get_field('center_content') ? 'center' : '';

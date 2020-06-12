@@ -57,7 +57,7 @@
 					<!-- Footer Four -->
 					<div class="col-md footer-four">
 						<?php if ( $footerCTA ) : ?>
-							<a href="<?php echo $footerCTA['url']; ?>" class="footer-cta button primary"><?php echo $footerCTA['title']; ?></a>
+							<a href="<?php echo $footerCTA['url']; ?>" class="footer-cta button secondary"><?php echo $footerCTA['title']; ?></a>
 						<?php endif; ?>
 						<?php if ( is_active_sidebar('footer_four') ) : ?>
 							<?php dynamic_sidebar('footer_four'); ?>

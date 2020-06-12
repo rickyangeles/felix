@@ -98,13 +98,13 @@
 						</div>
 					</div>
 				<?php endif; ?>
-				<!-- <?php if ( !get_field('disable_header_cta', $pID) ) : ?>
+				<?php if ( !get_field('disable_header_cta', $pID) && get_field('hide_header_menu', $pID) ) : ?>
 					<?php if ( $ctaLocation == 'header') : ?>
 						<ul id="main-menu" class="nav navbar-nav">
 							<?php echo get_header_cta(); ?>
 						</ul>
 					<?php endif; ?>
-				<?php endif; ?> -->
+				<?php endif; ?>
 				<?php if ( !get_field('hide_header_menu', $pID) ): ?>
 					<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
 				<?php endif; ?>

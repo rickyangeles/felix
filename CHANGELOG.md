@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.4] - 2020-06-12
+
+### Added
+
+### Changed
+- Theme: Footer CTA Button changed to secondary color
+
+### Fixed
+- Multi Column Block: Columns no longer broken when number of cols is null
+- Header: Issue with two CTAs showing up under certain conditions
+
 ## [0.7.3] - 2020-06-12
 
 ### Added
@@ -15,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Blocks: Added various ACF field instruction
 - FAQ: Background color in card body
 ### Changed
-- Theme: Button classes now expand to the whole site, it was just content area before.
+- Theme: Button classes now expand to the whole site, it was just content area before
  
 ### Fixed
 - Theme: Issues cleared from PH

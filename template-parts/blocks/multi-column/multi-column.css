@@ -61,6 +61,9 @@ section.multi [class*="col-"] h4 a, section.multi [class*="col-"] h4 a {
   section.multi [class*="col-"] h4 a:hover, section.multi [class*="col-"] h4 a:hover {
     text-decoration: none; }
 
+section.multi [class*="col-"] p {
+  margin-top: 1em; }
+
 section.multi [class*="col-"] a {
   color: inherit; }
 
