@@ -278,6 +278,13 @@
                 "operator": "==",
                 "value": "page"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "documentation"
+            }
         ]
     ],
     "menu_order": 0,
@@ -296,5 +303,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591196170
+    "modified": 1591981560
 }

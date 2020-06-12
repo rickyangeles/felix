@@ -89,7 +89,8 @@ section.split .splide .splide__pagination {
 section.split .splide .splide__slide {
   position: relative; }
   section.split .splide .splide__slide img {
-    position: relative; }
+    position: relative;
+    width: 100%; }
   section.split .splide .splide__slide > div {
     display: block;
     width: 100%;
