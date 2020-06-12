@@ -17,7 +17,7 @@
     //Styles
     $bg_color           = get_field('background_color');
     $style              = get_field('style');
-    $columns            = get_field('number_of_columns');
+    $columns            = get_field('number_of_columns') ? get_field('number_of_columns') : 'col';
     $show_images        = get_field('show_images');
     $show_post_meta     = get_field('show_post_meta');
     $show_excerpt       = get_field('show_excerpt');

@@ -55,11 +55,9 @@ section.multi {
             margin: 0 0 1em 0;
             font-weight: bold;
         }
-
-        h4, h4 {
-            a {
+        a {
+            h4, h4 {
                 text-decoration: none;
-
                 &:hover {
                     text-decoration: none;
                 }

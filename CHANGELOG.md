@@ -7,9 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.7.4] - 2020-06-12
 
-### Added
+## [0.7.5] - 2020-06-12
+
+### Fixed
+- Post Block: Columns no longer broken when number of cols is null
+
+
+## [0.7.4] - 2020-06-12
 
 ### Changed
 - Theme: Footer CTA Button changed to secondary color
@@ -18,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Multi Column Block: Columns no longer broken when number of cols is null
 - Header: Issue with two CTAs showing up under certain conditions
 
+
 ## [0.7.3] - 2020-06-12
 
 ### Added
@@ -25,6 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Split Block: Ability to replace the main content button with the block buttons
 - Blocks: Added various ACF field instruction
 - FAQ: Background color in card body
+
 ### Changed
 - Theme: Button classes now expand to the whole site, it was just content area before
  
@@ -47,10 +54,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Fixed
 - Various UI/UX changes
 
+
 ## [0.7.1] - 2020-06-08
 
 ### Changed
 - Theme: Making child theme more compatible
+
 
 ## [0.7] - 2020-06-05
 
@@ -58,8 +67,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Slider: Auto height option
 - Blocks: Custom ID for Starter blocks
 - Core Blocks: Better compatibility with our theme, using the group block as a wrapper
-
-### Changed
 
 ### Fixed
 - Blocks: Font Awesome icons now show on the block editor
@@ -93,19 +100,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Split Block: removed splide script if secondary content isn't slideshow.
 - Blocks: slider arrows now match background color.
 
+
 ## [0.6.8] - 2020-06-03
-
-### Added
-
-### Changed
 
 ### Fixed
 - Various minor visual and backend fixes
 
 
 ## [0.6.7] - 2020-05-26
-
-### Added
 
 ### Changed
 - Menu: Removed CTA from the menu. It is now its own element.
@@ -116,17 +118,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.6.1] - 2020-05-26
 
-### Added
-
-### Changed
-
 ### Fixed
 - Header: CTAs are fixed
 - Header: Minor CSS fix
 
 ## [0.6.6] - 2020-05-26
-
-### Added
 
 ### Changed
 - Mobile Menu: Removed social media icons
@@ -150,9 +146,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Page Options: Hide Header CTA now works
 - Page Options: Header Styles now working.
 
-## [0.6.4] - 2020-05-25
 
-### Added
+## [0.6.4] - 2020-05-25
 
 ### Changed
 - Theme: Merged global content page into the theme settings
@@ -160,6 +155,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Blog: Instead of 'blog', it picks up the page title of the blog page in the backend
+
 
 ## [0.6.3] - 2020-05-25
 
@@ -176,8 +172,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.2] - 2020-05-24
 
-### Added
-
 ### Changed
 - Theme: Minor design fixes
 
@@ -187,8 +181,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.6.1] - 2020-05-23
 
-### Added
-
 ### Changed
 - Mobile Menu: small changes
 
@@ -197,9 +189,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Mobile Menu: wrong menu location slug
 - Footer: added proper copyright text and a field for text above it
 
-## [0.6] - 2020-05-22
 
-### Added
+## [0.6] - 2020-05-22
 
 ### Changed
 - Steps Columns: Equal height is now a field instead of automatically being same height
@@ -214,14 +205,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.5.3] - 2020-05-22
 
-### Added
-
 ### Changed
 - Decreased the footer menu padding by 100%;
 
 ### Fixed
 - Right image size for slider
 - Back to back blocks with same colors now decrease the padding between
+
 
 ## [0.5.2] - 2020-05-21
 
@@ -236,6 +226,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - If banner only has one slide, it removes navigation, and other slider features.
 - Block icons
 
+
 ## [0.5.1] - 2020-05-21
 
 ### Added
@@ -244,5 +235,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A fourth footer width
 
 ### Fixed
-
 - Header Logo Link

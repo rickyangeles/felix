@@ -56,9 +56,9 @@ section.multi [class*="col-"] h5 {
   margin: 0 0 1em 0;
   font-weight: bold; }
 
-section.multi [class*="col-"] h4 a, section.multi [class*="col-"] h4 a {
+section.multi [class*="col-"] a h4, section.multi [class*="col-"] a h4 {
   text-decoration: none; }
-  section.multi [class*="col-"] h4 a:hover, section.multi [class*="col-"] h4 a:hover {
+  section.multi [class*="col-"] a h4:hover, section.multi [class*="col-"] a h4:hover {
     text-decoration: none; }
 
 section.multi [class*="col-"] p {
