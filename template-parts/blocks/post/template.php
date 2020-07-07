@@ -26,7 +26,14 @@
     if ( $p_count % 4 == 0 ) {
         $col_thumb_size = 'column_image_four';
     } else {
-        $col_thumb_size = 'column_iamge_three';
+        $col_thumb_size = 'column_image_three';
+    }
+    if ( get_field('number_of_columns') == 2 ) {
+        $col_thumb_size = 'column_image_two';
+    } elseif ( get_field('number_of_columns') == 3 ) {
+        $col_thumb_size = 'column_image_three';
+    } elseif ( get_field('number_of_columns') == 4 ) {
+        $col_thumb_size = 'column_image_four';
     }
     // if ( $equal_height ) {
     //     $classes .= ' equal-height';
@@ -75,7 +82,7 @@
                                 <?php if ( $excerpt ) : ?>
                                     <?php echo $excerpt; ?>
                                 <?php else : ?>
-                                    <?php echo excerpt(10, $pID); ?>
+                                    <?php echo excerpt(10, true, $pID); ?>
                                 <?php endif; ?>
                             </div>
                         <?php endif; ?>

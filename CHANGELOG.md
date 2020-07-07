@@ -7,10 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.8] - 2020-07-07
+
+### Added
+- Theme: Thumbnail size for 4 columns
+
+### Changed
+- Theme: Post Thumbnail size
+
+### Fixed
+-
+
+## [0.7.7] - 2020-06-14
+
+### Added
+- Theme: CPT for Testimonial and Documentation
+
 
 ## [0.7.6] - 2020-06-12
 
-## Fixed
+### Fixed
 - Theme: Minor UI changes
 
 ## [0.7.5] - 2020-06-12

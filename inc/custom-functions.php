@@ -186,11 +186,17 @@ function mobile_menu_cta() {
 }
 
 // tn Limit Excerpt Length by number of Words
-function excerpt( $limit, $pID ) {
+function excerpt( $limit, $readmore, $pID ) {
     $excerpt = explode(' ', get_the_excerpt($pID), $limit);
+    $link = get_the_permalink($pID);
     if ( count($excerpt) >= $limit ) {
         array_pop($excerpt);
-        $excerpt = implode(" ",$excerpt).'...<strong>Read More</strong>';
+        if ( $readmore == true ) {
+            $excerpt = implode(" ",$excerpt).'...<a href="' . $link . '"><strong>Read More</strong></a>';
+        } else {
+            $excerpt = implode(" ",$excerpt).'...';
+        }
+
     } else {
         $excerpt = implode(" ",$excerpt);
     }
@@ -345,4 +351,21 @@ function admin_menu_add_external_link_top_level() {
     // replace the slug with your external url
     $menu[$menu_pos][2] = "/doc/index.php";
 }
+
+
+
+/**
+ * Prevent update notification for plugin
+ * http://www.thecreativedev.com/disable-updates-for-specific-plugin-in-wordpress/
+ * Place in theme functions.php or at bottom of wp-config.php
+ */
+function disable_plugin_updates( $value ) {
+  if ( isset($value) && is_object($value) ) {
+    if ( isset( $value->response['acf-image-aspect-ratio-crop/acf-image-aspect-ratio-crop.php'] ) ) {
+      unset( $value->response['acf-image-aspect-ratio-crop/acf-image-aspect-ratio-crop.php'] );
+    }
+  }
+  return $value;
+}
+add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
 ?>

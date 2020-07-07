@@ -33,7 +33,7 @@
     } else {
         $main_content_width = 'col-12';
     }
-    $id = 'splt-' . $block['id'];
+    $id = 'split-' . $block['id'];
 
 ?>
 

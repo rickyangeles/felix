@@ -32,7 +32,7 @@
                 ?>
                 <div class="col-sm step-<?php echo $count; ?>">
                     <div>
-                        <span class="step-number"><?php echo $count; ?></span>
+                        <span class="step-number">Step <?php echo $count; ?></span>
                         <?php if ( $header ) : echo '<h4>' . $header . '</h4>'; endif; ?>
                         <?php if ( $subheader ) : echo '<h5>' . $subheader . '</h5>'; endif; ?>
                         <?php if ( $content ) : echo '<p>' . $content . '</p>'; endif; ?>

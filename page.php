@@ -22,7 +22,7 @@ get_header();
 		while ( have_posts() ) :
 			the_post();
 
-			if ( is_singular('documentation') {
+			if ( is_singular('documentation') ) {
 				get_template_part( 'template-parts/content', 'documentation' );
 			} else {
 				get_template_part( 'template-parts/content', 'page' );

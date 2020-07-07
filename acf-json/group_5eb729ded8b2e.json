@@ -279,6 +279,26 @@
             "return_format": "value"
         },
         {
+            "key": "field_5ef34aae4ba2e",
+            "label": "Show Categories",
+            "name": "show_categories",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "message": "",
+            "default_value": 0,
+            "ui": 0,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
             "key": "field_5eb80939514cf",
             "label": "Show Excerpt",
             "name": "show_excerpt",
@@ -324,5 +344,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591962644
+    "modified": 1593002685
 }

@@ -63,7 +63,8 @@ if ( ! function_exists( 'felix_setup' ) ) :
 		/* Custom Image sizes */
 		add_image_size( 'logo', 0, 100 );
 		add_image_size( 'page-header', 1300, 400 );
-		add_image_size( 'post-thumbnail', 240, 180, true );
+		add_image_size( 'post-thumbnail', 240, 240, true );
+		add_image_size( 'column_image_two', 540, 404, true );
 		add_image_size( 'column_image_three', 350, 262, true );
 		add_image_size( 'column_image_four', 255, 191, true );
 		add_image_size( 'slideshow_image', 570, 427, true );

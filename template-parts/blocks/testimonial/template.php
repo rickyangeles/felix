@@ -91,7 +91,7 @@
                         ?>
                         <div class="col-md-4 single-testimonial">
                             <h4><?php echo $title; ?></h4>
-                            <p><?php echo excerpt(20, $pID); ?></p>
+                            <p><?php echo excerpt(20, false, $pID); ?></p>
                             <?php if ( $show_details ) : ?>
                                 <span><?php echo $name; ?>, <?php echo $company; ?></span>
                             <?php endif; ?>
