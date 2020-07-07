@@ -178,6 +178,9 @@
             &:hover {
                 background-color: $primary-dark;
             }
+            &.open {
+                
+            }
             .dropdown-menu {
                 background-color: $primary-dark;
                 padding: 0;
@@ -190,13 +193,13 @@
                         padding: 10px 17px;
                         color: white;
                         &:hover {
-                            background-color: $primary-dark;
+                            background-color: $primary-light;
                         }
                     }
 
                     a.dropdown-menu:hover {
                         color: $navItemColor;
-                        background-color: $primary-dark;
+                        background-color: $primary-light;
                     }
                 }
 

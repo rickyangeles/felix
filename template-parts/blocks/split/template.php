@@ -82,7 +82,7 @@
                     <?php elseif ( $secondary_content_type == 'slideshow') : ?>
                         <?php $size = 'slideshow_image'; ?>
                         <?php if ( $secondary_content ) : ?>
-                            <div class="splide <?php echo $id; ?>">
+                            <div class="splide <?php echo $id; ?>"> 
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <?php if( have_rows('secondary_content_slideshow') ): ?>

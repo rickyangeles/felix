@@ -41,7 +41,7 @@
 		<?php if ( !$topMenu ) : ?>
 			<?php if ( ($topMenuLocation === 'own' || $socialHeaderLocation === 'own')) : ?>
 				<div class="container-fluid top-nav d-lg-block">
-					<div class="container d-flex align-items-end flex-column">
+					<div class="container d-flex align-items-end">
 						<div class="col-md-12">
 							<?php if ( $topMenuLocation === 'own') : ?>
 								<?php if ( has_nav_menu('top-menu') ) : ?>
@@ -63,6 +63,9 @@
 				<a class="navbar-brand logo" href="<?php echo get_option("siteurl"); ?>">
 					<img src="<?php echo header_logo(); ?>" alt="<?php echo get_site_url(); ?>">
 				</a>
+				<?php if ( !get_field('hide_header_menu', $pID) ): ?>
+					<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
+				<?php endif; ?>
 				<nav id="mmenu" class="mmenu mobile-menu">
 					<?php wp_nav_menu( array('theme_location'  => 'mobile-menu' )); ?>
 					<?php //wp_nav_menu( array('theme_location'  => 'main-nav', 'menu'  => 'main-nav' )); ?>
@@ -104,9 +107,6 @@
 							<?php echo get_header_cta(); ?>
 						</ul>
 					<?php endif; ?>
-				<?php endif; ?>
-				<?php if ( !get_field('hide_header_menu', $pID) ): ?>
-					<a href="#mmenu" class="mmenu-trigger"><i class="fal fa-bars"></i></a>
 				<?php endif; ?>
 			</div>
 		</nav>

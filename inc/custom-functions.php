@@ -66,13 +66,13 @@ function header_social() {
         $s_name = $social . '_url';
         $s_field = get_field($s_name, 'options');
         if ( !empty($s_field) && $social == 'facebook') {
-            echo '<li class="list-inline-item"><a href="' . $s_field . '"><i class="fab fa-' . $social . '-f"></i></a></li>';
+            echo '<li class="list-inline-item"><a href="' . $s_field . '" target="_blank"><i class="fab fa-' . $social . '-f"></i></a></li>';
         } elseif ( !empty($s_field) && $social == 'linkedin') {
-            echo '<li class="list-inline-item"><a href="' . $s_field . '"><i class="fab fa-' . $social . '-in"></i></a></li>';
+            echo '<li class="list-inline-item"><a href="' . $s_field . '" target="_blank"><i class="fab fa-' . $social . '-in"></i></a></li>';
         } elseif ( !empty($s_field) && $social == 'pinterest') {
-            echo '<li class="list-inline-item"><a href="' . $s_field . '"><i class="fab fa-' . $social . '-p"></i></a></li>';
+            echo '<li class="list-inline-item"><a href="' . $s_field . '" target="_blank"><i class="fab fa-' . $social . '-p"></i></a></li>';
         } else {
-            echo '<li class="list-inline-item"><a href="' . $s_field . '"><i class="fab fa-' . $social . '"></i></a></li>';
+            echo '<li class="list-inline-item"><a href="' . $s_field . '" target="_blank"><i class="fab fa-' . $social . '"></i></a></li>';
         }
     }
     echo '</ul>';
@@ -120,6 +120,15 @@ function register_widget_areas() {
         'id'            => 'footer_menu',
         'description'   => 'Area above menu',
         'before_widget' => '<section class="footer-menu fm">',
+        'after_widget'  => '</section>',
+        'before_title'  => '<h4>',
+        'after_title'   => '</h4>',
+    ));
+    register_sidebar( array(
+        'name'          => 'Copyright Menu',
+        'id'            => 'copyright_menu',
+        'description'   => 'Menu below footer',
+        'before_widget' => '<section class="copyright-menu">',
         'after_widget'  => '</section>',
         'before_title'  => '<h4>',
         'after_title'   => '</h4>',
@@ -351,21 +360,4 @@ function admin_menu_add_external_link_top_level() {
     // replace the slug with your external url
     $menu[$menu_pos][2] = "/doc/index.php";
 }
-
-
-
-/**
- * Prevent update notification for plugin
- * http://www.thecreativedev.com/disable-updates-for-specific-plugin-in-wordpress/
- * Place in theme functions.php or at bottom of wp-config.php
- */
-function disable_plugin_updates( $value ) {
-  if ( isset($value) && is_object($value) ) {
-    if ( isset( $value->response['acf-image-aspect-ratio-crop/acf-image-aspect-ratio-crop.php'] ) ) {
-      unset( $value->response['acf-image-aspect-ratio-crop/acf-image-aspect-ratio-crop.php'] );
-    }
-  }
-  return $value;
-}
-add_filter( 'site_transient_update_plugins', 'disable_plugin_updates' );
 ?>

@@ -63,8 +63,7 @@ if ( ! function_exists( 'felix_setup' ) ) :
 		/* Custom Image sizes */
 		add_image_size( 'logo', 0, 100 );
 		add_image_size( 'page-header', 1300, 400 );
-		add_image_size( 'post-thumbnail', 240, 240, true );
-		add_image_size( 'column_image_two', 540, 404, true );
+		add_image_size( 'post-thumbnail', 240, 180, true );
 		add_image_size( 'column_image_three', 350, 262, true );
 		add_image_size( 'column_image_four', 255, 191, true );
 		add_image_size( 'slideshow_image', 570, 427, true );
@@ -159,7 +158,7 @@ function felix_scripts() {
 	add_action( 'enqueue_block_editor_assets', 'font-awesome-5' );
 	wp_enqueue_style( 'felix-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'mmenu', get_template_directory_uri() . '/css/mmenu.css');
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap/bootstrap.css' );
 	wp_enqueue_style( 'starter', get_template_directory_uri() . '/css/starter.min.css' );
 
 	if ( is_user_logged_in() ) {
@@ -213,7 +212,7 @@ require get_template_directory() . '/inc/customizer.php';
  /**
  * Get custom Functions
  **/
-
+ require get_template_directory() . '/inc/custom-cpt.php';
  require get_template_directory() . '/inc/custom-functions.php';
  require get_template_directory() . '/inc/custom-widgets.php';
  require get_template_directory() . '/inc/blocks.php';
@@ -232,7 +231,7 @@ if (is_user_logged_in()) {
 }
 if( function_exists('acf_add_options_page') ) {
 	$parent = acf_add_options_page(array(
-		'page_title' 	=> 'Theme Settings',
+	   'page_title' => 'Theme Settings',
  	   'menu_title'	=> 'Theme Settings',
  	   'menu_slug' 	=> 'theme-settings',
  	   'capability'	=> 'edit_posts',

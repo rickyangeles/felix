@@ -4,6 +4,12 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 section.testimonial .grid .single-testimonial {
   margin-bottom: 2em; }
   section.testimonial .grid .single-testimonial ul.rating {
@@ -13,6 +19,12 @@ section.testimonial .grid .single-testimonial {
       display: inline-block;
       list-style-type: none;
       margin-right: .5em; }
+      section.testimonial .grid .single-testimonial ul.rating li.half-star {
+        position: relative; }
+        section.testimonial .grid .single-testimonial ul.rating li.half-star .fa-star {
+          position: absolute;
+          left: 0;
+          top: 3px; }
       section.testimonial .grid .single-testimonial ul.rating li i {
         color: gold; }
 
@@ -32,6 +44,12 @@ section.testimonial .slider {
         display: inline-block;
         list-style-type: none;
         margin-right: .5em; }
+        section.testimonial .slider .single-testimonial ul.rating li.half-star {
+          position: relative; }
+          section.testimonial .slider .single-testimonial ul.rating li.half-star .fa-star {
+            position: absolute;
+            left: 0;
+            top: 3px; }
         section.testimonial .slider .single-testimonial ul.rating li:last-child {
           margin-right: 0; }
         section.testimonial .slider .single-testimonial ul.rating li i {

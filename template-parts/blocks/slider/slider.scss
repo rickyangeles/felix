@@ -28,6 +28,38 @@ section.slider {
             }
         }
     }
+
+    .block-header {
+        @include respond-below(md) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            h3 {
+                font-size: 1.4em;
+            }
+            h4 {
+                font-size: 1.2em;
+            }
+            h5 {
+                font-size: 1em;
+            }
+            h6 {
+                font-size: .8em;
+            }
+        }
+    }
+    .block-buttons {
+        @include respond-below(md) {
+            margin-top: 0;
+
+            li:first-child {
+                margin-top: 0;
+            }
+        }
+    }
     &.content-left {
         text-align: left;
 
@@ -51,6 +83,8 @@ section.slider {
                 padding: 3em 15px;
                 position: relative;
                 z-index: 9;
+
+
             }
         }
     }

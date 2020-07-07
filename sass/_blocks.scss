@@ -1,6 +1,5 @@
 @import 'variables';
-//@import '../../felix-child/sass/child-variable.scss';
-
+@import '../../felix-child/sass/child-variable.scss';
 
 /* General Block Styles */
 
@@ -14,12 +13,15 @@ section.block {
         color: inherit;
         font-weight: 700;
     }
+    a.button {
+        text-decoration: none;
+    }
     @each $colorname, $color in $colors {
         &.#{$colorname} {
             background-color: #{$color};
             color: $white;
             &.light, &.light-dark {
-                color: $dark;
+                color: $primary;
             }
 
             &.white {
@@ -168,7 +170,7 @@ section.block {
                     transition: all .3s ease;
                     font-weight: normal;
 
-                    @include respond-below(md) {
+                    @include respond-below(sm) {
                         margin: 0;
                     }
 
@@ -315,6 +317,14 @@ section.block {
         padding-left: 15px;
         padding-right: 15px;
     }
+}
+
+.entry-content > .gform_wrapper {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 [class*="wp-block-embed"] {

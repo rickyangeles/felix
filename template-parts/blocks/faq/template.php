@@ -42,7 +42,7 @@
                                 <div class="card-header" id="heading<?php echo $count;?>">
                                     <h2 class="mb-0">
                                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse<?php echo $count;?>" aria-expanded="true" aria-controls="collapse<?php echo $count;?>">
-                                    <?php echo $q; ?>
+                                        <span><?php echo $q; ?></span>
                                     </button>
                                     </h2>
                                 </div>

@@ -9,7 +9,7 @@ section.steps {
                 display: block!important;
             }
             @include respond-above(md) {
-                .col {
+                [class*="col-"] {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -27,7 +27,7 @@ section.steps {
                 }
             }
 
-            .col {
+            [class*="col-"] {
                 h4, h5 {
                     a {
                         text-decoration: none;
@@ -39,7 +39,7 @@ section.steps {
             }
 
             &.center {
-                .col {
+                [class*="col-"] {
                     & > div {
                         align-items: center;
                     }
@@ -47,7 +47,7 @@ section.steps {
             }
         }
     }
-    .col-sm {
+    [class*="col-"] {
 
         &>div {
 
@@ -68,89 +68,93 @@ section.steps {
         a.button {
             display: inline-block;
         }
+        @include respond-below(md) {
+            margin-bottom: 1em;
+            padding-right: 0;
+        }
     }
     .center {
-        .col-sm {
+        [class*="col-"] {
             text-align: center;
         }
     }
 
     &.basic {
         &.primary {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $primary;
                     background-color: $white;
                 }
             }
         }
         &.primary-light {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $primary-light;
                     background-color: $white;
                 }
             }
         }
         &.primary-dark {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $primary-dark;
                     background-color: $white;
                 }
             }
         }
         &.secondary {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $secondary;
                     background-color: $white;
                 }
             }
         }
         &.secondary-light {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $secondary-light;
                     background-color: $white;
                 }
             }
         }
         &.secondary-dark {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $secondary-dark;
                     background-color: $white;
                 }
             }
         }
         &.light {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $light;
                     background-color: $dark;
                 }
             }
         }
         &.light-dark {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $light-dark;
                     background-color: $dark;
                 }
             }
         }
         &.dark {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $dark;
                     background-color: $light;
                 }
             }
         }
         &.white {
-            .col-sm {
-                a {
+            [class*="col-"] {
+                a.button {
                     color: $white;
                     background-color: $primary;
                 }
@@ -159,139 +163,171 @@ section.steps {
     }
 
     &.boxed {
-        .col-sm {
+        [class*="col-"] {
             &>div {
                 padding: 1em;
                 height: 100%;
             }
         }
         &.primary {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
-                    color: $dark;
+                    color: $primary;
 
-                    a {
-                        background-color: $primary;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $primary;
+                        background-color: transparent;
+                        color: $primary;
+                        &:hover {
+                            background-color: $primary;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.primary-light {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
 
-                    a {
-                        background-color: $primary-light;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $primary-light;
+                        background-color: transparent;
+                        color: $primary-light;
+                        &:hover {
+                            background-color: $primary-light;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.primary-dark {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
 
-                    a {
-                        background-color: $primary-dark;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $primary-dark;
+                        background-color: transparent;
+                        color: $primary-dark;
+                        &:hover {
+                            background-color: $primary-dark;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.secondary {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
 
-                    a {
-                        background-color: $secondary;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $secondary;
+                        background-color: transparent;
+                        color: $secondary;
+                        &:hover {
+                            background-color: $secondary;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.secondary-light {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
 
-                    a {
-                        background-color: $secondary-light;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $secondary-light;
+                        background-color: transparent;
+                        color: $secondary-light;
+                        &:hover {
+                            background-color: $secondary-light;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.secondary-dark {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $white;
                     color: $dark;
 
-                    a {
-                        background-color: $secondary-dark;
-                        color: $white;
+                    a.button {
+                        border: 3px solid $secondary-dark;
+                        background-color: transparent;
+                        color: $secondary-dark;
+                        &:hover {
+                            background-color: $secondary-dark;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.light {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $dark;
                     color: $light;
 
-                    a {
-                        background-color: $light;
+                    a.button {
+                        border: 3px solid $light;
+                        background-color: transparent;
                         color: $dark;
-                    }
-                }
-            }
-        }
-        &.light-dark {
-            .col-sm {
-                &>div {
-                    background-color: $dark;
-                    color: $light-dark;
-
-                    a {
-                        background-color: $light-dark;
-                        color: $dark;
+                        &:hover {
+                            background-color: $light;
+                            color: $dark;
+                        }
                     }
                 }
             }
         }
         &.dark {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $light;
                     color: $dark;
 
-                    a {
-                        background-color: $dark;
-                        color: $light;
+                    a.button {
+                        border: 3px solid $dark;
+                        background-color: transparent;
+                        color: $dark;
+                        &:hover {
+                            background-color: $dark;
+                            color: $white;
+                        }
                     }
                 }
             }
         }
         &.white {
-            .col-sm {
+            [class*="col-"] {
                 &>div {
                     background-color: $primary;
                 }
                 color: $white;
 
-                a {
-                    color: $primary;
-                    background-color: $white;
+                a.button {
+                    border: 3px solid $white;
+                    background-color: transparent;
+                    color: $white;
+                    &:hover {
+                        background-color: $white;
+                        color: $secondary;
+                    }
                 }
             }
         }

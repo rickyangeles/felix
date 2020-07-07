@@ -32,15 +32,19 @@
                     $content        = get_sub_field('content');
                     $button         = get_sub_field('button');
                     $button_color   = get_sub_field('button_color');
+                    $button_style   = get_sub_field('outline_style');
+
+                    if ( $button_style ) {
+                        $button_color .=  ' reverse';
+                    }
+
                     $image          = get_sub_field('image');
-                    if ( get_field('number_of_columns') == 2 ) {
-                        $image      = wp_get_attachment_image_src( $image, 'column_image_two' );
-                    } elseif ( get_field('number_of_columns') == 3 ) {
+                    if ( $c_count < 4 ) {
                         $image      = wp_get_attachment_image_src( $image, 'column_image_three' );
-                    } elseif ( get_field('number_of_columns') == 4 ) {
+                    } else {
                         $image      = wp_get_attachment_image_src( $image, 'column_image_four' );
                     }
-                    $icon           = get_sub_field('icon');
+                    $icon       = get_sub_field('icon');
                 ?>
                 <div class="<?php echo $columns; ?>">
                 <?php if ( $button && $link_column ) : ?> <a href="<?php echo $button['url']; ?>"><?php endif; ?>

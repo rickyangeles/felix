@@ -8,6 +8,7 @@ section.split {
         a.button {
             margin: 1em 0 0 0;
             display: inline-block;
+            text-decoration: none;
         }
 
         .block-buttons {
@@ -172,6 +173,7 @@ section.split {
                 padding: 1em;
                 background-color: rgba($dark, .8);
                 color: $white;
+                font-style: italic;
             }
         }
     }

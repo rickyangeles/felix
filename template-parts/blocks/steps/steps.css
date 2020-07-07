@@ -4,12 +4,18 @@
 /* Navigation */
 /* Footer */
 /* Border Radius */
+/* Color Scheme */
+/* Media Breakpoints */
+/* Fonts */
+/* Navigation */
+/* Footer */
+/* Border Radius */
 @media (max-width: 575px) {
   section.steps.equal-height .row {
     display: block !important; } }
 
 @media (min-width: 992px) {
-  section.steps.equal-height .row .col {
+  section.steps.equal-height .row [class*="col-"] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -20,7 +26,7 @@
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start; }
-    section.steps.equal-height .row .col > div {
+    section.steps.equal-height .row [class*="col-"] > div {
       height: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -32,148 +38,182 @@
       -webkit-box-align: start;
       -ms-flex-align: start;
       align-items: flex-start; }
-      section.steps.equal-height .row .col > div a {
+      section.steps.equal-height .row [class*="col-"] > div a {
         margin-top: auto; } }
 
-section.steps.equal-height .row .col h4 a, section.steps.equal-height .row .col h5 a {
+section.steps.equal-height .row [class*="col-"] h4 a, section.steps.equal-height .row [class*="col-"] h5 a {
   text-decoration: none; }
-  section.steps.equal-height .row .col h4 a:hover, section.steps.equal-height .row .col h5 a:hover {
+  section.steps.equal-height .row [class*="col-"] h4 a:hover, section.steps.equal-height .row [class*="col-"] h5 a:hover {
     text-decoration: none; }
 
-section.steps.equal-height .row.center .col > div {
+section.steps.equal-height .row.center [class*="col-"] > div {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
 
-section.steps .col-sm .step-number {
+section.steps [class*="col-"] .step-number {
   font-size: 3em;
   display: inline-block;
   line-height: 1;
   margin-bottom: .5em; }
 
-section.steps .col-sm a {
+section.steps [class*="col-"] a {
   margin-top: auto;
   text-align: center;
   margin: auto 0 0;
   border: none; }
 
-section.steps .col-sm a.button {
+section.steps [class*="col-"] a.button {
   display: inline-block; }
 
-section.steps .center .col-sm {
+@media (max-width: 991px) {
+  section.steps [class*="col-"] {
+    margin-bottom: 1em;
+    padding-right: 0; } }
+
+section.steps .center [class*="col-"] {
   text-align: center; }
 
-section.steps.basic.primary .col-sm a {
-  color: #3D5A80;
+section.steps.basic.primary [class*="col-"] a.button {
+  color: #527650;
   background-color: #fff; }
 
-section.steps.basic.primary-light .col-sm a {
-  color: #4d72a3;
+section.steps.basic.primary-light [class*="col-"] a.button {
+  color: #5d855a;
   background-color: #fff; }
 
-section.steps.basic.primary-dark .col-sm a {
-  color: #2d425d;
+section.steps.basic.primary-dark [class*="col-"] a.button {
+  color: #476746;
   background-color: #fff; }
 
-section.steps.basic.secondary .col-sm a {
-  color: #EE6C4D;
+section.steps.basic.secondary [class*="col-"] a.button {
+  color: #A84D46;
   background-color: #fff; }
 
-section.steps.basic.secondary-light .col-sm a {
-  color: #f2927c;
+section.steps.basic.secondary-light [class*="col-"] a.button {
+  color: #b75851;
   background-color: #fff; }
 
-section.steps.basic.secondary-dark .col-sm a {
-  color: #ea461e;
+section.steps.basic.secondary-dark [class*="col-"] a.button {
+  color: #96453f;
   background-color: #fff; }
 
-section.steps.basic.light .col-sm a {
-  color: #EEE;
-  background-color: #444; }
+section.steps.basic.light [class*="col-"] a.button {
+  color: #D5DBCF;
+  background-color: #1B291E; }
 
-section.steps.basic.light-dark .col-sm a {
-  color: #d5d5d5;
-  background-color: #444; }
+section.steps.basic.light-dark [class*="col-"] a.button {
+  color: #c8d0c0;
+  background-color: #1B291E; }
 
-section.steps.basic.dark .col-sm a {
-  color: #444;
-  background-color: #EEE; }
+section.steps.basic.dark [class*="col-"] a.button {
+  color: #1B291E;
+  background-color: #D5DBCF; }
 
-section.steps.basic.white .col-sm a {
+section.steps.basic.white [class*="col-"] a.button {
   color: #fff;
-  background-color: #3D5A80; }
+  background-color: #527650; }
 
-section.steps.boxed .col-sm > div {
+section.steps.boxed [class*="col-"] > div {
   padding: 1em;
   height: 100%; }
 
-section.steps.boxed.primary .col-sm > div {
+section.steps.boxed.primary [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.primary .col-sm > div a {
-    background-color: #3D5A80;
-    color: #fff; }
+  color: #527650; }
+  section.steps.boxed.primary [class*="col-"] > div a.button {
+    border: 3px solid #527650;
+    background-color: transparent;
+    color: #527650; }
+    section.steps.boxed.primary [class*="col-"] > div a.button:hover {
+      background-color: #527650;
+      color: #fff; }
 
-section.steps.boxed.primary-light .col-sm > div {
+section.steps.boxed.primary-light [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.primary-light .col-sm > div a {
-    background-color: #4d72a3;
-    color: #fff; }
+  color: #1B291E; }
+  section.steps.boxed.primary-light [class*="col-"] > div a.button {
+    border: 3px solid #5d855a;
+    background-color: transparent;
+    color: #5d855a; }
+    section.steps.boxed.primary-light [class*="col-"] > div a.button:hover {
+      background-color: #5d855a;
+      color: #fff; }
 
-section.steps.boxed.primary-dark .col-sm > div {
+section.steps.boxed.primary-dark [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.primary-dark .col-sm > div a {
-    background-color: #2d425d;
-    color: #fff; }
+  color: #1B291E; }
+  section.steps.boxed.primary-dark [class*="col-"] > div a.button {
+    border: 3px solid #476746;
+    background-color: transparent;
+    color: #476746; }
+    section.steps.boxed.primary-dark [class*="col-"] > div a.button:hover {
+      background-color: #476746;
+      color: #fff; }
 
-section.steps.boxed.secondary .col-sm > div {
+section.steps.boxed.secondary [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.secondary .col-sm > div a {
-    background-color: #EE6C4D;
-    color: #fff; }
+  color: #1B291E; }
+  section.steps.boxed.secondary [class*="col-"] > div a.button {
+    border: 3px solid #A84D46;
+    background-color: transparent;
+    color: #A84D46; }
+    section.steps.boxed.secondary [class*="col-"] > div a.button:hover {
+      background-color: #A84D46;
+      color: #fff; }
 
-section.steps.boxed.secondary-light .col-sm > div {
+section.steps.boxed.secondary-light [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.secondary-light .col-sm > div a {
-    background-color: #f2927c;
-    color: #fff; }
+  color: #1B291E; }
+  section.steps.boxed.secondary-light [class*="col-"] > div a.button {
+    border: 3px solid #b75851;
+    background-color: transparent;
+    color: #b75851; }
+    section.steps.boxed.secondary-light [class*="col-"] > div a.button:hover {
+      background-color: #b75851;
+      color: #fff; }
 
-section.steps.boxed.secondary-dark .col-sm > div {
+section.steps.boxed.secondary-dark [class*="col-"] > div {
   background-color: #fff;
-  color: #444; }
-  section.steps.boxed.secondary-dark .col-sm > div a {
-    background-color: #ea461e;
-    color: #fff; }
+  color: #1B291E; }
+  section.steps.boxed.secondary-dark [class*="col-"] > div a.button {
+    border: 3px solid #96453f;
+    background-color: transparent;
+    color: #96453f; }
+    section.steps.boxed.secondary-dark [class*="col-"] > div a.button:hover {
+      background-color: #96453f;
+      color: #fff; }
 
-section.steps.boxed.light .col-sm > div {
-  background-color: #444;
-  color: #EEE; }
-  section.steps.boxed.light .col-sm > div a {
-    background-color: #EEE;
-    color: #444; }
+section.steps.boxed.light [class*="col-"] > div {
+  background-color: #1B291E;
+  color: #D5DBCF; }
+  section.steps.boxed.light [class*="col-"] > div a.button {
+    border: 3px solid #D5DBCF;
+    background-color: transparent;
+    color: #1B291E; }
+    section.steps.boxed.light [class*="col-"] > div a.button:hover {
+      background-color: #D5DBCF;
+      color: #1B291E; }
 
-section.steps.boxed.light-dark .col-sm > div {
-  background-color: #444;
-  color: #d5d5d5; }
-  section.steps.boxed.light-dark .col-sm > div a {
-    background-color: #d5d5d5;
-    color: #444; }
+section.steps.boxed.dark [class*="col-"] > div {
+  background-color: #D5DBCF;
+  color: #1B291E; }
+  section.steps.boxed.dark [class*="col-"] > div a.button {
+    border: 3px solid #1B291E;
+    background-color: transparent;
+    color: #1B291E; }
+    section.steps.boxed.dark [class*="col-"] > div a.button:hover {
+      background-color: #1B291E;
+      color: #fff; }
 
-section.steps.boxed.dark .col-sm > div {
-  background-color: #EEE;
-  color: #444; }
-  section.steps.boxed.dark .col-sm > div a {
-    background-color: #444;
-    color: #EEE; }
-
-section.steps.boxed.white .col-sm {
+section.steps.boxed.white [class*="col-"] {
   color: #fff; }
-  section.steps.boxed.white .col-sm > div {
-    background-color: #3D5A80; }
-  section.steps.boxed.white .col-sm a {
-    color: #3D5A80;
-    background-color: #fff; }
+  section.steps.boxed.white [class*="col-"] > div {
+    background-color: #527650; }
+  section.steps.boxed.white [class*="col-"] a.button {
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff; }
+    section.steps.boxed.white [class*="col-"] a.button:hover {
+      background-color: #fff;
+      color: #A84D46; }

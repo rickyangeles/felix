@@ -60,7 +60,7 @@
                                                             echo '<li><i class="fas fa-star"></i></li>';
                                                         }
                                                         if (strpos($rating,'.')) {
-                                                            echo '<li class="half-star"></i><i class="far fa-star"></i><i class="fas fa-star-half"></li>';
+                                                            echo '<li class="half-star"></i><i class="fas fa-star-half"></i><i class="far fa-star"></i></li>';
                                                             $x++;
                                                         }
                                                         while ($x<=5) {
@@ -99,17 +99,17 @@
                                 <?php $i = 0; ?>
                                 <ul class="rating">
                                     <?php
-                                    for($x=1;$x<=$rating;$x++) {
-                                        echo '<li><i class="fas fa-star"></i></li>';
-                                    }
-                                    if (strpos($rating,'.')) {
-                                        echo '<li class="half-star"></i><i class="far fa-star"></i><i class="fas fa-star-half"></li>';
-                                        $x++;
-                                    }
-                                    while ($x<=5) {
-                                        echo '<li><i class="far fa-star"></i></li>';
-                                        $x++;
-                                    }
+                                        for($x=1;$x<=$rating;$x++) {
+                                            echo '<li><i class="fas fa-star"></i></li>';
+                                        }
+                                        if (strpos($rating,'.')) {
+                                            echo '<li class="half-star"></i><i class="fas fa-star-half"></i><i class="far fa-star"></i></li>';
+                                            $x++;
+                                        }
+                                        while ($x<=5) {
+                                            echo '<li><i class="far fa-star"></i></li>';
+                                            $x++;
+                                        }
                                     ?>
                                 </ul>
                             <?php endif; ?>

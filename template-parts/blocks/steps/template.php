@@ -6,7 +6,7 @@
     $bg_color               = get_field('background_color');
     $h_padding              = get_field('horizontal_padding');
     $center                 = get_field('center_content') ? 'center' : '';
-    $equal_height           = get_field('equal_height') ?  'equal_height' : '';
+    $equal_height           = get_field('equal_height') ?  'equal-height' : '';
 
 
     $id = 'testimonial-' . $block['id'];

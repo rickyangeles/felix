@@ -8,8 +8,8 @@ section.post {
             @include respond-below(xs) {
                 display: block!important;
             }
-            @include respond-above(md) {
-                .col {
+            @include respond-above(sm) {
+                [class*="col-"] {
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-start;
@@ -18,22 +18,33 @@ section.post {
                         height: 100%;
                         display: flex;
                         flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
 
-                        ul {
+                        a.button {
                             margin-top: auto;
                         }
+                    }
+                }
+            }
+
+            &.center {
+                [class*="col-"] {
+                    & > div {
+                        align-items: center;
                     }
                 }
             }
         }
     }
     .center {
-        .col {
+        [class*="col-"] {
             text-align: center;
         }
     }
 
-    .col {
+    [class*="col-"] {
+        margin-bottom: 1em;
         h4 {
             font-weight: bold;
             margin-top: 0;
@@ -52,7 +63,7 @@ section.post {
                 &:hover {
                     text-decoration: none;
                 }
-            } 
+            }
         }
 
         ul.post-meta {
@@ -79,7 +90,7 @@ section.post {
         }
     }
     &.basic {
-        .col {
+        [class*="col-"] {
             img {
                 max-width: 100%; width: 100%;
                 margin-bottom: 1em;
@@ -87,14 +98,144 @@ section.post {
         }
     }
     &.boxed {
-        .col {
+        [class*="col-"] {
             img {
                 max-width: 100%; width: 100%;
+            }
+            i {
+                display: block;
+                background-color: $white;
+                color: $primary;
+                font-size: 6em;
+                padding: 15px;
             }
             &>div {
                 padding: 1em;
                 background-color: $white;
-                color: $dark;
+            }
+        }
+        &.primary {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $primary;
+                }
+            }
+        }
+        &.primary-light {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $primary-light;
+                }
+            }
+        }
+        &.primary-dark {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $primary-dark;
+                }
+            }
+        }
+        &.secondary {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $secondary;
+                }
+            }
+        }
+        &.secondary-light {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $secondary-light;
+                }
+            }
+        }
+        &.secondary-dark {
+            [class*="col-"] {
+                &>div {
+                    background-color: $white;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $secondary-dark;
+                }
+            }
+        }
+        &.light {
+            [class*="col-"] {
+                &>div {
+                    background-color: $primary;
+                    color: $light;
+                }
+                i {
+                    background-color: $white;
+                    color: $light;
+                }
+            }
+        }
+        &.light-dark {
+            [class*="col-"] {
+                &>div {
+                    background-color: $dark;
+                    color: $light-dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $light-dark;
+                }
+            }
+        }
+        &.dark {
+            [class*="col-"] {
+                &>div {
+                    background-color: $light;
+                    color: $dark;
+                }
+                i {
+                    background-color: $white;
+                    color: $dark;
+                }
+            }
+        }
+        &.white {
+            [class*="col-"] {
+                &>div {
+                    background-color: $primary;
+                }
+                i {
+                    background-color: $primary;
+                    color: $white;
+                }
+                color: $white;
+
+                a {
+                    color: $white;
+                }
             }
         }
     }

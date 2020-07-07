@@ -24,11 +24,11 @@
     <div class="container">
         <?php if ( $layout == 'horizontal') : ?>
             <div class="row d-flex align-items-center">
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <?php echo '<' . $header_size . '>'; ?><?php echo $header; ?><?php echo '</' . $header_size . '>'; ?>
                     <?php echo $content; ?>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <?php if ( $subtext_location == 'top' ) : ?>
                         <?php if ( $sub_text ) : ?>
                             <span class="cta-sub-text"><?php echo $sub_text; ?></span>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         <?php elseif ( $layout == 'vertical') : ?>
-            <div class="row d-flex flex-column">
+            <div class="row d-flex">
                 <div class="col">
                     <?php echo '<' . $header_size . '>'; ?><?php echo $header; ?><?php echo '</' . $header_size . '>'; ?>
                     <?php echo $content; ?>

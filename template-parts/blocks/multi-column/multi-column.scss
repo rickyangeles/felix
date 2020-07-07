@@ -19,7 +19,7 @@ section.multi {
                         flex-direction: column;
                         align-items: flex-start;
 
-                        a {
+                        a.button {
                             margin-top: auto;
                         }
                     }
@@ -42,6 +42,7 @@ section.multi {
     }
 
     [class*="col-"] {
+        margin-bottom: 1em;
         i {
             font-size: 2.5em;
             padding: 1em;
@@ -55,7 +56,8 @@ section.multi {
             margin: 0 0 1em 0;
             font-weight: bold;
         }
-        a {
+        a:not(.button) {
+            text-decoration: none;
             h4, h4 {
                 text-decoration: none;
                 &:hover {
@@ -66,27 +68,17 @@ section.multi {
         p {
             margin-top: 1em;
         }
-        a {
+        a:not(.button) {
             color: inherit;
         }
-        // a.button {
-        //     background-color: $primary;
-        //     color: $white;
-        //     display: inline-block;
-        //     padding: 14px 30px;
-        //     margin: 1em 0 0 0;
-        //     border-radius: $sm-br;
-        //     text-decoration: none;
-        //     transition: all .3s ease;
-        //     text-align: center;
-        //     border: none;
-        //
-        //     &:hover {
-        //         transition: all .3s ease;
-        //     }
-        // }
+        a.button {
+            display: inline-block;
+            margin: 1em 0 0 0;
+            text-decoration: none;
+        }
         @include respond-below(md) {
-            margin-bottom: 3em;
+            margin-bottom: 1em;
+            //padding-right: 0;
         }
     }
     &.basic {
