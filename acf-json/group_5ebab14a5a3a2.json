@@ -59,7 +59,7 @@
             "key": "field_5ebab1b4a656d",
             "label": "Design",
             "name": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -69,7 +69,8 @@
                 "id": ""
             },
             "acfe_permissions": "",
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -207,5 +208,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1589804545
+    "modified": 1595204966
 }

@@ -43,7 +43,7 @@
 
 					<?php endif; ?>
 				</header>
-				<?php echo excerpt(20, false); ?>
+				<?php echo excerpt(20, false, get_the_ID()); ?>
 			</div>
 		</div>
 	</header><!-- .entry-header -->

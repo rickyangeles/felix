@@ -229,48 +229,66 @@ function content($limit) {
 
 
 function get_page_header($pID) {
-    $headerType = get_field('header_type');
-    $title = get_field('override_page_title') ? get_field('override_page_title') : get_the_title();
-    $bgColor = get_field('page_header_color');
+    $headerType     = get_field('header_type');
+    $title          = get_field('override_page_header') ? get_field('override_page_header') : get_the_title();
+    $bgColor        = get_field('page_header_color');
+    $headerSize     = get_field('page_header_level') ? get_field('page_header_level') : 'h1';
+    $subHeaderSize  = get_field('page_subheader_level');
+
     if ( $bgColor ) {
         $color = array_shift(array_values($bgColor));
     }
     if ( $headerType == 'banner') {
-        $subtitle = get_field('page_subtitle');
+        $subtitle = get_field('page_subheader');
         if ( get_field('page_header_color') ) {
-            $size = 'page-header';
-            $image = get_field('banner_background', $pID);
-            $thumb = $image['sizes'][ $size ];
-            $bgImage = ' style="background-image:url(' . $thumb . ');"';
+            $size       = 'page-header';
+            $image      = get_field('banner_background', $pID);
+            $thumb      = $image['sizes'][ $size ];
+            $bgImage    = ' style="background-image:url(' . $thumb . ');"';
         }
     }
 
     if ( $headerType == 'basic') {
         echo '<div class="page-header row ' . $color . ' ' . $headerType . '-header">';
-        echo '<h1 class="container">' . $title . '</h1>';
+        echo '<' . $headerSize . ' class="container">' . $title . '</' . $headerSize . '>';
         echo '</div>';
     } elseif ( $headerType == 'banner') {
         echo '<div class="page-header row ' . $color . ' ' . $headerType . '-header d-flex justify-content-center align-items-center"' . $bgImage . '>';
-        echo '<h1>' . $title . '</h1>';
-        echo '<h2>' . $subtitle . '</h2>';
+        echo '<' . $headerSize . '>' . $title . '</' .  $headerSize . '>';
+        echo '<' . $subHeaderSize . '>' . $subtitle . '</' . $subHeaderSize . '>';
         echo '</div>';
     } else {
         echo '<div class="page-header row none-header">';
-        echo '<h1 class="container">' . $title . '</h1>';
+        echo '<' . $headerSize . ' class="container">' . $title . '</' . $headerSize . '>';
         echo '</div>';
     }
 }
 
 function get_block_header() {
-    $header         = get_field('header');
-    $header_size    = get_field('header_size');
-    $subheader      = get_field('subheader');
-    $subheader_size = get_field('subheader_size');
-    $heaader_align  = get_field('header_align');
+    $header             = get_field('header');
+    $header_size        = get_field('header_size');
+    $ov_header_size     = get_field('header_font_size') ? 'style="font-size:'. get_field('header_font_size') . '"': '';
+    $subheader          = get_field('subheader');
+    $subheader_size     = get_field('subheader_size');
+    $ov_subheader_size  = get_field('subheader_font_size') ? 'style="font-size:'. get_field('subheader_font_size') . '"': '';
+    $heaader_align      = get_field('header_align');
 
     if ( $header || $subheader ) { echo '<div class="block-header ' . $heaader_align . '">'; }
-    if ( $header ) { echo '<' . $header_size . ' class="header">' . $header . '</' . $header_size . '>'; }
-    if ( $subheader ) { echo '<' . $subheader_size . ' class="subheader">' . $subheader . '</' . $subheader_size . '>'; }
+    if ( $header ) {
+        if ( $ov_header_size ) {
+            echo '<' . $header_size . ' ' . $ov_header_size .' class="header">' . $header . '</' . $header_size . '>';
+        } else {
+            echo '<' . $header_size . ' class="header">' . $header . '</' . $header_size . '>';
+        }
+    }
+    if ( $subheader ) {
+        if ( $ov_subheader_size ) {
+            echo '<' . $subheader_size . ' ' . $ov_subheader_size .' class="subheader">' . $subheader . '</' . $subheader_size . '>';
+        } else {
+            echo '<' . $subheader_size . ' class="subheader">' . $subheader . '</' . $subheader_size . '>';
+        }
+
+    }
     if ( $header || $subheader ) { echo '</div>'; }
 }
 

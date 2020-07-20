@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.2] = 2020-07-19
+
+## Added
+    - Notification bar feature added
+
+## [0.8.1] - 2020-07-07
+
+## Changed
+    - Changed the tabs on the blocks to Accordions, blends better with the core design.
+    - Changed the name for the block settings over to design on all blocks.
 ## [0.8.0] - 2020-07-07
 
 ### Added

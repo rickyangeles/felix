@@ -32,6 +32,11 @@
 	$topMenuLocation 		= get_field('top_menu_location', 'options');
 	$socialHeader 			= get_field('social_header', 'options');
 	$socialHeaderLocation 	= get_field('social_header_location', 'options');
+	$nb_text		= get_field('notification_text', 'options');
+	if ( $nb_text ) {
+		$nb_link	= get_field('notification_link', 'options');
+		$nb_color	= get_field('notification_background_color', 'options');
+	}
 	$pID 					= get_the_ID();
 ?>
 
@@ -57,6 +62,16 @@
 					</div>
 				</div>
 			<?php endif; ?>
+		<?php endif; ?>
+		<?php if ( $nb_text ) : ?>
+			<div class="nb <?php echo $nb_color; ?>">
+				<div class="container">
+					<span>
+						<?php echo $nb_text; ?> <a href="<?php echo $nb_link['url']; ?>"><?php echo $nb_link['title']; ?></a>
+					</span>
+					<a id="nb-close"> <i class="fa fa-times"></i></a>
+				</div>
+			</div>
 		<?php endif; ?>
 		<nav class="navbar navbar-expand-lg">
 			<div class="container">

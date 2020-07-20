@@ -6,7 +6,7 @@
             "key": "field_5ea77929cf6bf",
             "label": "Content",
             "name": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -16,7 +16,8 @@
                 "id": ""
             },
             "acfe_permissions": "",
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -229,9 +230,9 @@
         },
         {
             "key": "field_5ea77932cf6c0",
-            "label": "Settings",
+            "label": "Design",
             "name": "",
-            "type": "tab",
+            "type": "accordion",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -241,7 +242,8 @@
                 "id": ""
             },
             "acfe_permissions": "",
-            "placement": "top",
+            "open": 0,
+            "multi_expand": 0,
             "endpoint": 0
         },
         {
@@ -401,5 +403,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1592786576
+    "modified": 1594146422
 }

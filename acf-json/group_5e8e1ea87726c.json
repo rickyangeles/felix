@@ -104,8 +104,8 @@
         },
         {
             "key": "field_5e8e1eb9b2c41",
-            "label": "Override Page Title",
-            "name": "override_page_title",
+            "label": "Override Page Header",
+            "name": "override_page_header",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -123,9 +123,36 @@
             "maxlength": ""
         },
         {
+            "key": "field_5f04b3f8c28e9",
+            "label": "Header Level",
+            "name": "page_header_level",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "h1": "H1",
+                "h2": "H2",
+                "h3": "H3",
+                "h4": "H4",
+                "h5": "H5",
+                "h6": "H6"
+            },
+            "allow_null": 0,
+            "default_value": "h1",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5e8e3762b2c43",
-            "label": "Page Subtitle",
-            "name": "page_subtitle",
+            "label": "Page Subheader",
+            "name": "page_subheader",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -134,7 +161,7 @@
                     {
                         "field": "field_5e8e1edbb2c42",
                         "operator": "==",
-                        "value": "Banner"
+                        "value": "banner"
                     }
                 ]
             ],
@@ -151,8 +178,43 @@
             "maxlength": ""
         },
         {
+            "key": "field_5f04b425c28ea",
+            "label": "Subheader Level",
+            "name": "page_subheader_level",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e8e1edbb2c42",
+                        "operator": "==",
+                        "value": "banner"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_permissions": "",
+            "choices": {
+                "h1": "H1",
+                "h2": "H2",
+                "h3": "H3",
+                "h4": "H4",
+                "h5": "H5",
+                "h6": "H6"
+            },
+            "allow_null": 0,
+            "default_value": "h2",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_5e9347dbaa8fc",
-            "label": "Page Header",
+            "label": "Header Background Color",
             "name": "page_header_color",
             "type": "clone",
             "instructions": "",
@@ -303,5 +365,5 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1591981560
+    "modified": 1594144295
 }

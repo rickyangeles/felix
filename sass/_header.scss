@@ -1,6 +1,50 @@
 .site-header {
 
+    .nb {
+        display: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        i.fa-times {
+            float: right;
+            margin-top: 3px;
+        }
 
+        &.primary {
+            background-color: $primary;
+            color:$white;
+            a {
+                color: inherit;
+            }
+        }
+        &.secondary {
+            background-color: $secondary;
+            color:$white;
+            a {
+                color: inherit;
+            }
+        }
+        &.white {
+            background-color: $white;
+            color:$dark;
+            a {
+                color: inherit;
+            }
+        }
+        &.light {
+            background-color: $light;
+            color:$dark;
+            a {
+                color: inherit;
+            }
+        }
+        &.dark {
+            background-color: $dark;
+            color:$white;
+            a {
+                color: inherit;
+            }
+        }
+    }
     .top-nav {
         padding: 5px 0;
         overflow: hidden;
@@ -179,7 +223,7 @@
                 background-color: $primary-dark;
             }
             &.open {
-                
+
             }
             .dropdown-menu {
                 background-color: $primary-dark;

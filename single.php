@@ -29,6 +29,8 @@ get_header();
 		<div class="row">
 		<?php if ( !get_field('hide_sidebar') ) : ?>
 			<main id="main" class="site-main col-md-8">
+				<?php $meta = get_post_meta( get_the_ID(), '', true ); print_r($meta); ?>
+
 		<?php else : ?>
 			<main id="main" class="site-main col">
 		<?php endif; ?>

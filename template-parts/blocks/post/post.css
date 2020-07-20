@@ -74,7 +74,7 @@ section.post {
     section.post [class*="col-"] p:last-child {
       margin-bottom: 0; }
     section.post [class*="col-"] a {
-      color: #1B291E; }
+      color: #444; }
     @media (max-width: 991px) {
       section.post [class*="col-"] {
         margin-bottom: 1em; } }
@@ -88,7 +88,7 @@ section.post {
   section.post.boxed [class*="col-"] i {
     display: block;
     background-color: #fff;
-    color: #527650;
+    color: #3D5A80;
     font-size: 6em;
     padding: 15px; }
   section.post.boxed [class*="col-"] > div {
@@ -96,68 +96,68 @@ section.post {
     background-color: #fff; }
   section.post.boxed.primary [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.primary [class*="col-"] i {
     background-color: #fff;
-    color: #527650; }
+    color: #3D5A80; }
   section.post.boxed.primary-light [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.primary-light [class*="col-"] i {
     background-color: #fff;
-    color: #5d855a; }
+    color: #4d72a3; }
   section.post.boxed.primary-dark [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.primary-dark [class*="col-"] i {
     background-color: #fff;
-    color: #476746; }
+    color: #2d425d; }
   section.post.boxed.secondary [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.secondary [class*="col-"] i {
     background-color: #fff;
-    color: #A84D46; }
+    color: #EE6C4D; }
   section.post.boxed.secondary-light [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.secondary-light [class*="col-"] i {
     background-color: #fff;
-    color: #b75851; }
+    color: #f2927c; }
   section.post.boxed.secondary-dark [class*="col-"] > div {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.secondary-dark [class*="col-"] i {
     background-color: #fff;
-    color: #96453f; }
+    color: #ea461e; }
   section.post.boxed.light [class*="col-"] > div {
-    background-color: #527650;
-    color: #D5DBCF; }
+    background-color: #3D5A80;
+    color: #EEE; }
   section.post.boxed.light [class*="col-"] i {
     background-color: #fff;
-    color: #D5DBCF; }
+    color: #EEE; }
   section.post.boxed.light-dark [class*="col-"] > div {
-    background-color: #1B291E;
-    color: #c8d0c0; }
+    background-color: #444;
+    color: #d5d5d5; }
   section.post.boxed.light-dark [class*="col-"] i {
     background-color: #fff;
-    color: #c8d0c0; }
+    color: #d5d5d5; }
   section.post.boxed.dark [class*="col-"] > div {
-    background-color: #D5DBCF;
-    color: #1B291E; }
+    background-color: #EEE;
+    color: #444; }
   section.post.boxed.dark [class*="col-"] i {
     background-color: #fff;
-    color: #1B291E; }
+    color: #444; }
   section.post.boxed.white [class*="col-"] {
     color: #fff; }
     section.post.boxed.white [class*="col-"] > div {
-      background-color: #527650; }
+      background-color: #3D5A80; }
     section.post.boxed.white [class*="col-"] i {
-      background-color: #527650;
+      background-color: #3D5A80;
       color: #fff; }
     section.post.boxed.white [class*="col-"] a {
       color: #fff; }
   section.post.primary.basic a, section.post.primary-light.basic a, section.post.primary-dark.basic a, section.post.secondary.basic a, section.post.secondary-light.basic a, section.post.secondary-dark.basic a, section.post.dark.basic a {
     color: #fff; }
   section.post.white .basic a, section.post.light .basic a, section.post.light-dark .basic a {
-    color: #1B291E; }
+    color: #444; }
