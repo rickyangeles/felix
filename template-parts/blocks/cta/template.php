@@ -16,6 +16,9 @@
     $id                     = 'cta-' . $block['id'];
 
     $classes                = $bg_color . ' ' . $layout . ' ' . $h_padding . ' ' . $center . ' ' . $c_width;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
 ?>
 

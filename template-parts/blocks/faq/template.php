@@ -10,6 +10,10 @@
     $schema                 = get_field('enable_faq_schema');
     $c_count                = 0;
     $q_count                = count($questions_answers);
+    $classes                = $bg_color . ' ' . $h_padding;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
     if ( $addition_content ) {
         if ( $main_content_width == 'col-md-9') {
@@ -25,7 +29,7 @@
     $id                     = 'faq-' . $block['id'];
 ?>
 
-<section class="block faq container-fluid <?php echo $bg_color . ' ' . $h_padding; ?>">
+<section class="block faq container-fluid <?php echo $classes; ?>">
     <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>

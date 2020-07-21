@@ -7,13 +7,17 @@
     $h_padding              = get_field('horizontal_padding');
     $center                 = get_field('center_content') ? 'center' : '';
     $equal_height           = get_field('equal_height') ?  'equal-height' : '';
+    $classes                = $bg_color . ' ' . $style . ' ' . $h_padding . ' ' . $equal_height;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
 
     $id = 'testimonial-' . $block['id'];
 
 ?>
 
-<section class="block steps container-fluid <?php echo $bg_color . ' ' . $style . ' ' . $h_padding . ' ' . $equal_height; ?>">
+<section class="block steps container-fluid <?php echo $classes; ?>">
     <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>

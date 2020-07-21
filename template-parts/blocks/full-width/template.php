@@ -12,6 +12,9 @@
     $c_width = get_field('width_of_content') ? get_field('width_of_content') . '-width' : '';
 
     $classes = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
     if ( get_field('background_image') ) {
         $classes .= ' bg-img';

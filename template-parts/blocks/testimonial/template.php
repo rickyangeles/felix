@@ -8,6 +8,10 @@
     $show_rating            = get_field('show_rating');
     $bg_color               = get_field('background_color');
     $h_padding              = get_field('horizontal_padding');
+    $classes                = $bg_color . ' ' . $h_padding;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
 
     $id = 'testimonial-' . $block['id'];
@@ -27,7 +31,7 @@
 
 ?>
 
-<section class="block testimonial container-fluid <?php echo $bg_color . ' ' . $h_padding; ?>">
+<section class="block testimonial container-fluid <?php echo $classes; ?>">
     <div class="container">
         <?php echo get_block_header(); ?>
         <div class="row <?php echo $layout ?>">
@@ -46,7 +50,6 @@
                                         $rating     = get_field('rating', $pID);
                                     ?>
                                     <li class="slide__slide single-testimonial">
-                                        <h4><?php echo $title; ?></h4>
                                         <p><?php echo content(600); ?></p>
                                         <?php if ( $show_details ) : ?>
                                             <span><?php echo $name; ?><?php echo $company; ?></span>
@@ -90,7 +93,6 @@
                             $rating     = get_field('rating', $pID);
                         ?>
                         <div class="col-md-4 single-testimonial">
-                            <h4><?php echo $title; ?></h4>
                             <p><?php echo excerpt(20, false, $pID); ?></p>
                             <?php if ( $show_details ) : ?>
                                 <span><?php echo $name; ?>, <?php echo $company; ?></span>

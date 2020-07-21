@@ -16,6 +16,10 @@
     $secondary_bg           = get_field('enable_secondary_background') ? get_field('secondary_background_color') .' bg' : '';
     $flip_column_mobile     = get_field('flip_column_mobile') ? ' flip-mobile' : '';
     $block_buttons_main     = get_field('use_block_buttons');
+    $classes                = $bg_color . ' ' . $h_padding;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
     if ( $secondary_content_type == 'text' && $enable_secondary_bg ) {
         $margin = 'style="margin-top: 1.6em;"';
@@ -37,7 +41,7 @@
 
 ?>
 
-<section class="block split container-fluid <?php echo $bg_color . ' ' . $h_padding; ?>">
+<section class="block split container-fluid <?php echo $classes; ?>">
     <?php block_custom_id(); ?>
     <div class="container">
         <?php echo get_block_header(); ?>
@@ -82,7 +86,7 @@
                     <?php elseif ( $secondary_content_type == 'slideshow') : ?>
                         <?php $size = 'slideshow_image'; ?>
                         <?php if ( $secondary_content ) : ?>
-                            <div class="splide <?php echo $id; ?>"> 
+                            <div class="splide <?php echo $id; ?>">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <?php if( have_rows('secondary_content_slideshow') ): ?>

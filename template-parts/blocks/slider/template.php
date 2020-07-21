@@ -13,6 +13,9 @@
 
     //Other
     $classes            = $bg_color . ' ' . $align . ' ' . $h_padding . ' ' . $c_width;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
     $id                 = 'slider-' . $block['id'];
     $c_id               = get_field('custom_id') ? 'id="' . get_field('custom_id') . '"' : '';
 

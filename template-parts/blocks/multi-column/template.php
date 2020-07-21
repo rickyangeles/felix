@@ -13,6 +13,9 @@
     $h_padding      = get_field('horizontal_padding');
     $link_column    = get_field('link_whole_column');
     $classes        = $bg_color . ' ' . $style . ' ' . $h_padding;
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
     if ( $equal_height ) {
         $classes .= ' equal-height';

@@ -23,6 +23,9 @@
     $show_excerpt       = get_field('show_excerpt');
     $show_category      = get_field('show_categories');
     $classes            = $bg_color . ' ' . $style . ' equal-height';
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
 
     if ( $p_count % 4 == 0 ) {
         $col_thumb_size = 'column_image_four';

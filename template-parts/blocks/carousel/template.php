@@ -7,7 +7,10 @@
     $number_of_slides   = get_field('number_of_slides') ? get_field('number_of_slides') : '5';
     $auto_play          = get_field('autoplay')? 'true' : 'false';
 
-    $classes            = $bg_color . ' ' . $h_padding;
+    $classes            = $bg_color . ' ' . $h_padding . ' ' . $block['className'];
+    if( $block['className'] ) {
+        $classes .= $block['className'];
+    }
     $id                 = 'carouse-' . $block['id'];
 ?>
 
